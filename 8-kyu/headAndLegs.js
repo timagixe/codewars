@@ -36,8 +36,9 @@ There are many different ways to solve this, but they all give the same answer.
 You will only be given integers types - however negative values (edge cases) will be given.
 
 Happy coding!
+
 - LABELS:
-#algebra #mathematics #logic #algorithms
+#ALGEBRA #MATHEMATICS #LOGICAL #GORITHMS
 
 */
 
