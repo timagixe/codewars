@@ -15,7 +15,7 @@ ghost = new Ghost();
 ghost.color //=> "white" or "yellow" or "purple" or "red"
 
 - LABELS:
-#OBJECT-ORIENTED PROGRAMMING #FUNDAMENTALS
+#OBJECT_ORIENTED_PROGRAMMING #FUNDAMENTALS
 
 */
 
