@@ -17,6 +17,7 @@ use this as a reference encoding
 #PUZZLES
 
 */
+
 function generateLink(user) {
   return `http://www.codewars.com/users/${encodeURIComponent(user)}`;
 }
