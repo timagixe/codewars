@@ -81,7 +81,7 @@ Return the five after works finished.
 You should use for..in in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)
 
 - LABELS:
-#FUNDAMENTALS #BASIC#LANGUAGE#FEATURES #LANGUAGE_FEATURES #TUTORIALS
+#FUNDAMENTALS #BASIC_LANGUAGE_FEATURES #LANGUAGE_FEATURES #TUTORIALS
 
 */
 
