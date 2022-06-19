@@ -53,6 +53,34 @@ What you need to think about is how to judge it correctly and effectively and do
 
 */
 
+const MAX_VALUE = 1.7976931348623157e308;
+const MIN_VALUE = 5e-324;
+
+function responseWith(numberType) {
+  const response = "Input number is ";
+  switch (numberType) {
+    case "MAX":
+      return response + "Number.MAX_VALUE";
+    case "MIN":
+      return response + "Number.MIN_VALUE";
+    case "NAN":
+      return response + "Number.NaN";
+    case "+INF":
+      return response + "Number.POSITIVE_INFINITY";
+    case "-INF":
+      return response + "Number.NEGATIVE_INFINITY";
+    default:
+      return response + numberType;
+  }
+}
+
 function whatNumberIsIt(n) {
-  //coding here
+  if (n === MAX_VALUE) return responseWith("MAX");
+  if (n === MIN_VALUE) return responseWith("MIN");
+  if (Number.isNaN(n)) return responseWith("NAN");
+  if (!Number.isFinite(n)) {
+    if (Math.sign(n) === -1) return responseWith("-INF");
+    if (Math.sign(n) === 1) return responseWith("+INF");
+  }
+  return responseWith(n);
 }
