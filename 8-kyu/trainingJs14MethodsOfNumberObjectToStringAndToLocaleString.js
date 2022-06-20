@@ -52,10 +52,12 @@ That's all of your work. My work is print your color code on your screen.
 
 */
 
-function colorOf(...colors) {
-  const hex = colors
-    .map((colorInt) => colorInt.toString(16).padStart(2, 0))
-    .join("");
+function intToHex(int) {
+  return int.toString(16).padStart(2, 0);
+}
 
-  return `#${hex}`;
+function colorOf(...colors) {
+  const hexColor = colors.map(intToHex).join("");
+
+  return `#${hexColor}`;
 }
