@@ -13,11 +13,5 @@ Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his 
 */
 
 function createArray(number) {
-  const newArray = [];
-
-  for (let counter = 1; counter <= number; counter++) {
-    newArray.push(counter);
-  }
-
-  return newArray;
+  return Array.from({ length: number }, (v, k) => k + 1);
 }
