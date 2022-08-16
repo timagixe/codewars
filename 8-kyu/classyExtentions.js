@@ -1,7 +1,7 @@
 /*
 
 - TITLE:
-Classy Extentions
+Classy Extensions
 
 - DESCRIPTION:
 Classy Extensions
