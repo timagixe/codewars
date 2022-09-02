@@ -32,6 +32,38 @@ For everything else, don't return anything (return null in C#, None in Rust).
 
 */
 
+const BOTTLES_COUNT = 99;
+
+function createLyrics() {
+  return Array.from({ length: BOTTLES_COUNT + 1 }, (value, key) => {
+    const bottleNumber = BOTTLES_COUNT - key;
+
+    if (bottleNumber === 0) {
+      return [
+        "No more bottles of beer on the wall, no more bottles of beer.\n",
+        "Go to the store and buy some more, 99 bottles of beer on the wall."
+      ].join("");
+    }
+
+    if (bottleNumber === 1) {
+      return [
+        `${bottleNumber} bottle of beer on the wall, ${bottleNumber} bottle of beer.\n`,
+        "Take one down and pass it around, no more bottles of beer on the wall.\n"
+      ].join("");
+    }
+
+    return [
+      `${bottleNumber} bottles of beer on the wall, ${bottleNumber} bottles of beer.\n`,
+      `Take one down and pass it around, ${bottleNumber - 1} bottle${
+        bottleNumber - 1 > 1 ? "s" : ""
+      } of beer on the wall.\n`
+    ].join("");
+  });
+}
+
 function HQ9(code) {
-  //finish me
+  if (code === "H") return "Hello World!";
+  if (code === "Q") return code;
+  if (code === "9") return createLyrics().join("");
+  return undefined;
 }
