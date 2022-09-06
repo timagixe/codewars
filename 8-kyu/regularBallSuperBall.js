@@ -23,8 +23,4 @@ class Ball {
   constructor(ballType = "regular") {
     this.ballType = ballType;
   }
-
-  static get ballType() {
-    return this.ballType;
-  }
 }
