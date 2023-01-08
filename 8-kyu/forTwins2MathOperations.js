@@ -20,6 +20,7 @@ bottle_length = 10
 rim_length = 2
 
 volume = 16
+
 Example 2:
 radius = 5
 bottle_length = 30
@@ -33,6 +34,5 @@ volume = 1150
 */
 
 function iceBrickVolume(radius, bottleLength, rimLength) {
-  const squareSide = Math.square(radius ** 2 / 2);
-  console.log({ squareSide });
+  return (bottleLength - rimLength) * 2 * radius ** 2;
 }
