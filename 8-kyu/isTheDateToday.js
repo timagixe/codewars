@@ -16,11 +16,3 @@ Make sure that your function does not return a false positive by only checking t
 function isToday(date) {
   return date.toDateString() === new Date().toDateString();
 }
-
-function extractDate(date) {
-  return {
-    year: date.getFullYear(),
-    month: date.getMonth(),
-    day: date.getDay()
-  };
-}
