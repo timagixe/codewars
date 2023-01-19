@@ -15,12 +15,10 @@ You should not remove or add elements from/to the array.
 
 */
 
+const EMPTY = "";
+const STARS = "***";
+
 function twoSort(words) {
   const [word] = [...words].sort();
-  return word.replace(/\w/g, appendStars);
-}
-
-function appendStars(char, index, word) {
-  if (index === word.length - 1) return char;
-  return `${char}***`;
+  return word.split(EMPTY).join(STARS);
 }
