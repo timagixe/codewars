@@ -13,6 +13,7 @@ The(name(of(the(dog(is(also(Adam()))))))); // must return "The name of the dog i
 #FUNDAMENTALS
 
 */
+
 function factory(word) {
   return (string) => (string ? `${word} ${string}` : `${word}.`);
 }
