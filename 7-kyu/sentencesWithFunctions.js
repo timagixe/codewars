@@ -13,43 +13,17 @@ The(name(of(the(dog(is(also(Adam()))))))); // must return "The name of the dog i
 #FUNDAMENTALS
 
 */
-
-function Adam(str) {
-  return ["Adam", str].filter(Boolean).join(" ") + ".";
+function factory(word) {
+  return (string) => (string ? `${word} ${string}` : `${word}.`);
 }
 
-function has(str) {
-  return ["has", str].join(" ");
-}
-
-function a(str) {
-  return ["a", str].join(" ");
-}
-
-function dog(str) {
-  return ["dog", str].filter(Boolean).join(" ");
-}
-
-function The(str) {
-  return ["The", str].join(" ");
-}
-
-function name(str) {
-  return ["name", str].join(" ");
-}
-
-function of(str) {
-  return ["of", str].join(" ");
-}
-
-function the(str) {
-  return ["the", str].join(" ");
-}
-
-function is(str) {
-  return ["is", str].join(" ");
-}
-
-function also(str) {
-  return ["also", str].join(" ");
-}
+const Adam = factory("Adam");
+const has = factory("has");
+const a = factory("a");
+const dog = factory("dog");
+const The = factory("The");
+const name = factory("name");
+const of = factory("of");
+const the = factory("the");
+const is = factory("is");
+const also = factory("also");
