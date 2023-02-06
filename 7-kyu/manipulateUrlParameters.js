@@ -36,13 +36,14 @@ addOrChangeUrlParameter("www.example.com?key=oldValue`", "key=newValue" )
  */
 function addOrChangeUrlParameter(url, param) {
   if (!param) return url;
-  const [link, params] = url.split("?");
-  if (!params) return [link, param].join("?");
-  const [key] = param.split("=");
-  if (params.indexOf(key) === -1) return [url, param].join("&");
-  const nextParams = params.split("&").map((par) => {
-    if (par.indexOf(key) === -1) return par;
-    return param;
-  });
-  return [link, nextParams.join("&")].join("?");
+  const regExp = getParamRegExp(param);
+  const shouldUpdate = regExp.test(url);
+  if (shouldUpdate) return url.replace(regExp, param);
+  const delimiter = url.indexOf("?") === -1 ? "?" : "&";
+  return [url, param].join(delimiter);
+}
+
+function getParamRegExp(param) {
+  const key = param.split("=")[0];
+  return new RegExp(`${key}=[^&]*`);
 }
