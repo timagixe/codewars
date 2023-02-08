@@ -21,12 +21,11 @@ obj2.test; // => 1
 
 */
 
-let instance;
 class Singleton {
   constructor() {
-    if (!instance) {
-      instance = this;
+    if (!Singleton._instance) {
+      Singleton._instance = this;
     }
-    return instance;
+    return Singleton._instance;
   }
 }
