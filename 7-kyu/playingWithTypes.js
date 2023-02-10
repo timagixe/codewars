@@ -24,22 +24,10 @@ typing(undefined);    //returns "undefined"
 */
 
 function typing(param) {
-  const type = typeof param;
-  switch (type) {
-    case "number":
-    case "boolean":
-      return concat(type, param);
-    case "object":
-      return concat(type, JSON.stringify(param));
-    case "string":
-      return concat(type, `"${param}"`);
-    case "function":
-      return concat(type, param.toString());
-    default:
-      return `${param}`;
-  }
-}
+  if (param === undefined) return `${param}`;
 
-function concat(v1, v2) {
-  return `${v1}=${v2}`;
+  const type = typeof param;
+  const value = type === "function" ? param.toString() : JSON.stringify(param);
+
+  return `${type}=${value}`;
 }
