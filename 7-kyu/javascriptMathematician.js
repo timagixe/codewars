@@ -19,7 +19,7 @@ calculate(2,4)(3,7,1) // should return 17
 */
 
 function calculate(...nums) {
-  return (...nextNums) => nums.reduce(sum, 0) + nextNums.reduce(sum, 0);
+  return (...nextNums) => nums.reduce(sum) + nextNums.reduce(sum);
 }
 
 function sum(total, num) {
