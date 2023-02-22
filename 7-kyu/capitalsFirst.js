@@ -22,20 +22,16 @@ function capitalsFirst(str) {
   const upper = [];
   const lower = [];
   for (const word of words) {
-    if (!isValidWord(word)) continue;
-    if (isUpper(word)) {
-      upper.push(word);
-      continue;
-    }
-    lower.push(word);
+    if (isUpper(word)) upper.push(word);
+    if (isLower(word)) lower.push(word);
   }
   return [...upper, ...lower].join(" ");
 }
 
-const STRING_REGEPX = /^[a-z]/i;
+const LOWER_REGEXP = /^[a-z]/;
 
-function isValidWord(word) {
-  return STRING_REGEPX.test(word);
+function isLower(word) {
+  return LOWER_REGEXP.test(word);
 }
 
 const UPPER_REGEXP = /^[A-Z]/;
