@@ -13,16 +13,8 @@ Note that the number will always be non-negative (>= 0).
 
 */
 
-function insertDash(num) {
-  const digits = num.toString().split("").map(Number);
-  const dashedDigits = digits.map((value, key, self) => {
-    const prevValue = self[key - 1];
-    const odd = isOdd(prevValue) && isOdd(value);
-    return odd ? `-${value}` : value;
-  });
-  return dashedDigits.join("");
-}
+const TWO_ODD_NUMS_REGEXP = /[13579](?=[13579])/g;
 
-function isOdd(num) {
-  return num % 2;
+function insertDash(num) {
+  return num.toString().replace(TWO_ODD_NUMS_REGEXP, (match) => `${match}-`);
 }
