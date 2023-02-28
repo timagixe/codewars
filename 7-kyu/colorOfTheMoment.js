@@ -22,14 +22,18 @@ const RADIX = 16;
 function hexToTime(hexCode) {
   const code = hexCode.replace("#", "");
   const hexNums = code.match(/.{2,2}/g);
-  const result = hexNums.map(parseHexToInt).join(":");
+  const result = hexNums.map(parseHexToInt).map(padZero).join(":");
   const valid = validateTime(result);
   if (!valid) throw new Error("Thats not a valid time!");
   return result;
 }
 
 function parseHexToInt(hex) {
-  return parseInt(hex, RADIX).toString().padStart(2, 0);
+  return parseInt(hex, RADIX);
+}
+
+function padZero(num) {
+  return num.toString().padStart(2, 0);
 }
 
 function validateTime(time) {
