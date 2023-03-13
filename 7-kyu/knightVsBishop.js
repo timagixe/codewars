@@ -20,19 +20,14 @@ Check the test cases and Happy coding :)
 
 */
 
-function knightVsBishop(knight, bishop) {
-  const [knightRowIndex, knightColumnIndex] = getPosition(knight);
-  const [bishoptRowIndex, bishoptColumnIndex] = getPosition(bishop);
-  const rowIndexDiff = Math.abs(knightRowIndex - bishoptRowIndex);
-  const columnIndexDiff = Math.abs(knightColumnIndex - bishoptColumnIndex);
+function knightVsBishop([knightRow, knightColumn], [bishopRow, bishopColumn]) {
+  const rowIndexDiff = Math.abs(knightRow - bishopRow);
+  const columnIndexDiff = Math.abs(
+    knightColumn.charCodeAt() - bishopColumn.charCodeAt()
+  );
   if (knightCaptures(rowIndexDiff, columnIndexDiff)) return "Knight";
   if (bishopCaptures(rowIndexDiff, columnIndexDiff)) return "Bishop";
   return "None";
-}
-
-function getPosition(figure) {
-  const [row, column] = figure;
-  return [row - 1, column.charCodeAt() - 65];
 }
 
 function knightCaptures(rowIndexDiff, columnIndexDiff) {
@@ -45,5 +40,3 @@ function knightCaptures(rowIndexDiff, columnIndexDiff) {
 function bishopCaptures(rowIndexDiff, columnIndexDiff) {
   return rowIndexDiff === columnIndexDiff;
 }
-
-console.log(knightVsBishop([4, "C"], [6, "D"]));
