@@ -22,10 +22,5 @@ http://devdocs.io/javascript/global_objects/math/random
 */
 
 function shuffle(array) {
-    for (let index = array.length - 1; index > 0; index--) {
-        const nextIndex = Math.floor(Math.random() * index);
-        [array[nextIndex], array[index]] = [array[index], array[nextIndex]];
-    }
-
-    return array;
+    return array.slice().sort(() => 0.5 - Math.random());
 }
