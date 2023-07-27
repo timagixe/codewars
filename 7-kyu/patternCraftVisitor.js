@@ -38,7 +38,6 @@ The original PatternCraft series (by John Lindquist) is a collection of Youtube 
 
 */
 
-
 class Marine {
     constructor() {
         this.health = 100;
@@ -48,18 +47,20 @@ class Marine {
     }
 }
 
-  class Marauder {
+class Marauder {
     constructor() {
-      this.health = 125;
+        this.health = 125;
     }
-    accept(visitor) { visitor.visitArmored(this) }
-  }
+    accept(visitor) {
+        visitor.visitArmored(this);
+    }
+}
 
-  class TankBullet {
+class TankBullet {
     visitLight(unit) {
-      unit.health -= 21;
+        unit.health -= 21;
     }
     visitArmored(unit) {
-      unit.health -=32;
+        unit.health -= 32;
     }
-  }
+}
