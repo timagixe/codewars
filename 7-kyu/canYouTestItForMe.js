@@ -92,11 +92,13 @@ _describe("Foo", function () {
     });
 
     it("value should start at 0", function () {
-        Test.expect(new Foo().value === 0);
+        const foo = new Foo();
+        Test.expect(foo.value === 0);
     });
 
     it("array should start with 1, 2, 3", function () {
-        Test.assertSimilar(new Foo().array, [1, 2, 3]);
+        const foo = new Foo();
+        Test.assertSimilar(foo.array, [1, 2, 3]);
     });
 
     it("throws for params that are not numbers", function () {
@@ -115,13 +117,14 @@ _describe("Foo", function () {
 
     it("is the initial value plus what was added", function () {
         const foo = new Foo();
-        foo.add(1);
-        Test.expect(foo.value === 1);
+        foo.add(10);
+        Test.assertEquals(foo.value, 10);
     });
 
     it("throws for params that are not numbers", function () {
         Test.expectError("", () => {
-            new Foo().push("1");
+            const foo = new Foo();
+            foo.push("1");
         });
     });
 
