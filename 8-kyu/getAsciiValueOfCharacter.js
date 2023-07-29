@@ -14,5 +14,5 @@ For the ASCII table you can refer to http://www.asciitable.com/
 */
 
 function getASCII(character) {
-  return character.charCodeAt(0);
+    return character.charCodeAt(0);
 }

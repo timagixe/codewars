@@ -17,8 +17,8 @@ Note: You can expect all of the inputs to be the same length.
 */
 
 function tripleTrouble(one, two, three) {
-  const length = one.length;
-  return Array.from({ length }, (value, key) =>
-    [one[key], two[key], three[key]].join("")
-  ).join("");
+    const length = one.length;
+    return Array.from({ length }, (value, key) =>
+        [one[key], two[key], three[key]].join("")
+    ).join("");
 }

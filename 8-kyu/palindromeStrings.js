@@ -23,17 +23,17 @@ Examples(Input ==> Output)
 const EMPTY_STRING = "";
 
 function reverseString(string) {
-  if (!string.length) return EMPTY_STRING;
+    if (!string.length) return EMPTY_STRING;
 
-  return reverseString(string.substring(1)) + string.charAt(0);
+    return reverseString(string.substring(1)) + string.charAt(0);
 }
 
 function getHalves(string) {
-  const midPoint = Math.round(string.length / 2);
-  return [string.slice(0, midPoint), string.slice(-midPoint)];
+    const midPoint = Math.round(string.length / 2);
+    return [string.slice(0, midPoint), string.slice(-midPoint)];
 }
 
 function isPalindrome(line) {
-  const [firstHalf, secondHalf] = getHalves(String(line));
-  return reverseString(firstHalf) === secondHalf;
+    const [firstHalf, secondHalf] = getHalves(String(line));
+    return reverseString(firstHalf) === secondHalf;
 }

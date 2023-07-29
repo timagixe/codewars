@@ -19,17 +19,17 @@ Examples(Input1, Input2 --> Output):
 */
 
 const BEATS = {
-  scissors: "paper",
-  paper: "rock",
-  rock: "scissors"
+    scissors: "paper",
+    paper: "rock",
+    rock: "scissors"
 };
 
 function rps(playerOne, playerTwo) {
-  if (playerOne === playerTwo) return "Draw!";
-  const winner = BEATS[playerOne] === playerTwo ? 1 : 2;
-  return getMessage(winner);
+    if (playerOne === playerTwo) return "Draw!";
+    const winner = BEATS[playerOne] === playerTwo ? 1 : 2;
+    return getMessage(winner);
 }
 
 function getMessage(winner) {
-  return `Player ${winner} won!`;
+    return `Player ${winner} won!`;
 }

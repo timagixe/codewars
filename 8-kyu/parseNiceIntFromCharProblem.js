@@ -18,7 +18,7 @@ Assume the test input string is always a valid string. For example, the test inp
 const NUM_REGEXP = /^\d+/;
 
 function getAge(inputString) {
-  const result = inputString.match(NUM_REGEXP);
-  if (result.length) return Number(result[0]);
-  throw new Error("Invalid input string");
+    const result = inputString.match(NUM_REGEXP);
+    if (result.length) return Number(result[0]);
+    throw new Error("Invalid input string");
 }

@@ -17,5 +17,5 @@ n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
 */
 
 function powersOfTwo(n) {
-  return Array.from({ length: n + 1 }, (_, power) => 2 ** power);
+    return Array.from({ length: n + 1 }, (_, power) => 2 ** power);
 }

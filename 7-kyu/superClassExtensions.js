@@ -15,21 +15,21 @@ Your task is to complete the Cat class which Extends Animal, we want to go to us
 */
 
 class Animal {
-  constructor(name) {
-    this.name = name;
-  }
+    constructor(name) {
+        this.name = name;
+    }
 
-  speak() {
-    return `${this.name} makes a noise,`;
-  }
+    speak() {
+        return `${this.name} makes a noise,`;
+    }
 }
 
 class Cat extends Animal {
-  constructor(name) {
-    super(name);
-  }
+    constructor(name) {
+        super(name);
+    }
 
-  speak() {
-    return `${super.speak()} ${this.name} goes meow.`;
-  }
+    speak() {
+        return `${super.speak()} ${this.name} goes meow.`;
+    }
 }

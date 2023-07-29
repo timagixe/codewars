@@ -16,5 +16,5 @@ So, you need to check if there is gold in the bucket, and if so, return True/tru
 const GOLD = "gold";
 
 function checkTheBucket(bucket) {
-  return bucket.includes(GOLD);
+    return bucket.includes(GOLD);
 }

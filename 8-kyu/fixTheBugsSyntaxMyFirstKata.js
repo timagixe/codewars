@@ -29,9 +29,9 @@ Extension: Once you have fixed all the syntax errors present in the code (basic 
 */
 
 function myFirstKata(a, b) {
-  if (typeof a !== "number" || typeof b !== "number") {
-    return false;
-  } else {
-    return (a % b) + (b % a);
-  }
+    if (typeof a !== "number" || typeof b !== "number") {
+        return false;
+    } else {
+        return (a % b) + (b % a);
+    }
 }

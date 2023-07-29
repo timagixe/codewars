@@ -23,8 +23,8 @@ Assume there will always be a sum of x consecutive integers that totals to y and
 */
 
 function position(x, y, n) {
-  const first = (y - (x * (x - 1)) / 2) / x;
-  return first + n;
+    const first = (y - (x * (x - 1)) / 2) / x;
+    return first + n;
 }
 
 // NOTE: the sum of x consecutive integers

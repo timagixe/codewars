@@ -17,7 +17,7 @@ Calculate the distance between the first and the last pillar in centimeters (wit
 */
 
 function pillars(numPill, dist, width) {
-  if (numPill === 1) return 0;
-  const distCm = dist * 100;
-  return distCm * (numPill - 1) + width * (numPill - 2);
+    if (numPill === 1) return 0;
+    const distCm = dist * 100;
+    return distCm * (numPill - 1) + width * (numPill - 2);
 }

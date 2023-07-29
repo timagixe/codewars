@@ -30,10 +30,10 @@ Write your own function "exp [x n]".
 const ALPHABET_LENGTH = 26;
 
 function titleToNumber(title) {
-  let result = 0;
-  for (const char of title) {
-    const code = char.charCodeAt() - 64;
-    result = ALPHABET_LENGTH * result + code;
-  }
-  return result;
+    let result = 0;
+    for (const char of title) {
+        const code = char.charCodeAt() - 64;
+        result = ALPHABET_LENGTH * result + code;
+    }
+    return result;
 }

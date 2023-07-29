@@ -12,6 +12,6 @@ Write a function that checks if a given string (case insensitive) is a palindrom
 */
 
 function isPalindrome(str) {
-  const lowerCase = str.toLowerCase();
-  return lowerCase.split("").reverse().join("") === lowerCase;
+    const lowerCase = str.toLowerCase();
+    return lowerCase.split("").reverse().join("") === lowerCase;
 }

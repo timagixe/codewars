@@ -26,12 +26,12 @@ For a valid match, the candidate's minimum salary must be less than or equal to 
 const WIGGLE_PERCENT = 10;
 
 function match(candidate, job) {
-  if (!candidate.minSalary || !job.maxSalary) {
-    throw new Error("Candidate or job has no salary requirements.");
-  }
+    if (!candidate.minSalary || !job.maxSalary) {
+        throw new Error("Candidate or job has no salary requirements.");
+    }
 
-  const candidateSalaryWithWiggle =
-    candidate.minSalary - candidate.minSalary * (WIGGLE_PERCENT / 100);
+    const candidateSalaryWithWiggle =
+        candidate.minSalary - candidate.minSalary * (WIGGLE_PERCENT / 100);
 
-  return candidateSalaryWithWiggle <= job.maxSalary;
+    return candidateSalaryWithWiggle <= job.maxSalary;
 }

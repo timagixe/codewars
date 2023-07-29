@@ -16,6 +16,6 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fun
 */
 
 function Counter() {
-  this.count = 0;
-  this.updateCount = () => this.count++;
+    this.count = 0;
+    this.updateCount = () => this.count++;
 }

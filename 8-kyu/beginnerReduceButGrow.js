@@ -14,5 +14,5 @@ Given a non-empty array of integers, return the result of multiplying the values
 */
 
 function grow(nums) {
-  return nums.reduce((a, b) => a * b);
+    return nums.reduce((a, b) => a * b);
 }

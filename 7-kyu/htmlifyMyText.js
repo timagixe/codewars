@@ -30,27 +30,27 @@ If you want to actually use this function you can adapt it to suit your preferre
 */
 
 const PUNCTUATION_TO_HTML = {
-  "–": "&ndash;",
-  "’": "&rsquo;",
-  "&": "&amp;",
-  "“": "&ldquo;",
-  "”": "&rdquo;"
+    "–": "&ndash;",
+    "’": "&rsquo;",
+    "&": "&amp;",
+    "“": "&ldquo;",
+    "”": "&rdquo;"
 };
 
 const PUNCTUATION_REGEXP = new RegExp(
-  `[${Object.keys(PUNCTUATION_TO_HTML).join("")}]`,
-  "g"
+    `[${Object.keys(PUNCTUATION_TO_HTML).join("")}]`,
+    "g"
 );
 
 function htmlify(string) {
-  const formatted = string.replace(PUNCTUATION_REGEXP, replacer);
-  return paragraph(formatted);
+    const formatted = string.replace(PUNCTUATION_REGEXP, replacer);
+    return paragraph(formatted);
 }
 
 function replacer(match) {
-  return PUNCTUATION_TO_HTML[match];
+    return PUNCTUATION_TO_HTML[match];
 }
 
 function paragraph(text) {
-  return `<p>${text}</p>`;
+    return `<p>${text}</p>`;
 }

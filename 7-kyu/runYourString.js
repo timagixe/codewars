@@ -31,5 +31,5 @@ Usage of this code in production is not recommended.
 */
 
 function runYourString(arg, { param, func }) {
-  return new Function(param, func)(arg);
+    return new Function(param, func)(arg);
 }

@@ -21,11 +21,11 @@ Examples:
 */
 
 function hello(name) {
-  if (!name) return "Hello, World!";
-  const capitalized = capitalize(name);
-  return `Hello, ${capitalized}!`;
+    if (!name) return "Hello, World!";
+    const capitalized = capitalize(name);
+    return `Hello, ${capitalized}!`;
 }
 
 function capitalize(name) {
-  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 }

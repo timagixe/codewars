@@ -50,69 +50,69 @@ return value must be Newton for force (obviously)
 const GRAVITY_CONSTANT = 6.67 / 10 ** 11;
 
 const MASS_UNITS = {
-  g: "g",
-  kg: "kg",
-  mg: "mg",
-  μg: "μg",
-  lb: "lb"
+    g: "g",
+    kg: "kg",
+    mg: "mg",
+    μg: "μg",
+    lb: "lb"
 };
 
 const DISTANCE_UNITS = {
-  m: "m",
-  cm: "cm",
-  mm: "mm",
-  μm: "μm",
-  ft: "ft"
+    m: "m",
+    cm: "cm",
+    mm: "mm",
+    μm: "μm",
+    ft: "ft"
 };
 
 function convertMassToKg(value, convertFromUnit) {
-  switch (convertFromUnit) {
-    case MASS_UNITS.g:
-      return value / 1000;
-    case MASS_UNITS.mg:
-      return value / 1000 ** 2;
-    case MASS_UNITS.lb:
-      return value * 0.453592;
-    case MASS_UNITS.μg:
-      return value / 1000 ** 3;
-    default:
-      return value;
-  }
+    switch (convertFromUnit) {
+        case MASS_UNITS.g:
+            return value / 1000;
+        case MASS_UNITS.mg:
+            return value / 1000 ** 2;
+        case MASS_UNITS.lb:
+            return value * 0.453592;
+        case MASS_UNITS.μg:
+            return value / 1000 ** 3;
+        default:
+            return value;
+    }
 }
 
 function convertDistanceToM(value, convertFromUnit) {
-  switch (convertFromUnit) {
-    case DISTANCE_UNITS.cm:
-      return value / 10 ** 2;
-    case DISTANCE_UNITS.mm:
-      return value / 10 ** 3;
-    case DISTANCE_UNITS.μm:
-      return value / 10 ** 6;
-    case DISTANCE_UNITS.ft:
-      return value * 0.3048;
-    default:
-      return value;
-  }
+    switch (convertFromUnit) {
+        case DISTANCE_UNITS.cm:
+            return value / 10 ** 2;
+        case DISTANCE_UNITS.mm:
+            return value / 10 ** 3;
+        case DISTANCE_UNITS.μm:
+            return value / 10 ** 6;
+        case DISTANCE_UNITS.ft:
+            return value * 0.3048;
+        default:
+            return value;
+    }
 }
 
 function calculateGravityForce({
-  firstObjectMass,
-  secondObjectMass,
-  distanceBetween
+    firstObjectMass,
+    secondObjectMass,
+    distanceBetween
 }) {
-  return (
-    (GRAVITY_CONSTANT * firstObjectMass * secondObjectMass) /
-    distanceBetween ** 2
-  );
+    return (
+        (GRAVITY_CONSTANT * firstObjectMass * secondObjectMass) /
+        distanceBetween ** 2
+    );
 }
 
 function solution(valuesArray, unitsArray) {
-  const [firstObject, secondObject, distance] = valuesArray;
-  const [firstObjectUnit, secondObjectUnit, distanceUnit] = unitsArray;
+    const [firstObject, secondObject, distance] = valuesArray;
+    const [firstObjectUnit, secondObjectUnit, distanceUnit] = unitsArray;
 
-  return calculateGravityForce({
-    firstObjectMass: convertMassToKg(firstObject, firstObjectUnit),
-    secondObjectMass: convertMassToKg(secondObject, secondObjectUnit),
-    distanceBetween: convertDistanceToM(distance, distanceUnit)
-  });
+    return calculateGravityForce({
+        firstObjectMass: convertMassToKg(firstObject, firstObjectUnit),
+        secondObjectMass: convertMassToKg(secondObject, secondObjectUnit),
+        distanceBetween: convertDistanceToM(distance, distanceUnit)
+    });
 }

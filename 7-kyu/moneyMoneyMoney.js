@@ -36,13 +36,13 @@ Assumption: Assume that Desired Principal 'D' is always greater than the initial
 */
 
 function calculateYears(principal, interest, tax, desired) {
-  let money = principal;
-  let years = 0;
-  while (money < desired) {
-    const interestEarned = money * interest;
-    const taxes = interestEarned * tax;
-    money += interestEarned - taxes;
-    years += 1;
-  }
-  return years;
+    let money = principal;
+    let years = 0;
+    while (money < desired) {
+        const interestEarned = money * interest;
+        const taxes = interestEarned * tax;
+        money += interestEarned - taxes;
+        years += 1;
+    }
+    return years;
 }

@@ -16,17 +16,17 @@ Examples (input -> output:
 */
 
 function flip(d, a) {
-  const sort = defineSort(d);
-  return sort(a);
+    const sort = defineSort(d);
+    return sort(a);
 }
 
 function defineSort(direction) {
-  switch (direction) {
-    case "R":
-      return (array) => [...array].sort((a, b) => a - b);
-    case "L":
-      return (array) => [...array].sort((a, b) => b - a);
-    default:
-      return (x) => x;
-  }
+    switch (direction) {
+        case "R":
+            return (array) => [...array].sort((a, b) => a - b);
+        case "L":
+            return (array) => [...array].sort((a, b) => b - a);
+        default:
+            return (x) => x;
+    }
 }

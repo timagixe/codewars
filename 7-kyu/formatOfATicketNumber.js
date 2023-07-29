@@ -24,8 +24,8 @@ An integer representing the number of valid ticket numbers.
 const TICKET_REGEXP = /^[a-z][0-9][a-z]{4}$/i;
 
 function nbrValidTickets(tickets) {
-  return tickets.reduce((count, ticket) => {
-    if (TICKET_REGEXP.test(ticket)) return (count += 1);
-    return count;
-  }, 0);
+    return tickets.reduce((count, ticket) => {
+        if (TICKET_REGEXP.test(ticket)) return (count += 1);
+        return count;
+    }, 0);
 }

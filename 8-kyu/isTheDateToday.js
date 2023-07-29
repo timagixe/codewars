@@ -14,5 +14,5 @@ Make sure that your function does not return a false positive by only checking t
 */
 
 function isToday(date) {
-  return date.toDateString() === new Date().toDateString();
+    return date.toDateString() === new Date().toDateString();
 }

@@ -24,5 +24,7 @@ Return true if the number of days passed from last to today is greater than cycl
 const DAY_TO_MILLISECONDS = 86400000;
 
 function periodIsLate(last, today, cycleLength) {
-  return (today.getTime() - last.getTime()) / DAY_TO_MILLISECONDS > cycleLength;
+    return (
+        (today.getTime() - last.getTime()) / DAY_TO_MILLISECONDS > cycleLength
+    );
 }

@@ -20,9 +20,9 @@ You may consider that there will not be any empty arrays/vectors.
 */
 
 function min(list) {
-  return Math.min(...list);
+    return Math.min(...list);
 }
 
 function max(list) {
-  return Math.max(...list);
+    return Math.max(...list);
 }

@@ -29,16 +29,16 @@ new RangeError(`Message contains ${msg.length} characters!`)
 const HTML_REGEXP = /<[^>]*>/gi;
 
 function validateMessage(msg) {
-  if (msg === null) {
-    throw new ReferenceError("Message is null!");
-  }
-  if (typeof msg !== "string") {
-    throw new TypeError(
-      `Message should be of type string but was of type ${typeof msg}!`
-    );
-  }
-  if (!msg.length || msg.length > 255) {
-    throw new RangeError(`Message contains ${msg.length} characters!`);
-  }
-  return !HTML_REGEXP.test(msg);
+    if (msg === null) {
+        throw new ReferenceError("Message is null!");
+    }
+    if (typeof msg !== "string") {
+        throw new TypeError(
+            `Message should be of type string but was of type ${typeof msg}!`
+        );
+    }
+    if (!msg.length || msg.length > 255) {
+        throw new RangeError(`Message contains ${msg.length} characters!`);
+    }
+    return !HTML_REGEXP.test(msg);
 }

@@ -15,7 +15,7 @@ The(name(of(the(dog(is(also(Adam()))))))); // must return "The name of the dog i
 */
 
 function factory(word) {
-  return (string) => (string ? `${word} ${string}` : `${word}.`);
+    return (string) => (string ? `${word} ${string}` : `${word}.`);
 }
 
 const Adam = factory("Adam");

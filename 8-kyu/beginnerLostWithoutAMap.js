@@ -16,5 +16,5 @@ For example:
 */
 
 function maps(nums) {
-  return nums.map((num) => num * 2);
+    return nums.map((num) => num * 2);
 }

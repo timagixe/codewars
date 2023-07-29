@@ -24,7 +24,7 @@ But as you will see after clicking RUN or ATTEMPT this code has several bugs, pl
 */
 
 function getStatus(isBusy) {
-  return {
-    status: isBusy ? "busy" : "available"
-  };
+    return {
+        status: isBusy ? "busy" : "available"
+    };
 }

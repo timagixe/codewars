@@ -22,12 +22,12 @@ sumMul(4, -7)  ==> "INVALID"
 */
 
 function sumMul(num, limit) {
-  if (limit <= num) return "INVALID";
-  let nextNum = num;
-  let sum = 0;
-  while (nextNum < limit) {
-    sum += nextNum;
-    nextNum += num;
-  }
-  return sum;
+    if (limit <= num) return "INVALID";
+    let nextNum = num;
+    let sum = 0;
+    while (nextNum < limit) {
+        sum += nextNum;
+        nextNum += num;
+    }
+    return sum;
 }

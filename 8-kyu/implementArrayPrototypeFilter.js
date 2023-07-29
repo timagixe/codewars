@@ -21,11 +21,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 */
 
 Array.prototype.filter = function (predicate) {
-  const result = [];
-  for (let element of this) {
-    if (predicate(element)) {
-      result.push(element);
+    const result = [];
+    for (let element of this) {
+        if (predicate(element)) {
+            result.push(element);
+        }
     }
-  }
-  return result;
+    return result;
 };

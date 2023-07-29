@@ -12,7 +12,7 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 */
 
 function removeChar(word) {
-  const start = 1;
-  const end = -start;
-  return word.slice(start, end);
+    const start = 1;
+    const end = -start;
+    return word.slice(start, end);
 }

@@ -19,11 +19,11 @@ The interesting part is that MyClass should only be accessible via the namespace
 */
 
 MyNamespace.MyClass = class {
-  constructor(word) {
-    this.word = word;
-  }
+    constructor(word) {
+        this.word = word;
+    }
 
-  sayHello() {
-    return this.word;
-  }
+    sayHello() {
+        return this.word;
+    }
 };

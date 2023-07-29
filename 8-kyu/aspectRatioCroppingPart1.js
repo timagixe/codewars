@@ -14,6 +14,6 @@ Write a function that accepts arbitrary X and Y resolutions and converts them in
 */
 
 function aspectRatio(width, height) {
-  const convertedHeight = Math.ceil(height * (16 / 9));
-  return [convertedHeight, height];
+    const convertedHeight = Math.ceil(height * (16 / 9));
+    return [convertedHeight, height];
 }

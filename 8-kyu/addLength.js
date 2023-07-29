@@ -22,5 +22,7 @@ Note: String will have at least one element; words will always be separated by a
 const WHITESPACE_REG_EXP = /\s/;
 
 function addLength(str) {
-  return str.split(WHITESPACE_REG_EXP).map((word) => `${word} ${word.length}`);
+    return str
+        .split(WHITESPACE_REG_EXP)
+        .map((word) => `${word} ${word.length}`);
 }

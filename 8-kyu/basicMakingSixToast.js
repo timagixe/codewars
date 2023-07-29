@@ -16,5 +16,5 @@ Define a function that counts how many more (or less) pieces of toast you need i
 const TOSTS_COUNT = 6;
 
 function sixToast(value) {
-  return Math.abs(TOSTS_COUNT - value);
+    return Math.abs(TOSTS_COUNT - value);
 }

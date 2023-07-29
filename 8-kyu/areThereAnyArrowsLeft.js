@@ -21,5 +21,5 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fun
 */
 
 function anyArrows(arrows) {
-  return arrows.some(({ damaged }) => !damaged);
+    return arrows.some(({ damaged }) => !damaged);
 }

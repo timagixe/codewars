@@ -18,10 +18,10 @@ IMPORTANT: Returning just "string" is insufficient. We are required to use Objec
 */
 
 function myFunction() {
-  return {
-    objProperty: "string",
-    objMethod: function () {
-      return this.objProperty;
-    }
-  };
+    return {
+        objProperty: "string",
+        objMethod: function () {
+            return this.objProperty;
+        }
+    };
 }

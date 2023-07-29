@@ -15,11 +15,11 @@ Return true if team 1 wins or false if team 2 wins!
 */
 
 function calculateTotal(team1, team2) {
-  const t1s = team1.reduce(sum, 0);
-  const t2s = team2.reduce(sum, 0);
-  return t1s > t2s;
+    const t1s = team1.reduce(sum, 0);
+    const t2s = team2.reduce(sum, 0);
+    return t1s > t2s;
 }
 
 function sum(total, num) {
-  return total + num;
+    return total + num;
 }

@@ -20,5 +20,5 @@ However, my test results are not as expected. can you find out what I did wrong?
 const TWO_CHARS_REG_EXP = /"[^"]*"/g;
 
 function getQuotes(string) {
-  return string.match(TWO_CHARS_REG_EXP);
+    return string.match(TWO_CHARS_REG_EXP);
 }

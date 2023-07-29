@@ -18,43 +18,43 @@ This change machine is programmed to accept and distribute strings rather than n
 */
 
 function isValidMoney(money) {
-  return ["£5", "£2", "£1", "50p", "20p"].includes(money);
+    return ["£5", "£2", "£1", "50p", "20p"].includes(money);
 }
 
 function isNote(money) {
-  return /^£/.test(money);
+    return /^£/.test(money);
 }
 
 function convertMoneyToCoins(money) {
-  const moneyNumber = money.replace(/[^0-9]/, "");
-  return isNote(money) ? Number(moneyNumber) * 100 : Number(moneyNumber);
+    const moneyNumber = money.replace(/[^0-9]/, "");
+    return isNote(money) ? Number(moneyNumber) * 100 : Number(moneyNumber);
 }
 
 function changeMe(moneyIn) {
-  if (!isValidMoney(moneyIn)) return moneyIn;
+    if (!isValidMoney(moneyIn)) return moneyIn;
 
-  const coinMoneys = convertMoneyToCoins(moneyIn);
+    const coinMoneys = convertMoneyToCoins(moneyIn);
 
-  const [changeResult] = [20, 10].reduce(
-    ([currChangeResult, currCoinMoneys], currChange) => {
-      if (
-        !currCoinMoneys ||
-        (currCoinMoneys === currChange && currChange === 20)
-      ) {
-        return [currChangeResult, currCoinMoneys];
-      }
+    const [changeResult] = [20, 10].reduce(
+        ([currChangeResult, currCoinMoneys], currChange) => {
+            if (
+                !currCoinMoneys ||
+                (currCoinMoneys === currChange && currChange === 20)
+            ) {
+                return [currChangeResult, currCoinMoneys];
+            }
 
-      const divResult = Math.floor(currCoinMoneys / currChange);
+            const divResult = Math.floor(currCoinMoneys / currChange);
 
-      const nextCoinMoneys = currCoinMoneys - divResult * currChange;
-      const nextChangeResult = currChangeResult.concat(
-        Array(divResult).fill(`${currChange}p`)
-      );
+            const nextCoinMoneys = currCoinMoneys - divResult * currChange;
+            const nextChangeResult = currChangeResult.concat(
+                Array(divResult).fill(`${currChange}p`)
+            );
 
-      return [nextChangeResult, nextCoinMoneys];
-    },
-    [[], coinMoneys]
-  );
+            return [nextChangeResult, nextCoinMoneys];
+        },
+        [[], coinMoneys]
+    );
 
-  return changeResult.join(" ");
+    return changeResult.join(" ");
 }

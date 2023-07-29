@@ -17,5 +17,5 @@ Expect large Inputs!
 */
 
 function oddCount(n) {
-  return Math.floor(n / 2);
+    return Math.floor(n / 2);
 }

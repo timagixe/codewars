@@ -21,5 +21,5 @@ const WORD_REGEXP = /\S+/g;
 const KEYWORD = "sex";
 
 function toFreud(string) {
-  return string.replace(WORD_REGEXP, KEYWORD);
+    return string.replace(WORD_REGEXP, KEYWORD);
 }

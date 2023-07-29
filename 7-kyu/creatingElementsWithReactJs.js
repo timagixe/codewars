@@ -25,12 +25,12 @@ Also, React suggests that you always supply a key property when creating dynamic
 const React = require("react");
 
 function createElement(content, tag = "div", props) {
-  return React.createElement(tag, props, content);
+    return React.createElement(tag, props, content);
 }
 
 function createUnorderedList(list) {
-  const listItems = list.map((entry, index) =>
-    createElement(entry, "li", { key: index })
-  );
-  return createElement(listItems, "ul");
+    const listItems = list.map((entry, index) =>
+        createElement(entry, "li", { key: index })
+    );
+    return createElement(listItems, "ul");
 }

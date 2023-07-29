@@ -24,7 +24,7 @@ If you still don't get it probably you can define main as an attribute of the So
 */
 
 class Solution {
-  static main() {
-    console.log("Hello World!");
-  }
+    static main() {
+        console.log("Hello World!");
+    }
 }

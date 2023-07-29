@@ -23,6 +23,6 @@ ls -R / ["ls", "-R", "/"]
 const NEW_COMMAND_REGEXP = /(?![^;>|&])/g;
 
 function args(cmd) {
-  const command = cmd.split(NEW_COMMAND_REGEXP)[0];
-  return command.trim().split(" ");
+    const command = cmd.split(NEW_COMMAND_REGEXP)[0];
+    return command.trim().split(" ");
 }

@@ -27,12 +27,12 @@ This is my first Kata, so please any feedback (especially on Test Cases) is welc
 */
 
 function yourFutureCareer() {
-  const career = Math.random();
-  if (career <= 0.32) {
-    return "FrontEnd Developer";
-  } else if (career <= 0.65) {
-    return "BackEnd Developer";
-  } else return "Full-Stack Developer";
+    const career = Math.random();
+    if (career <= 0.32) {
+        return "FrontEnd Developer";
+    } else if (career <= 0.65) {
+        return "BackEnd Developer";
+    } else return "Full-Stack Developer";
 }
 
 yourFutureCareer();

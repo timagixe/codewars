@@ -24,5 +24,5 @@ returns
 */
 
 String.prototype.myNewMethod = function () {
-  return this.toUpperCase();
+    return this.toUpperCase();
 };

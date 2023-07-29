@@ -17,5 +17,5 @@ Example(Input => Output):
 */
 
 function digitize(number) {
-  return Array.from(number.toString(), Number).reverse();
+    return Array.from(number.toString(), Number).reverse();
 }

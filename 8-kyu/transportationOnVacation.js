@@ -18,15 +18,15 @@ Write a code that gives out the total amount for different days(d).
 */
 
 function rentalCarCost(days) {
-  return calcTotalPrice(days) - calcDiscount(days);
+    return calcTotalPrice(days) - calcDiscount(days);
 }
 
 function calcTotalPrice(days) {
-  return days * 40;
+    return days * 40;
 }
 
 function calcDiscount(days) {
-  if (days < 3) return 0;
-  if (days < 7) return 20;
-  return 50;
+    if (days < 3) return 0;
+    if (days < 7) return 20;
+    return 50;
 }

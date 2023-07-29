@@ -24,5 +24,5 @@ For example:
 */
 
 function goals(...leagues) {
-  return leagues.reduce((a, b) => a + b);
+    return leagues.reduce((a, b) => a + b);
 }

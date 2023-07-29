@@ -24,10 +24,10 @@ Tips: Order of other numbers should not change.
 */
 
 function move_zeros(arrNum, isRight = true) {
-  return [...arrNum].sort((a, b) => {
-    if (!a || !b) {
-      return isRight ? b - a : a - b;
-    }
-    return 0;
-  });
+    return [...arrNum].sort((a, b) => {
+        if (!a || !b) {
+            return isRight ? b - a : a - b;
+        }
+        return 0;
+    });
 }

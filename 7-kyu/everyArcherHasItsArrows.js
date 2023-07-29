@@ -22,6 +22,6 @@ archersReady([5, 6, 7, 8]) returns true.
 */
 
 function archersReady(archers) {
-  if (!archers || archers.length === 0) return false;
-  return archers.every((archer) => archer >= 5);
+    if (!archers || archers.length === 0) return false;
+    return archers.every((archer) => archer >= 5);
 }

@@ -33,7 +33,8 @@ Example:
 
 String.prototype.eachChar = function (charCb) {
     return [...this].reduce((acc, cur) => {
-        const result = typeof charCb === "function" ? charCb(cur) : `${cur}${charCb}`;
+        const result =
+            typeof charCb === "function" ? charCb(cur) : `${cur}${charCb}`;
 
         return `${acc}${result}`;
     }, "");

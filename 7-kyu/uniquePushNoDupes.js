@@ -19,11 +19,11 @@ If the person doesn't have a phoneNumber, don't add them to the array and return
 */
 
 function uniquePush(persons, person) {
-  if (!person.phoneNumber) return false;
-  const exists = persons.find(
-    (entry) => entry.phoneNumber === person.phoneNumber
-  );
-  if (exists) return false;
-  persons.push(person);
-  return true;
+    if (!person.phoneNumber) return false;
+    const exists = persons.find(
+        (entry) => entry.phoneNumber === person.phoneNumber
+    );
+    if (exists) return false;
+    persons.push(person);
+    return true;
 }

@@ -17,6 +17,6 @@ PS: Due to intrinsic uncertainty of empty arrays, in this kata an empty array is
 */
 
 Array.prototype.valueOf = function () {
-  if (!this.length) return 0;
-  return this.reduce((a, b) => a + b);
+    if (!this.length) return 0;
+    return this.reduce((a, b) => a + b);
 };

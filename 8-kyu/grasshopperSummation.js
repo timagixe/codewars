@@ -18,9 +18,9 @@ For example (Input -> Output):
 */
 
 function summation(count) {
-  let result = 0;
-  for (let index = 1; index <= count; index++) {
-    result += index;
-  }
-  return result;
+    let result = 0;
+    for (let index = 1; index <= count; index++) {
+        result += index;
+    }
+    return result;
 }

@@ -26,6 +26,6 @@ The second string argument will always be of length 1
 */
 
 function strCount(string, char) {
-  const notCharRegExp = new RegExp(`[^${char}]`, "g");
-  return string.replace(notCharRegExp, "").length;
+    const notCharRegExp = new RegExp(`[^${char}]`, "g");
+    return string.replace(notCharRegExp, "").length;
 }

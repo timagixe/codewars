@@ -25,11 +25,11 @@ So the years 0, -64 and 2016 will return 366 days. Whilst 1974, -10 and 666 will
 */
 
 function isRegularYear(year) {
-  return Boolean((year % 400 && !(year % 100)) || year % 4);
+    return Boolean((year % 400 && !(year % 100)) || year % 4);
 }
 
 function yearDays(year) {
-  const days = isRegularYear(year) || year % 4 ? 365 : 366;
+    const days = isRegularYear(year) || year % 4 ? 365 : 366;
 
-  return `${year} has ${days} days`;
+    return `${year} has ${days} days`;
 }

@@ -19,13 +19,13 @@ Our deck (is preloaded):
 */
 
 const SUITS = {
-  "♣": "clubs",
-  "♦": "diamonds",
-  "♥": "hearts",
-  "♠": "spades"
+    "♣": "clubs",
+    "♦": "diamonds",
+    "♥": "hearts",
+    "♠": "spades"
 };
 
 function defineSuit(card) {
-  const suit = card[card.length - 1];
-  return SUITS[suit];
+    const suit = card[card.length - 1];
+    return SUITS[suit];
 }

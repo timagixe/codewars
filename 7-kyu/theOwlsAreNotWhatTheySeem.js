@@ -28,8 +28,8 @@ const OWL = "''0v0''";
 const CHARS_REGEXP = /[8WTYUIOAHXVM]/gi;
 
 function owlPic(text) {
-  const match = text.match(CHARS_REGEXP);
-  const start = match.join("").toUpperCase();
-  const end = match.reverse().join("").toUpperCase();
-  return `${start}${OWL}${end}`;
+    const match = text.match(CHARS_REGEXP);
+    const start = match.join("").toUpperCase();
+    const end = match.reverse().join("").toUpperCase();
+    return `${start}${OWL}${end}`;
 }

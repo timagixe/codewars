@@ -12,6 +12,6 @@ Task: Given an array of Player objects (an array of associative arrays in PHP) a
 */
 
 function duckDuckGoose(players, goose) {
-  const playerIndex = (goose - 1) % players.length;
-  return players[playerIndex].name;
+    const playerIndex = (goose - 1) % players.length;
+    return players[playerIndex].name;
 }

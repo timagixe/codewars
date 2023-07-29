@@ -28,5 +28,5 @@ For an example list of 1, 3, 5, 7
 */
 
 function findAverage(nums) {
-  return nums.reduce((total, num) => total + num, 0) / (nums.length || 1);
+    return nums.reduce((total, num) => total + num, 0) / (nums.length || 1);
 }

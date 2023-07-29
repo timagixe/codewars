@@ -43,13 +43,13 @@ Happy coding!
 */
 
 function isValidNumber(number) {
-  return number >= 0 && Number.isInteger(number);
+    return number >= 0 && Number.isInteger(number);
 }
 
 function animals(heads, legs) {
-  const cows = legs / 2 - heads;
-  const chickens = heads - cows;
-  return [chickens, cows].every(isValidNumber)
-    ? [chickens, cows]
-    : "No solutions";
+    const cows = legs / 2 - heads;
+    const chickens = heads - cows;
+    return [chickens, cows].every(isValidNumber)
+        ? [chickens, cows]
+        : "No solutions";
 }

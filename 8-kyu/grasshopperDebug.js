@@ -20,12 +20,12 @@ Remember that typically temperatures in the current weather conditions are given
 */
 
 function weatherInfo(temp) {
-  var c = convertToCelsius(temp);
-  if (c < 0) return c + " is freezing temperature";
-  else return c + " is above freezing temperature";
+    var c = convertToCelsius(temp);
+    if (c < 0) return c + " is freezing temperature";
+    else return c + " is above freezing temperature";
 }
 
 function convertToCelsius(temperature) {
-  var celsius = (temperature - 32) * (5 / 9);
-  return celsius;
+    var celsius = (temperature - 32) * (5 / 9);
+    return celsius;
 }

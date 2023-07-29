@@ -15,9 +15,9 @@ Time to test your basic knowledge in functions! Return the odds from a list:
 */
 
 function isOdd(value) {
-  return Boolean(value % 2);
+    return Boolean(value % 2);
 }
 
 function odds(values) {
-  return values.filter(isOdd);
+    return values.filter(isOdd);
 }

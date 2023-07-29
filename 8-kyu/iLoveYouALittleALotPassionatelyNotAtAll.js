@@ -24,15 +24,15 @@ Your goal in this kata is to determine which phrase the girls would say at the l
 */
 
 const PHRASES = [
-  "I love you",
-  "a little",
-  "a lot",
-  "passionately",
-  "madly",
-  "not at all"
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all"
 ];
 
 function howMuchILoveYou(petalCount) {
-  const index = (petalCount - 1) % PHRASES.length;
-  return PHRASES[index];
+    const index = (petalCount - 1) % PHRASES.length;
+    return PHRASES[index];
 }

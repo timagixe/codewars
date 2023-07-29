@@ -14,6 +14,6 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 */
 
 function findMultiples(integer, limit) {
-  const length = Math.floor(limit / integer);
-  return Array.from({ length }, (_, index) => integer * (index + 1));
+    const length = Math.floor(limit / integer);
+    return Array.from({ length }, (_, index) => integer * (index + 1));
 }

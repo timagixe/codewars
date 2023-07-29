@@ -16,5 +16,5 @@ Examples (input -> output)
 */
 
 function repeatStr(count, string) {
-  return string.repeat(Math.max(count, 1));
+    return string.repeat(Math.max(count, 1));
 }

@@ -18,10 +18,10 @@ If the sperm contains the X chromosome, return "Congratulations! You're going to
 */
 
 const CHROMOSOMES = {
-  XX: "daughter",
-  XY: "son"
+    XX: "daughter",
+    XY: "son"
 };
 
 function chromosomeCheck(sperm) {
-  return `Congratulations! You're going to have a ${CHROMOSOMES[sperm]}.`;
+    return `Congratulations! You're going to have a ${CHROMOSOMES[sperm]}.`;
 }

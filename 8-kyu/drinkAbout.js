@@ -30,20 +30,20 @@ Examples: (Input --> Output)
 */
 
 function peopleWithAgeDrink(yearsOld) {
-  let drink = getDrink(yearsOld);
-  return `drink ${drink}`;
+    let drink = getDrink(yearsOld);
+    return `drink ${drink}`;
 }
 
 const DRINK = {
-  CHILD: "toddy",
-  TEEN: "coke",
-  YOUNG: "beer",
-  ADULT: "whisky"
+    CHILD: "toddy",
+    TEEN: "coke",
+    YOUNG: "beer",
+    ADULT: "whisky"
 };
 
 function getDrink(age) {
-  if (age < 14) return DRINK.CHILD;
-  if (age < 18) return DRINK.TEEN;
-  if (age < 21) return DRINK.YOUNG;
-  if (age >= 21) return DRINK.ADULT;
+    if (age < 14) return DRINK.CHILD;
+    if (age < 18) return DRINK.TEEN;
+    if (age < 21) return DRINK.YOUNG;
+    if (age >= 21) return DRINK.ADULT;
 }

@@ -41,20 +41,20 @@ Good Luck and have fun.
 */
 
 function validateEAN(eanCode) {
-  const digits = eanCode.slice(0, -1);
-  const checksum = calculateChecksum(digits);
-  const code = `${digits}${checksum}`;
-  return code === eanCode;
+    const digits = eanCode.slice(0, -1);
+    const checksum = calculateChecksum(digits);
+    const code = `${digits}${checksum}`;
+    return code === eanCode;
 }
 
 function calculateChecksum(digits) {
-  const sum = digits.split("").reduce((total, num, index) => {
-    const isOdd = Boolean((index + 1) % 2);
-    const parsedNum = Number(num);
-    if (isOdd) return (total += parsedNum);
-    return (total += parsedNum * 3);
-  }, 0);
-  const mod = sum % 10;
-  const checksum = mod ? 10 - mod : 0;
-  return checksum;
+    const sum = digits.split("").reduce((total, num, index) => {
+        const isOdd = Boolean((index + 1) % 2);
+        const parsedNum = Number(num);
+        if (isOdd) return (total += parsedNum);
+        return (total += parsedNum * 3);
+    }, 0);
+    const mod = sum % 10;
+    const checksum = mod ? 10 - mod : 0;
+    return checksum;
 }

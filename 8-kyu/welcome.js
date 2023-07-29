@@ -41,29 +41,29 @@ IP_ADDRESS_REQUIRED - no ip address was supplied
 const DEFAULT_LANGUAGE = "english";
 
 const LANGUGAES_MAP = new Map([
-  [DEFAULT_LANGUAGE, "Welcome"],
-  ["czech", "Vitejte"],
-  ["danish", "Velkomst"],
-  ["dutch", "Welkom"],
-  ["estonian", "Tere tulemast"],
-  ["finnish", "Tervetuloa"],
-  ["flemish", "Welgekomen"],
-  ["french", "Bienvenue"],
-  ["german", "Willkommen"],
-  ["irish", "Failte"],
-  ["italian", "Benvenuto"],
-  ["latvian", "Gaidits"],
-  ["lithuanian", "Laukiamas"],
-  ["polish", "Witamy"],
-  ["spanish", "Bienvenido"],
-  ["swedish", "Valkommen"],
-  ["welsh", "Croeso"]
+    [DEFAULT_LANGUAGE, "Welcome"],
+    ["czech", "Vitejte"],
+    ["danish", "Velkomst"],
+    ["dutch", "Welkom"],
+    ["estonian", "Tere tulemast"],
+    ["finnish", "Tervetuloa"],
+    ["flemish", "Welgekomen"],
+    ["french", "Bienvenue"],
+    ["german", "Willkommen"],
+    ["irish", "Failte"],
+    ["italian", "Benvenuto"],
+    ["latvian", "Gaidits"],
+    ["lithuanian", "Laukiamas"],
+    ["polish", "Witamy"],
+    ["spanish", "Bienvenido"],
+    ["swedish", "Valkommen"],
+    ["welsh", "Croeso"]
 ]);
 
 function greet(language) {
-  if (LANGUGAES_MAP.has(language)) {
-    return LANGUGAES_MAP.get(language);
-  }
+    if (LANGUGAES_MAP.has(language)) {
+        return LANGUGAES_MAP.get(language);
+    }
 
-  return LANGUGAES_MAP.get(DEFAULT_LANGUAGE);
+    return LANGUGAES_MAP.get(DEFAULT_LANGUAGE);
 }

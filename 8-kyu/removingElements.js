@@ -17,5 +17,5 @@ None of the arrays will be empty, so you don't have to worry about that!
 */
 
 function removeEveryOther(array) {
-  return array.filter((_, index) => index % 2 === 0);
+    return array.filter((_, index) => index % 2 === 0);
 }

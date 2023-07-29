@@ -29,6 +29,6 @@ Doublecheck that words with chars like -, ', ` are counted right.
 */
 
 function countWords(str) {
-  if (str.length) return str.split(/\s+/).filter(Boolean).length;
-  return str.length;
+    if (str.length) return str.split(/\s+/).filter(Boolean).length;
+    return str.length;
 }

@@ -19,8 +19,8 @@ charFreq("I like cats") // Returns {'a': 1, ' ': 2, 'c': 1, 'e': 1, 'I': 1, 'k':
 */
 
 function charFreq(message) {
-  return message.split("").reduce((acc, char) => {
-    acc[char] = acc[char] ? acc[char] + 1 : 1;
-    return acc;
-  }, {});
+    return message.split("").reduce((acc, char) => {
+        acc[char] = acc[char] ? acc[char] + 1 : 1;
+        return acc;
+    }, {});
 }

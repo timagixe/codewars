@@ -16,7 +16,7 @@ The array will never be empty.
 */
 
 function getAverage(marks) {
-  const count = marks.length;
-  const sum = marks.reduce((a, b) => a + b);
-  return Math.floor(sum / count);
+    const count = marks.length;
+    const sum = marks.reduce((a, b) => a + b);
+    return Math.floor(sum / count);
 }

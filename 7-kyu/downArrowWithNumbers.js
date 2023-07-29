@@ -39,24 +39,24 @@ Have fun!
 */
 
 function getADownArrowOf(num) {
-  let result = "";
-  for (let index = num; 1 <= index; index--) {
-    const nums = getNums(index);
-    const indent = getIndent(num - index);
-    const endOfLine = index === 1 ? "" : "\n";
-    result += `${indent}${nums}${endOfLine}`;
-  }
-  return result.trim();
+    let result = "";
+    for (let index = num; 1 <= index; index--) {
+        const nums = getNums(index);
+        const indent = getIndent(num - index);
+        const endOfLine = index === 1 ? "" : "\n";
+        result += `${indent}${nums}${endOfLine}`;
+    }
+    return result.trim();
 }
 
 function getNums(num) {
-  let row = "";
-  for (let index = 1; index <= num * 2 - 1; index++) {
-    row += index <= num ? index % 10 : (num * 2 - index) % 10;
-  }
-  return row;
+    let row = "";
+    for (let index = 1; index <= num * 2 - 1; index++) {
+        row += index <= num ? index % 10 : (num * 2 - index) % 10;
+    }
+    return row;
 }
 
 function getIndent(len) {
-  return " ".repeat(len);
+    return " ".repeat(len);
 }

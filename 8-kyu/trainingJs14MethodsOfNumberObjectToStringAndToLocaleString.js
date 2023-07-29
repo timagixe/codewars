@@ -53,11 +53,11 @@ That's all of your work. My work is print your color code on your screen.
 */
 
 function intToHex(int) {
-  return int.toString(16).padStart(2, 0);
+    return int.toString(16).padStart(2, 0);
 }
 
 function colorOf(...colors) {
-  const hexColor = colors.map(intToHex).join("");
+    const hexColor = colors.map(intToHex).join("");
 
-  return `#${hexColor}`;
+    return `#${hexColor}`;
 }

@@ -20,14 +20,14 @@ Zero shouldn't be considered even or odd.
 const EVEN_ODD_NUM_REGEXP = /([13579](?=[13579]))|([2468](?=[2468]))/g;
 
 function insertDashII(num) {
-  return num.toString().replace(EVEN_ODD_NUM_REGEXP, dashReplacer);
+    return num.toString().replace(EVEN_ODD_NUM_REGEXP, dashReplacer);
 }
 
 function isOdd(num) {
-  return Number(num) % 2 === 1;
+    return Number(num) % 2 === 1;
 }
 
 function dashReplacer(match) {
-  const sign = isOdd(match) ? "-" : "*";
-  return `${match}${sign}`;
+    const sign = isOdd(match) ? "-" : "*";
+    return `${match}${sign}`;
 }

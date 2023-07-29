@@ -22,20 +22,20 @@ Examples of inputs and subsequent outputs:
 */
 
 function reverseIt(data) {
-  switch (typeof data) {
-    case "string":
-      return reverseString(data);
-    case "number":
-      return reverseNumber(data);
-    default:
-      return data;
-  }
+    switch (typeof data) {
+        case "string":
+            return reverseString(data);
+        case "number":
+            return reverseNumber(data);
+        default:
+            return data;
+    }
 }
 
 function reverseString(str) {
-  return str.split("").reverse().join("");
+    return str.split("").reverse().join("");
 }
 
 function reverseNumber(num) {
-  return Number(reverseString(num.toString()));
+    return Number(reverseString(num.toString()));
 }

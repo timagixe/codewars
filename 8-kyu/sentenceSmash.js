@@ -18,5 +18,5 @@ Example
 const SPACE = " ";
 
 function smash(words) {
-  return words.join(SPACE);
+    return words.join(SPACE);
 }

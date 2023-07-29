@@ -21,8 +21,8 @@ The input array will always contain only positive numbers, and will never be emp
 */
 
 function squareOrSquareRoot(array) {
-  return array.map((num) => {
-    const root = Math.sqrt(num);
-    return num % root ? num ** 2 : root;
-  });
+    return array.map((num) => {
+        const root = Math.sqrt(num);
+        return num % root ? num ** 2 : root;
+    });
 }

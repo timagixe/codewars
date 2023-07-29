@@ -20,14 +20,14 @@ Go on and code some pure awesomeness!
 */
 
 function nextId(ids) {
-  const uniqueAndSortedIds = [...new Set(ids.sort((a, b) => a - b))];
+    const uniqueAndSortedIds = [...new Set(ids.sort((a, b) => a - b))];
 
-  for (const [key, value] of uniqueAndSortedIds.entries()) {
-    if (key === 0 && value !== 0) return 0;
-    const nextValue = uniqueAndSortedIds[key + 1];
-    if (typeof nextValue === "number" && value + 1 !== nextValue) {
-      return value + 1;
+    for (const [key, value] of uniqueAndSortedIds.entries()) {
+        if (key === 0 && value !== 0) return 0;
+        const nextValue = uniqueAndSortedIds[key + 1];
+        if (typeof nextValue === "number" && value + 1 !== nextValue) {
+            return value + 1;
+        }
     }
-  }
-  return uniqueAndSortedIds.at(-1) + 1;
+    return uniqueAndSortedIds.at(-1) + 1;
 }

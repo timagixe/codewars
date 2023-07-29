@@ -12,7 +12,7 @@ Create a combat function that takes the player's current health and the amount o
 */
 
 function combat(health, damage) {
-  if (damage >= health) return 0;
+    if (damage >= health) return 0;
 
-  return health - damage;
+    return health - damage;
 }

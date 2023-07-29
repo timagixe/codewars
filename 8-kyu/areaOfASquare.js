@@ -14,9 +14,9 @@ Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
 */
 
 function squareArea(arcLength) {
-  const circleLength = arcLength * 4;
-  const radius = circleLength / (2 * Math.PI);
-  const area = radius ** 2;
-  const areaConverted = area.toFixed(2);
-  return Number(areaConverted);
+    const circleLength = arcLength * 4;
+    const radius = circleLength / (2 * Math.PI);
+    const area = radius ** 2;
+    const areaConverted = area.toFixed(2);
+    return Number(areaConverted);
 }

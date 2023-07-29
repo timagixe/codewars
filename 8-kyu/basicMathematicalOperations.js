@@ -21,13 +21,13 @@ Examples(Operator, value1, value2) --> output
 */
 
 const OPERATIONS = {
-  "+": (a, b) => a + b,
-  "-": (a, b) => a - b,
-  "*": (a, b) => a * b,
-  "/": (a, b) => a / b
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "*": (a, b) => a * b,
+    "/": (a, b) => a / b
 };
 
 function basicOp(operation, value1, value2) {
-  const calc = OPERATIONS[operation];
-  return calc(value1, value2);
+    const calc = OPERATIONS[operation];
+    return calc(value1, value2);
 }

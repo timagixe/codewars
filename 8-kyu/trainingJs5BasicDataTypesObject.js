@@ -30,5 +30,5 @@ In the end, click "Submit" to submit your code pass this kata.
 */
 
 function animal({ color, name, legs }) {
-  return `This ${color} ${name} has ${legs} legs.`;
+    return `This ${color} ${name} has ${legs} legs.`;
 }

@@ -12,5 +12,5 @@ Implement String#digit? (in Java StringUtils.isDigit(String)), which should retu
 */
 
 String.prototype.digit = function () {
-  return /^[0-9]$/.test(this);
+    return /^[0-9]$/.test(this);
 };

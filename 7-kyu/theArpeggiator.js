@@ -39,24 +39,24 @@ arpeggio("a") == undefined
 */
 
 function arpeggio(note) {
-  if (!isValidNote(note)) return undefined;
-  const scale = getScaleForNote(note);
-  return getArpeggioNotes(scale);
+    if (!isValidNote(note)) return undefined;
+    const scale = getScaleForNote(note);
+    return getArpeggioNotes(scale);
 }
 
 const SCALE = "ABCDEFG";
 
 function isValidNote(note) {
-  return SCALE.indexOf(note) >= 0;
+    return SCALE.indexOf(note) >= 0;
 }
 
 function getScaleForNote(note) {
-  const [leftPart, rightPart] = SCALE.split(note);
-  return [note, rightPart, leftPart, note].join("");
+    const [leftPart, rightPart] = SCALE.split(note);
+    return [note, rightPart, leftPart, note].join("");
 }
 
 const ARPEGGIO_NOTE_INDEXES = [0, 2, 4, 7];
 
 function getArpeggioNotes(scale) {
-  return ARPEGGIO_NOTE_INDEXES.map((noteIndex) => scale[noteIndex]);
+    return ARPEGGIO_NOTE_INDEXES.map((noteIndex) => scale[noteIndex]);
 }

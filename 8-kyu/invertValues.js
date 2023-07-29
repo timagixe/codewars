@@ -17,5 +17,5 @@ You can assume that all values are integers. Do not mutate the input array/list.
 */
 
 function invert(nums) {
-  return nums.map((num) => -num);
+    return nums.map((num) => -num);
 }

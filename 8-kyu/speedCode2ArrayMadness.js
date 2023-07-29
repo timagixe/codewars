@@ -19,13 +19,13 @@ Get your timer out. Are you ready? Ready, get set, GO!!!
 */
 
 function getSquaresSum(numbers) {
-  return numbers.reduce((total, curr) => total + curr ** 2, 0);
+    return numbers.reduce((total, curr) => total + curr ** 2, 0);
 }
 
 function getCubesSum(numbers) {
-  return numbers.reduce((total, curr) => total + curr ** 3, 0);
+    return numbers.reduce((total, curr) => total + curr ** 3, 0);
 }
 
 function arrayMadness(a, b) {
-  return getSquaresSum(a) > getCubesSum(b);
+    return getSquaresSum(a) > getCubesSum(b);
 }

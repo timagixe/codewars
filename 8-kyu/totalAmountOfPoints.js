@@ -29,10 +29,10 @@ our team always plays 10 matches in the championship
 */
 
 function points(games) {
-  return games.reduce((total, game) => {
-    const [x, y] = game.split(":").map(Number);
-    if (x > y) return total + 3;
-    if (x === y) return total + 1;
-    return total;
-  }, 0);
+    return games.reduce((total, game) => {
+        const [x, y] = game.split(":").map(Number);
+        if (x > y) return total + 3;
+        if (x === y) return total + 1;
+        return total;
+    }, 0);
 }

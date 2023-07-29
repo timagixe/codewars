@@ -27,7 +27,7 @@ In a category of 8 products with 10 products per page, on page 1 you would see
 */
 
 function paginationText(pageNumber, pageSize, totalProducts) {
-  const start = (pageNumber - 1) * pageSize + 1;
-  const end = Math.min(pageNumber * pageSize, totalProducts);
-  return `Showing ${start} to ${end} of ${totalProducts} Products.`;
+    const start = (pageNumber - 1) * pageSize + 1;
+    const end = Math.min(pageNumber * pageSize, totalProducts);
+    return `Showing ${start} to ${end} of ${totalProducts} Products.`;
 }

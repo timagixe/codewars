@@ -19,16 +19,16 @@ Example:
 */
 
 function trigrams(phrase) {
-  if (phrase.length <= 3) return "";
-  const chunks = [];
-  const text = phrase.replace(/ /g, "_");
-  for (let index = 0; index < text.length - 2; index++) {
-    const chunk = getTrigram(text, index, index + 3);
-    chunks.push(chunk);
-  }
-  return chunks.join(" ");
+    if (phrase.length <= 3) return "";
+    const chunks = [];
+    const text = phrase.replace(/ /g, "_");
+    for (let index = 0; index < text.length - 2; index++) {
+        const chunk = getTrigram(text, index, index + 3);
+        chunks.push(chunk);
+    }
+    return chunks.join(" ");
 }
 
 function getTrigram(string, start, end) {
-  return string.slice(start, end);
+    return string.slice(start, end);
 }

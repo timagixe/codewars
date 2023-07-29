@@ -28,12 +28,12 @@ Note: newlines should be added between rows, but there should be no trailing new
 */
 
 function multiTable(number) {
-  const rows = Array.from({ length: 10 }, (_, index) =>
-    calcMultiplication(index + 1, number)
-  );
-  return rows.join("\n");
+    const rows = Array.from({ length: 10 }, (_, index) =>
+        calcMultiplication(index + 1, number)
+    );
+    return rows.join("\n");
 }
 
 function calcMultiplication(index, number) {
-  return `${index} * ${number} = ${index * number}`;
+    return `${index} * ${number} = ${index * number}`;
 }

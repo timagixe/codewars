@@ -16,6 +16,6 @@ Task: Generate a javascript method that converts a base-20 value into its decima
 */
 
 function convertBase20ToDecimal(init) {
-  const decimal = parseInt(init, 20);
-  return Number.isNaN(decimal) ? -1 : decimal;
+    const decimal = parseInt(init, 20);
+    return Number.isNaN(decimal) ? -1 : decimal;
 }

@@ -28,11 +28,11 @@ const EXCLAMATION_REGEXP = /\!/;
 const EMPTY_STRING = "";
 
 function removeSingleExclamation(string) {
-  return string.replace(EXCLAMATION_REGEXP, EMPTY_STRING);
+    return string.replace(EXCLAMATION_REGEXP, EMPTY_STRING);
 }
 
 function remove(string, times) {
-  if (times) return remove(removeSingleExclamation(string), times - 1);
+    if (times) return remove(removeSingleExclamation(string), times - 1);
 
-  return string;
+    return string;
 }

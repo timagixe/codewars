@@ -26,9 +26,9 @@ Have you figured it out? Good! Then write a program that can figure it out as we
 */
 
 function stepThroughWith(word) {
-  return [...word].some((char, index, self) => {
-    const prev = self[index - 1];
-    if (prev && prev === char) return true;
-    return false;
-  });
+    return [...word].some((char, index, self) => {
+        const prev = self[index - 1];
+        if (prev && prev === char) return true;
+        return false;
+    });
 }

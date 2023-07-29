@@ -29,14 +29,14 @@ Enjoy it and happy coding!!
 */
 
 function calcCentroid(dots) {
-  return Number(
-    (dots.reduce((acc, curr) => acc + curr, 0) / dots.length).toFixed(4)
-  );
+    return Number(
+        (dots.reduce((acc, curr) => acc + curr, 0) / dots.length).toFixed(4)
+    );
 }
 
 function barTriang([xA, yA], [xB, yB], [xC, yC]) {
-  const xO = calcCentroid([xA, xB, xC]);
-  const yO = calcCentroid([yA, yB, yC]);
+    const xO = calcCentroid([xA, xB, xC]);
+    const yO = calcCentroid([yA, yB, yC]);
 
-  return [xO, yO];
+    return [xO, yO];
 }

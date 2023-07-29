@@ -16,11 +16,11 @@ reverseFibo(10) // => '3421138532110'
 */
 
 function reverseFibo(n) {
-  if (n <= 1) return "0";
-  const nums = [1, 0];
-  while (n > nums.length) {
-    const nextNum = nums[0] + nums[1];
-    nums.unshift(nextNum);
-  }
-  return nums.join("");
+    if (n <= 1) return "0";
+    const nums = [1, 0];
+    while (n > nums.length) {
+        const nextNum = nums[0] + nums[1];
+        nums.unshift(nextNum);
+    }
+    return nums.join("");
 }

@@ -32,7 +32,7 @@ Nim: none(int)
 */
 
 function firstNonConsecutive(array) {
-  const head = array[0];
-  const number = array.find((value, index) => value !== head + index);
-  return number ?? null;
+    const head = array[0];
+    const number = array.find((value, index) => value !== head + index);
+    return number ?? null;
 }

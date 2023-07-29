@@ -24,5 +24,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 const UNDERSCORE_REGEXP = /_$/;
 
 function searchNames(logins) {
-  return logins.filter(([login]) => UNDERSCORE_REGEXP.test(login));
+    return logins.filter(([login]) => UNDERSCORE_REGEXP.test(login));
 }

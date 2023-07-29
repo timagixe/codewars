@@ -31,10 +31,10 @@ The values will always be numbers, and the properties will always exist.
 */
 
 function sortList(sortBy, list) {
-  const compare = createDescComparator(sortBy);
-  return list.sort(compare);
+    const compare = createDescComparator(sortBy);
+    return list.sort(compare);
 }
 
 function createDescComparator(key) {
-  return (a, b) => b[key] - a[key];
+    return (a, b) => b[key] - a[key];
 }

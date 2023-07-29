@@ -24,11 +24,11 @@ It should assume that all numbers are not signed and written in base 10
 */
 
 function myParseInt(str) {
-  const trimmed = str.trim();
-  if (hasChars(trimmed)) return NaN;
-  return parseInt(trimmed);
+    const trimmed = str.trim();
+    if (hasChars(trimmed)) return NaN;
+    return parseInt(trimmed);
 }
 
 function hasChars(str) {
-  return /[^0-9]/g.test(str);
+    return /[^0-9]/g.test(str);
 }

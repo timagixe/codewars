@@ -14,5 +14,5 @@ Example : n=5 --> [5,4,3,2,1]
 */
 
 function reverseSeq(num) {
-  return Array.from({ length: num }, (_, index) => num - index);
+    return Array.from({ length: num }, (_, index) => num - index);
 }

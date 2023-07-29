@@ -13,5 +13,5 @@ Oh no, Timmy's received some hate mail recently but he knows better. Help Timmy 
 */
 
 function filterWords(phrase) {
-  return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, "awesome");
+    return phrase.replace(/(bad|mean|ugly|horrible|hideous)/gi, "awesome");
 }

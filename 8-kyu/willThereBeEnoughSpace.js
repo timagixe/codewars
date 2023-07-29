@@ -21,6 +21,6 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 */
 
 function enough(cap, on, wait) {
-  const people = on + wait;
-  return people > cap ? people - cap : 0;
+    const people = on + wait;
+    return people > cap ? people - cap : 0;
 }

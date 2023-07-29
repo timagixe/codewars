@@ -19,6 +19,6 @@ Waiting for translations and Feedback! Thanks!
 */
 
 function paperwork(matesCount, pageCount) {
-  if (matesCount < 0 || pageCount < 0) return 0;
-  return matesCount * pageCount;
+    if (matesCount < 0 || pageCount < 0) return 0;
+    return matesCount * pageCount;
 }

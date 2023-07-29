@@ -24,10 +24,11 @@ typing(undefined);    //returns "undefined"
 */
 
 function typing(param) {
-  if (param === undefined) return `${param}`;
+    if (param === undefined) return `${param}`;
 
-  const type = typeof param;
-  const value = type === "function" ? param.toString() : JSON.stringify(param);
+    const type = typeof param;
+    const value =
+        type === "function" ? param.toString() : JSON.stringify(param);
 
-  return `${type}=${value}`;
+    return `${type}=${value}`;
 }

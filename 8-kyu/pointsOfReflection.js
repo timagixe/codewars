@@ -17,5 +17,5 @@ This kata was inspired by the Hackerrank challenge Find Point
 */
 
 function symmetricPoint([x, y], [p, q]) {
-  return [p * 2 - x, q * 2 - y];
+    return [p * 2 - x, q * 2 - y];
 }

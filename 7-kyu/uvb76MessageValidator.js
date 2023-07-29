@@ -28,5 +28,5 @@ Your task is to write a function that can validate the correct UVB-76 message. F
 const UVB_76_REGEXP = /^MDZHB \d{2} \d{3} [A-Z]+ \d{2} \d{2} \d{2} \d{2}$/;
 
 function validate(message) {
-  return UVB_76_REGEXP.test(message);
+    return UVB_76_REGEXP.test(message);
 }

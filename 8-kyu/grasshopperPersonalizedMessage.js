@@ -18,5 +18,5 @@ otherwise	'Hello guest'
 */
 
 function greet(name, owner) {
-  return `Hello ${name === owner ? "boss" : "guest"}`;
+    return `Hello ${name === owner ? "boss" : "guest"}`;
 }

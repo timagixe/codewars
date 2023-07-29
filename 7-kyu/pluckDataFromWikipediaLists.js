@@ -22,5 +22,5 @@ See the Test Cases for examples.
 */
 
 function pluck(data, property) {
-  return data.map((entry) => entry[property]);
+    return data.map((entry) => entry[property]);
 }

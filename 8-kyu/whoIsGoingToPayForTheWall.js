@@ -16,11 +16,11 @@ Your code will show Full name of the neighbor and the truncated version of the n
 const LETTERS_NUMBER = 2;
 
 function truncateName(name) {
-  return name.slice(0, LETTERS_NUMBER);
+    return name.slice(0, LETTERS_NUMBER);
 }
 
 function whoIsPaying(name) {
-  if (name.length <= 2) return [name];
+    if (name.length <= 2) return [name];
 
-  return [name, truncateName(name)];
+    return [name, truncateName(name)];
 }

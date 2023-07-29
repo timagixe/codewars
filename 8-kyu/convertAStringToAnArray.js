@@ -19,5 +19,5 @@ Examples (Input ==> Output):
 const SPACE = " ";
 
 function stringToArray(string) {
-  return string.split(SPACE);
+    return string.split(SPACE);
 }

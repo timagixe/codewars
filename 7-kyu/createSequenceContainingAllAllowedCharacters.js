@@ -19,10 +19,10 @@ let hexadecimal = /[0-9A-F]/;
 */
 
 function createSequence(regex) {
-  let result = "";
-  for (let code = 0; code < 128; code++) {
-    const char = String.fromCharCode(code);
-    if (regex.test(char)) result += char;
-  }
-  return result;
+    let result = "";
+    for (let code = 0; code < 128; code++) {
+        const char = String.fromCharCode(code);
+        if (regex.test(char)) result += char;
+    }
+    return result;
 }

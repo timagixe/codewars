@@ -32,5 +32,5 @@ In the end, click "Submit" to submit your code pass this kata.
 */
 
 function trueOrFalse(val) {
-  return Boolean(val).toString();
+    return Boolean(val).toString();
 }

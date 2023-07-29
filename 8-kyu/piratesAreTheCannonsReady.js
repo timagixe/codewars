@@ -32,10 +32,10 @@ If all answers are 'aye' then Fire! if one or more are 'nay' then Shiver me timb
 */
 
 function cannonsReady(gunners) {
-  for (const gunner in gunners) {
-    if (gunners[gunner] === "nay") {
-      return "Shiver me timbers!";
+    for (const gunner in gunners) {
+        if (gunners[gunner] === "nay") {
+            return "Shiver me timbers!";
+        }
     }
-  }
-  return "Fire!";
+    return "Fire!";
 }

@@ -19,5 +19,5 @@ http://en.wikipedia.org/wiki/Main_diagonal
 */
 
 function mainDiagonalProduct(matrix) {
-  return matrix.reduce((total, row, index) => total * row[index], 1);
+    return matrix.reduce((total, row, index) => total * row[index], 1);
 }

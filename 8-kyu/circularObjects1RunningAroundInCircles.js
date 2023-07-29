@@ -29,10 +29,10 @@ Unfortunately, in this Kata, any article I recommend to you would immediately gi
 */
 
 class Circular {
-  constructor() {
-    this.value = "Hello World";
-    this.self = this;
-  }
+    constructor() {
+        this.value = "Hello World";
+        this.self = this;
+    }
 }
 
 const circular = new Circular();

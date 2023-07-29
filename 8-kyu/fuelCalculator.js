@@ -19,11 +19,12 @@ Note
 */
 
 function calcDiscount(litres, discountValue = 0.05) {
-  const discountPerLitre = Math.floor(litres / 2) * discountValue;
-  const maxDiscountPerLitre = discountPerLitre > 0.25 ? 0.25 : discountPerLitre;
-  return maxDiscountPerLitre * litres;
+    const discountPerLitre = Math.floor(litres / 2) * discountValue;
+    const maxDiscountPerLitre =
+        discountPerLitre > 0.25 ? 0.25 : discountPerLitre;
+    return maxDiscountPerLitre * litres;
 }
 
 function fuelPrice(litres, pricePerLitre) {
-  return Number((litres * pricePerLitre - calcDiscount(litres)).toFixed(2));
+    return Number((litres * pricePerLitre - calcDiscount(litres)).toFixed(2));
 }

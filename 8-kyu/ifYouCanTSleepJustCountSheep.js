@@ -17,9 +17,9 @@ Given a non-negative integer, 3 for example, return a string with a murmur: "1 s
 const EMPTY = "";
 
 function countSheep(num) {
-  return Array.from({ length: num }, nthSheep).join(EMPTY);
+    return Array.from({ length: num }, nthSheep).join(EMPTY);
 }
 
 function nthSheep(_, index) {
-  return `${++index} sheep...`;
+    return `${++index} sheep...`;
 }

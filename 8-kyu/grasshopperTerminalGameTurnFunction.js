@@ -22,5 +22,12 @@ You are using a library (Game.Logic in C#) that already has the functions below.
 */
 
 function doTurn() {
-  log = ["rollDice", "move", "combat", "getCoins", "buyHealth", "printStatus"];
+    log = [
+        "rollDice",
+        "move",
+        "combat",
+        "getCoins",
+        "buyHealth",
+        "printStatus"
+    ];
 }

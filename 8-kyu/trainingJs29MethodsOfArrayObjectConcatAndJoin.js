@@ -101,8 +101,8 @@ bigToSmall([[1,1],[1],[1,1]]) should return "1>1>1>1>1"
 */
 
 function bigToSmall(arr) {
-  return arr
-    .reduce((acc, curr) => acc.concat(...curr))
-    .sort((a, b) => b - a)
-    .join(">");
+    return arr
+        .reduce((acc, curr) => acc.concat(...curr))
+        .sort((a, b) => b - a)
+        .join(">");
 }

@@ -12,5 +12,5 @@ This method, which is supposed to return the result of dividing its first argume
 */
 
 function solve(x, y) {
-  return x / y;
+    return x / y;
 }

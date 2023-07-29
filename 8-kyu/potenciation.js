@@ -20,5 +20,5 @@ Great coding <3
 */
 
 function power(x, y) {
-  return x ** y;
+    return x ** y;
 }

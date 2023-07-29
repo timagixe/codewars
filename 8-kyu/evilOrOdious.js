@@ -23,13 +23,13 @@ const ODIOUS = "Odious";
 const EVIL = "Evil";
 
 function isOdious(binaryNumber) {
-  return binaryNumber
-    .split("")
-    .reduce((acc, num) => (num === "1" ? !acc : acc), false);
+    return binaryNumber
+        .split("")
+        .reduce((acc, num) => (num === "1" ? !acc : acc), false);
 }
 
 function evil(n) {
-  const binaryN = n.toString(2);
+    const binaryN = n.toString(2);
 
-  return `It's ${isOdious(binaryN) ? ODIOUS : EVIL}!`;
+    return `It's ${isOdious(binaryN) ? ODIOUS : EVIL}!`;
 }

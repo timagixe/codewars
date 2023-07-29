@@ -14,9 +14,9 @@ You have to do God's job. The creation method must return an array of length 2 c
 */
 
 class Human {
-  constructor(name) {
-    this.name = name;
-  }
+    constructor(name) {
+        this.name = name;
+    }
 }
 
 class Man extends Human {}
@@ -24,7 +24,7 @@ class Man extends Human {}
 class Woman extends Human {}
 
 class God {
-  static create() {
-    return [new Man("Adam"), new Woman("Eve")];
-  }
+    static create() {
+        return [new Man("Adam"), new Woman("Eve")];
+    }
 }

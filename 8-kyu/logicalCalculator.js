@@ -32,13 +32,13 @@ A Boolean value (True or False).
 */
 
 const OPERATIONS = new Map([
-  ["AND", (first, second) => first && second],
-  ["OR", (first, second) => first || second],
-  ["XOR", (first, second) => first ^ second]
+    ["AND", (first, second) => first && second],
+    ["OR", (first, second) => first || second],
+    ["XOR", (first, second) => first ^ second]
 ]);
 
 function logicalCalc(array, operation) {
-  const operationCallback = OPERATIONS.get(operation);
+    const operationCallback = OPERATIONS.get(operation);
 
-  return array.reduce((acc, curr) => Boolean(operationCallback(acc, curr)));
+    return array.reduce((acc, curr) => Boolean(operationCallback(acc, curr)));
 }

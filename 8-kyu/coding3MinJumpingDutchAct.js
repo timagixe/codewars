@@ -42,9 +42,9 @@ Just play in this kata, Don't experiment in real life ;-)
 */
 
 const SCREAMS = {
-  FALLING: "Aa~",
-  FELL: "Pa!",
-  BEFORE_DYING: "Aa!"
+    FALLING: "Aa~",
+    FELL: "Pa!",
+    BEFORE_DYING: "Aa!"
 };
 
 const CRITICAL_FLOOR_NUMBER = 6;
@@ -53,14 +53,14 @@ const EMPTY_STRING = "";
 const WHITESPACE = " ";
 
 function getScreamString(floor, isDeadAfterFalling) {
-  return Array.from({ length: floor }, (value, key) => {
-    if (key !== floor - 1) return SCREAMS.FALLING;
-    if (isDeadAfterFalling) return SCREAMS.FELL;
-    return [SCREAMS.FELL, SCREAMS.BEFORE_DYING].join(WHITESPACE);
-  }).join(WHITESPACE);
+    return Array.from({ length: floor }, (value, key) => {
+        if (key !== floor - 1) return SCREAMS.FALLING;
+        if (isDeadAfterFalling) return SCREAMS.FELL;
+        return [SCREAMS.FELL, SCREAMS.BEFORE_DYING].join(WHITESPACE);
+    }).join(WHITESPACE);
 }
 
 function sc(floor) {
-  if (floor <= 1) return EMPTY_STRING;
-  return getScreamString(floor, floor > CRITICAL_FLOOR_NUMBER);
+    if (floor <= 1) return EMPTY_STRING;
+    return getScreamString(floor, floor > CRITICAL_FLOOR_NUMBER);
 }

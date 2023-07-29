@@ -23,8 +23,8 @@ stringChunk('sunny day', 0) // []
 */
 
 function stringChunk(str, n) {
-  if (!Number.isFinite(n) || n <= 0) return [];
+    if (!Number.isFinite(n) || n <= 0) return [];
 
-  const regExp = new RegExp(`.{1,${n}}`, "g");
-  return str.match(regExp);
+    const regExp = new RegExp(`.{1,${n}}`, "g");
+    return str.match(regExp);
 }

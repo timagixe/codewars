@@ -22,5 +22,5 @@ a + (a+r) + (a+r+r) + (a+r+r+r) + (a+r+r+r+r)
 */
 
 function ArithmeticSequenceSum(a, r, n) {
-  return (n / 2) * (2 * a + (n - 1) * r);
+    return (n / 2) * (2 * a + (n - 1) * r);
 }

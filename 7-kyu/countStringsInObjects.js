@@ -21,10 +21,10 @@ strCount({
 */
 
 function strCount(obj) {
-  let count = 0;
-  for (const key in obj) {
-    if (typeof obj[key] === "string") count += 1;
-    if (typeof obj[key] === "object") count += strCount(obj[key]);
-  }
-  return count;
+    let count = 0;
+    for (const key in obj) {
+        if (typeof obj[key] === "string") count += 1;
+        if (typeof obj[key] === "object") count += strCount(obj[key]);
+    }
+    return count;
 }

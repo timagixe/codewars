@@ -23,12 +23,12 @@ sleigh.authenticate("jhoffner", "CodeWars"); // Nope, even Jake is not allowed t
 */
 
 const CREDENTIALS = {
-  NAME: "Santa Claus",
-  PASSWORD: "Ho Ho Ho!"
+    NAME: "Santa Claus",
+    PASSWORD: "Ho Ho Ho!"
 };
 
 function Sleigh() {}
 
 Sleigh.prototype.authenticate = function (name, password) {
-  return name === CREDENTIALS.NAME && password === CREDENTIALS.PASSWORD;
+    return name === CREDENTIALS.NAME && password === CREDENTIALS.PASSWORD;
 };

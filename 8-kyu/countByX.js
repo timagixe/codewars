@@ -20,5 +20,5 @@ countBy(2,5) === [2,4,6,8,10]
 */
 
 function countBy(multiple, length) {
-  return Array.from({ length }, (_, index) => (index + 1) * multiple);
+    return Array.from({ length }, (_, index) => (index + 1) * multiple);
 }

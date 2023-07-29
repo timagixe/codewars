@@ -14,5 +14,5 @@ You can assume the input will always be a number.
 */
 
 function validateCode(code) {
-  return /^[1-3]/.test(code);
+    return /^[1-3]/.test(code);
 }

@@ -20,24 +20,25 @@ Note: The hexCode you will be provided will always be in the correct format. How
 const RADIX = 16;
 
 function hexToTime(hexCode) {
-  const code = hexCode.replace("#", "");
-  const hexNums = code.match(/.{2,2}/g);
-  const result = hexNums.map(parseHexToInt).map(padZero).join(":");
-  const valid = validateTime(result);
-  if (!valid) throw new Error("Thats not a valid time!");
-  return result;
+    const code = hexCode.replace("#", "");
+    const hexNums = code.match(/.{2,2}/g);
+    const result = hexNums.map(parseHexToInt).map(padZero).join(":");
+    const valid = validateTime(result);
+    if (!valid) throw new Error("Thats not a valid time!");
+    return result;
 }
 
 function parseHexToInt(hex) {
-  return parseInt(hex, RADIX);
+    return parseInt(hex, RADIX);
 }
 
 function padZero(num) {
-  return num.toString().padStart(2, 0);
+    return num.toString().padStart(2, 0);
 }
 
 function validateTime(time) {
-  const [hh, mm, ss] = time.split(":");
-  if (parseInt(hh) > 23 || parseInt(mm) > 59 || parseInt(ss) > 59) return false;
-  return true;
+    const [hh, mm, ss] = time.split(":");
+    if (parseInt(hh) > 23 || parseInt(mm) > 59 || parseInt(ss) > 59)
+        return false;
+    return true;
 }

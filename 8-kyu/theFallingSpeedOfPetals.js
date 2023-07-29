@@ -24,6 +24,6 @@ If the initial velocity is non-positive, the return value should be 0
 const BRANCH_HEIGHT = 80 * 5;
 
 function sakuraFall(velocity) {
-  if (velocity <= 0) return 0;
-  return BRANCH_HEIGHT / velocity;
+    if (velocity <= 0) return 0;
+    return BRANCH_HEIGHT / velocity;
 }

@@ -19,5 +19,5 @@ Length should be between 4 and 16 characters (both included).
 const USERNAME_REGEXP = /^[a-z0-9_]{4,16}$/;
 
 function validateUsr(username) {
-  return USERNAME_REGEXP.test(username);
+    return USERNAME_REGEXP.test(username);
 }

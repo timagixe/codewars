@@ -18,5 +18,5 @@ getNumberFromString(s)
 const ANY_NUMBERS_REGEXP = /\d+/g;
 
 function getNumberFromString(s) {
-  return Number(s.match(ANY_NUMBERS_REGEXP).join(""));
+    return Number(s.match(ANY_NUMBERS_REGEXP).join(""));
 }

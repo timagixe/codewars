@@ -33,5 +33,5 @@ Tests round answers to 6 decimal places.
 */
 
 function circleArea(circle) {
-  return Math.PI * circle.radius ** 2;
+    return Math.PI * circle.radius ** 2;
 }

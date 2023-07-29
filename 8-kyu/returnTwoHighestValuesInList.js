@@ -20,10 +20,10 @@ Examples:
 */
 
 function twoHighest(array) {
-  const distinct = new Set(array);
-  return sortDescending(distinct).slice(0, 2);
+    const distinct = new Set(array);
+    return sortDescending(distinct).slice(0, 2);
 }
 
 function sortDescending(values) {
-  return [...values].sort((x, y) => y - x);
+    return [...values].sort((x, y) => y - x);
 }

@@ -26,6 +26,6 @@ fib(1) = 1;
 */
 
 function fib(num, a = 0, b = 1) {
-  if (!num) return a;
-  return fib(num - 1, b, a + b);
+    if (!num) return a;
+    return fib(num - 1, b, a + b);
 }

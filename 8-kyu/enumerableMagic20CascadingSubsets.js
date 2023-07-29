@@ -20,11 +20,11 @@ As you can see, the lists are cascading; ie, they overlap, but never out of orde
 */
 
 function eachCons(array, length) {
-  const result = [];
-  for (let index = 0; index <= array.length; index += 1) {
-    const chunk = array.slice(index, length + index);
-    if (chunk.length !== length) return result;
-    result.push(chunk);
-  }
-  return result;
+    const result = [];
+    for (let index = 0; index <= array.length; index += 1) {
+        const chunk = array.slice(index, length + index);
+        if (chunk.length !== length) return result;
+        result.push(chunk);
+    }
+    return result;
 }

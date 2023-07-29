@@ -50,7 +50,7 @@ The number of people who sit strictly behind you and in your column or to the le
 */
 
 function seatsInTheater(totalColumns, totalRows, myColumn, myRow) {
-  const columnsBehid = totalColumns - myColumn + 1;
-  const rowsBehind = totalRows - myRow;
-  return columnsBehid * rowsBehind;
+    const columnsBehid = totalColumns - myColumn + 1;
+    const rowsBehind = totalRows - myRow;
+    return columnsBehid * rowsBehind;
 }

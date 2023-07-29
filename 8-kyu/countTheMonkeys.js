@@ -20,5 +20,5 @@ For example(Input --> Output):
 */
 
 function monkeyCount(n) {
-  return Array.from({ length: n }, (value, key) => key + 1);
+    return Array.from({ length: n }, (value, key) => key + 1);
 }

@@ -19,5 +19,5 @@ Your task is to simply calculate the loudness of a sound wave, given its intensi
 */
 
 function dBScale(intensity) {
-  return 10 * Math.log10(intensity * 10 ** 12);
+    return 10 * Math.log10(intensity * 10 ** 12);
 }

@@ -16,6 +16,6 @@ You can do this iteratively or recursively.
 */
 
 function mul(a, b, acc = 0) {
-  if (a === 0) return acc;
-  return mul(a - 1, b, acc + b);
+    if (a === 0) return acc;
+    return mul(a - 1, b, acc + b);
 }

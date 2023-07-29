@@ -27,16 +27,16 @@ split [obj1, obj2], 'prop'
 */
 
 function split(arr, prop) {
-  return arr.reduce(
-    (result, value) => {
-      const [truthy, falsy] = result;
-      if (value[prop]) {
-        truthy.push(value);
-        return result;
-      }
-      falsy.push(value);
-      return result;
-    },
-    [[], []]
-  );
+    return arr.reduce(
+        (result, value) => {
+            const [truthy, falsy] = result;
+            if (value[prop]) {
+                truthy.push(value);
+                return result;
+            }
+            falsy.push(value);
+            return result;
+        },
+        [[], []]
+    );
 }

@@ -28,8 +28,9 @@ Passed val should not be case sensitive.
 */
 
 function getCharacters({ characters }, key, val) {
-  return characters.filter(
-    (character) =>
-      key in character && character[key].toLowerCase() === val.toLowerCase()
-  );
+    return characters.filter(
+        (character) =>
+            key in character &&
+            character[key].toLowerCase() === val.toLowerCase()
+    );
 }

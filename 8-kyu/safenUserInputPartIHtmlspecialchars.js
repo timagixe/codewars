@@ -22,12 +22,12 @@ Good luck :D
 */
 
 const SAFE_HASH = {
-  "<": "&lt;",
-  ">": "&gt;",
-  '"': "&quot;",
-  "&": "&amp;"
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "&": "&amp;"
 };
 
 function htmlspecialchars(formData) {
-  return formData.replace(/./g, (match) => SAFE_HASH[match] || match);
+    return formData.replace(/./g, (match) => SAFE_HASH[match] || match);
 }

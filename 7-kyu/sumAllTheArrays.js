@@ -16,10 +16,10 @@ Ignore all other types of values.
 */
 
 function arraySum(arr) {
-  return arr.flat(Infinity).reduce(add, 0);
+    return arr.flat(Infinity).reduce(add, 0);
 }
 
 function add(sum, num) {
-  if (!Number.isFinite(num)) return sum;
-  return sum + num;
+    if (!Number.isFinite(num)) return sum;
+    return sum + num;
 }

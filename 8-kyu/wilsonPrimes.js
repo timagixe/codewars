@@ -19,15 +19,15 @@ Your task is to create a function that returns true if the given number is a Wil
 */
 
 function amIWilson(num) {
-  const bigNum = BigInt(num);
-  return wilsonFormula(bigNum) === 0n;
+    const bigNum = BigInt(num);
+    return wilsonFormula(bigNum) === 0n;
 }
 
 function factorial(num) {
-  if (num === 0n) return 1n;
-  return num * factorial(num - 1n);
+    if (num === 0n) return 1n;
+    return num * factorial(num - 1n);
 }
 
 function wilsonFormula(num) {
-  return (factorial(num - 1n) + 1n) % (num * num);
+    return (factorial(num - 1n) + 1n) % (num * num);
 }

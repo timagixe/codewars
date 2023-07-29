@@ -22,13 +22,13 @@ Translations and comments (and upvotes!) welcome!
 */
 
 function sumCircles(...diameters) {
-  const diamteresSum = diameters.reduce(
-    (acc, diameter) => acc + calcCircleArea(diameter),
-    0
-  );
-  return `We have this much circle: ${Math.round(diamteresSum)}`;
+    const diamteresSum = diameters.reduce(
+        (acc, diameter) => acc + calcCircleArea(diameter),
+        0
+    );
+    return `We have this much circle: ${Math.round(diamteresSum)}`;
 }
 
 function calcCircleArea(diameter) {
-  return Math.PI * (diameter / 2) ** 2;
+    return Math.PI * (diameter / 2) ** 2;
 }

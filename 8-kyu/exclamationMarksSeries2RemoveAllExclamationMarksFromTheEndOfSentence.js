@@ -23,5 +23,5 @@ const EXCLAMATION_REGEXP = /!*$/;
 const EMPTY = "";
 
 function remove(string) {
-  return string.replace(EXCLAMATION_REGEXP, EMPTY);
+    return string.replace(EXCLAMATION_REGEXP, EMPTY);
 }

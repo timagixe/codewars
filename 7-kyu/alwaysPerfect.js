@@ -18,17 +18,17 @@ If string contains 4 numbers but not consecutive it returns "not consecutive".
 */
 
 function checkRoot(string) {
-  const chars = string.split(",");
-  if (chars.length !== 4) return "incorrect input";
-  if (chars.some((char) => /[a-z]/i.test(char))) return "incorrect input";
-  const digits = chars.map(Number);
-  if (!digits.every(isConsecutive)) return "not consecutive";
-  const product = digits.reduce((a, b) => a * b) + 1;
-  const squareRoot = Math.sqrt(product);
-  return `${product}, ${squareRoot}`;
+    const chars = string.split(",");
+    if (chars.length !== 4) return "incorrect input";
+    if (chars.some((char) => /[a-z]/i.test(char))) return "incorrect input";
+    const digits = chars.map(Number);
+    if (!digits.every(isConsecutive)) return "not consecutive";
+    const product = digits.reduce((a, b) => a * b) + 1;
+    const squareRoot = Math.sqrt(product);
+    return `${product}, ${squareRoot}`;
 }
 
 function isConsecutive(value, index, array) {
-  if (array.length - 1 === index) return true;
-  return value + 1 === array[index + 1];
+    if (array.length - 1 === index) return true;
+    return value + 1 === array[index + 1];
 }

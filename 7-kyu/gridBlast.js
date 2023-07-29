@@ -32,6 +32,6 @@ Notice the grid is a monodimensional array, good luck!
 //
 
 function fire(x, y) {
-  const index = y * 3 + x;
-  return grid[index];
+    const index = y * 3 + x;
+    return grid[index];
 }

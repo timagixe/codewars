@@ -14,9 +14,9 @@ P.S. Each array includes only integer numbers. Output is a number too.
 */
 
 function arrayPlusArray(arr1, arr2) {
-  return arr1.reduce(sum) + arr2.reduce(sum);
+    return arr1.reduce(sum) + arr2.reduce(sum);
 }
 
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }

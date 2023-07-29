@@ -12,5 +12,5 @@ Create a function that accepts a list/array and a number n, and returns a list/a
 */
 
 function take(array, n) {
-  return array.slice(0, n);
+    return array.slice(0, n);
 }

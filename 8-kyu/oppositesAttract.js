@@ -14,9 +14,9 @@ Write a function that will take the number of petals of each flower and return t
 */
 
 function lovefunc(flower1, flower2) {
-  return inLove(flower1, flower2) || inLove(flower2, flower1);
+    return inLove(flower1, flower2) || inLove(flower2, flower1);
 }
 
 function inLove(num1, num2) {
-  return num1 % 2 === 0 && num2 % 2 === 1;
+    return num1 % 2 === 0 && num2 % 2 === 1;
 }

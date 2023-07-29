@@ -23,5 +23,5 @@ Examples
 */
 
 function stringToNumber(str) {
-  return parseInt(str);
+    return parseInt(str);
 }

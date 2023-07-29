@@ -26,7 +26,10 @@ primes(1, 10) // [2, 3, 5, 7]
 */
 
 function primes(start, end) {
-    const range = Array.from({ length: end - start + 1 }, (_, index) => index + start);
+    const range = Array.from(
+        { length: end - start + 1 },
+        (_, index) => index + start
+    );
 
     const primes = range.reduce((acc, cur) => {
         if (cur === 0 || cur === 1) return acc;

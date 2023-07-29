@@ -25,5 +25,5 @@ The elements in the returned array should be in the same order as in the initial
 const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
 
 function gooseFilter(birds) {
-  return birds.filter((bird) => !geese.includes(bird));
+    return birds.filter((bird) => !geese.includes(bird));
 }

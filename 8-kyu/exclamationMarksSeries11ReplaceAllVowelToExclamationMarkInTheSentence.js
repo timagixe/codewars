@@ -21,5 +21,5 @@ const EXCLAMATION_MARK = "!";
 const VOWELS_REGEXP = /[aeiou]/gi;
 
 function replace(string) {
-  return string.replace(VOWELS_REGEXP, EXCLAMATION_MARK);
+    return string.replace(VOWELS_REGEXP, EXCLAMATION_MARK);
 }

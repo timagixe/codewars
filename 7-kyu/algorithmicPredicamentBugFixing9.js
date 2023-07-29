@@ -18,31 +18,31 @@ Your goal is to make the total the age of all people having the same name throug
 */
 
 function highestAge(group1, group2) {
-  let highestName = { name: "", age: -1 };
-  const newGroup = [];
-  const combGroup = [...group1, ...group2];
+    let highestName = { name: "", age: -1 };
+    const newGroup = [];
+    const combGroup = [...group1, ...group2];
 
-  for (let i = 0; i < combGroup.length; i++) {
-    let index = newGroup.indexOfProp("name", combGroup[i].name);
-    if (index === -1) {
-      newGroup.push(combGroup[i]);
-    } else {
-      newGroup[index].age += combGroup[i].age;
+    for (let i = 0; i < combGroup.length; i++) {
+        let index = newGroup.indexOfProp("name", combGroup[i].name);
+        if (index === -1) {
+            newGroup.push(combGroup[i]);
+        } else {
+            newGroup[index].age += combGroup[i].age;
+        }
     }
-  }
 
-  newGroup.sort((p, c) => p.name.localeCompare(c.name));
+    newGroup.sort((p, c) => p.name.localeCompare(c.name));
 
-  for (let i = 0; i < newGroup.length; i++) {
-    if (newGroup[i].age > highestName.age) highestName = newGroup[i];
-  }
+    for (let i = 0; i < newGroup.length; i++) {
+        if (newGroup[i].age > highestName.age) highestName = newGroup[i];
+    }
 
-  return highestName.name;
+    return highestName.name;
 }
 
 Array.prototype.indexOfProp = function (prop, value) {
-  for (let i = 0; i < this.length; i++) {
-    if (this[i][prop] == value) return i;
-  }
-  return -1;
+    for (let i = 0; i < this.length; i++) {
+        if (this[i][prop] == value) return i;
+    }
+    return -1;
 };

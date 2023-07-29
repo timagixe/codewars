@@ -19,6 +19,6 @@ For example (Input --> Output)
 const QUESTION_MARK = "?";
 
 function ensureQuestion(string) {
-  if (string.endsWith(QUESTION_MARK)) return string;
-  return `${string}?`;
+    if (string.endsWith(QUESTION_MARK)) return string;
+    return `${string}?`;
 }

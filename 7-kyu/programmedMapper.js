@@ -28,10 +28,10 @@ Each item in the second argument array is an array itself, where the first eleme
 */
 
 function mapEmUp(inputs, mappers) {
-  return inputs.map((input) => {
-    for (const [check, convert] of mappers) {
-      if (check(input)) return convert(input);
-    }
-    return -1;
-  });
+    return inputs.map((input) => {
+        for (const [check, convert] of mappers) {
+            if (check(input)) return convert(input);
+        }
+        return -1;
+    });
 }

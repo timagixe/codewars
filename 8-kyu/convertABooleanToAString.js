@@ -14,5 +14,5 @@ Note: Only valid inputs will be given.
 */
 
 function booleanToString(bool) {
-  return bool.toString();
+    return bool.toString();
 }

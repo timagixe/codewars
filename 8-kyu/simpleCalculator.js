@@ -26,26 +26,26 @@ Good luck!
 const SIGNS_REGEXP = /\+|\-|\/|\*/;
 
 function isNumber(number) {
-  return typeof number === "number";
+    return typeof number === "number";
 }
 
 function isValidParams(a, b, sign) {
-  return [a, b].every(isNumber) && SIGNS_REGEXP.test(sign);
+    return [a, b].every(isNumber) && SIGNS_REGEXP.test(sign);
 }
 
 const OPERATIONS = {
-  "+": (a, b) => a + b,
-  "-": (a, b) => a - b,
-  "/": (a, b) => a / b,
-  "*": (a, b) => a * b
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+    "/": (a, b) => a / b,
+    "*": (a, b) => a * b
 };
 
 function calculate(a, b, sign) {
-  return OPERATIONS[sign](a, b);
+    return OPERATIONS[sign](a, b);
 }
 
 function calculator(a, b, sign) {
-  if (!isValidParams(a, b, sign)) return "unknown value";
+    if (!isValidParams(a, b, sign)) return "unknown value";
 
-  return calculate(a, b, sign);
+    return calculate(a, b, sign);
 }

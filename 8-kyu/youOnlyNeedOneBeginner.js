@@ -16,5 +16,5 @@ Return true if the array contains the value, false if not.
 */
 
 function check(array, value) {
-  return array.indexOf(value) !== -1;
+    return array.indexOf(value) !== -1;
 }

@@ -22,5 +22,5 @@ Happy coding!
 const WHITEPSACE = " ";
 
 function reverse(string) {
-  return string.split(WHITEPSACE).reverse().join(WHITEPSACE);
+    return string.split(WHITEPSACE).reverse().join(WHITEPSACE);
 }

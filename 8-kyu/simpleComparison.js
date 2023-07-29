@@ -14,5 +14,5 @@ To make this challange harder and to promp the challenger to read up about coerc
 */
 
 function add(a, b) {
-  return +a === +b;
+    return +a === +b;
 }

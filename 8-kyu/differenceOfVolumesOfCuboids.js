@@ -16,13 +16,13 @@ Your function will be tested with pre-made examples as well as random ones.
 */
 
 function findDifference(a, b) {
-  const volumeA = Formulas.getVolumeOfCuboid(...a);
-  const volumeB = Formulas.getVolumeOfCuboid(...b);
-  return Math.abs(volumeA - volumeB);
+    const volumeA = Formulas.getVolumeOfCuboid(...a);
+    const volumeB = Formulas.getVolumeOfCuboid(...b);
+    return Math.abs(volumeA - volumeB);
 }
 
 class Formulas {
-  static getVolumeOfCuboid(length, width, height) {
-    return length * width * height;
-  }
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height;
+    }
 }

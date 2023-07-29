@@ -18,11 +18,11 @@ foo + boo // => must return 5
 */
 
 class Foo {
-  constructor(value) {
-    this.val = value;
-  }
+    constructor(value) {
+        this.val = value;
+    }
 
-  toString() {
-    return Number(this.val);
-  }
+    toString() {
+        return Number(this.val);
+    }
 }

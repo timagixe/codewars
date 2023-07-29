@@ -25,12 +25,12 @@ You are not required to support equality comparison between two Counter instance
 */
 
 function Counter() {
-  this.c = 0;
-  this.valueOf = function () {
-    return this.c;
-  };
+    this.c = 0;
+    this.valueOf = function () {
+        return this.c;
+    };
 }
 
 Counter.prototype.incr = function () {
-  this.c += 1;
+    this.c += 1;
 };

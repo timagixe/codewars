@@ -30,17 +30,17 @@ Happy hacking!
 const FIRST_IS_CHAR = /^[^a-z]/i;
 
 function isValidNames(names) {
-  return names.every((name) => !FIRST_IS_CHAR.test(name));
+    return names.every((name) => !FIRST_IS_CHAR.test(name));
 }
 
 function getNameKey(name) {
-  return name[0].toUpperCase();
+    return name[0].toUpperCase();
 }
 
 function aliasGen(nameOne, nameTwo) {
-  if (!isValidNames([nameOne, nameTwo])) {
-    return "Your name must start with a letter from A - Z.";
-  }
+    if (!isValidNames([nameOne, nameTwo])) {
+        return "Your name must start with a letter from A - Z.";
+    }
 
-  return `${firstName[getNameKey(nameOne)]} ${surname[getNameKey(nameTwo)]}`;
+    return `${firstName[getNameKey(nameOne)]} ${surname[getNameKey(nameTwo)]}`;
 }

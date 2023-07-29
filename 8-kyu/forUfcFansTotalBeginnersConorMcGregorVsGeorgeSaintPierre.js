@@ -28,11 +28,11 @@ const MC_GREGOR_KEY = "Conor McGregor".toLowerCase();
 const SAINT_PIERRE_KEY = "George Saint Pierre".toLocaleLowerCase();
 
 const FIGHTER_QUOTES = {
-  [MC_GREGOR_KEY]:
-    "I'd like to take this chance to apologize.. To absolutely NOBODY!",
-  [SAINT_PIERRE_KEY]: "I am not impressed by your performance."
+    [MC_GREGOR_KEY]:
+        "I'd like to take this chance to apologize.. To absolutely NOBODY!",
+    [SAINT_PIERRE_KEY]: "I am not impressed by your performance."
 };
 
 function quote(fighter) {
-  return FIGHTER_QUOTES[fighter.toLowerCase()];
+    return FIGHTER_QUOTES[fighter.toLowerCase()];
 }

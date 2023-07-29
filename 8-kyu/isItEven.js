@@ -20,5 +20,5 @@ Floats with decimal part non equal to zero are considered UNeven for this kata.
 */
 
 function testEven(num) {
-  return !(num % 2);
+    return !(num % 2);
 }

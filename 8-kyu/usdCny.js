@@ -19,6 +19,6 @@ The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers shou
 const RATE = 6.75;
 
 function usdcny(usd) {
-  const converted = (usd * RATE).toFixed(2);
-  return `${converted} Chinese Yuan`;
+    const converted = (usd * RATE).toFixed(2);
+    return `${converted} Chinese Yuan`;
 }

@@ -20,5 +20,5 @@ String str will never be null.
 */
 
 function replaceDots(str) {
-  return str.replace(/\./g, "-");
+    return str.replace(/\./g, "-");
 }

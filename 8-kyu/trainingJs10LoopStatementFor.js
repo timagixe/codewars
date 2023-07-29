@@ -57,12 +57,12 @@ If you forgot how to push an element to array, please refer to lesson 4.
 */
 
 function pickIt(arr) {
-  let odd = [];
-  let even = [];
+    let odd = [];
+    let even = [];
 
-  for (let val of arr) {
-    val % 2 ? odd.push(val) : even.push(val);
-  }
+    for (let val of arr) {
+        val % 2 ? odd.push(val) : even.push(val);
+    }
 
-  return [odd, even];
+    return [odd, even];
 }

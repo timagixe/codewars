@@ -20,5 +20,5 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fun
 */
 
 function OrderPeople(people) {
-  return Array.from(people).sort((a, b) => a.age - b.age);
+    return Array.from(people).sort((a, b) => a.age - b.age);
 }

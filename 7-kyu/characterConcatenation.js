@@ -19,15 +19,15 @@ charConcat("abc!def")   == 'af1be2cd3' // same result
 */
 
 function charConcat(string) {
-  let text = string;
-  let index = 1;
-  let result = "";
-  while (text.length > 1) {
-    const start = 0;
-    const end = text.length - 1;
-    result += text.charAt(start) + text.charAt(end) + index;
-    text = text.slice(1, -1);
-    index++;
-  }
-  return result;
+    let text = string;
+    let index = 1;
+    let result = "";
+    while (text.length > 1) {
+        const start = 0;
+        const end = text.length - 1;
+        result += text.charAt(start) + text.charAt(end) + index;
+        text = text.slice(1, -1);
+        index++;
+    }
+    return result;
 }

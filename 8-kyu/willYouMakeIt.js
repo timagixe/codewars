@@ -16,6 +16,6 @@ Function should return true if it is possible and false if not.
 */
 
 function zeroFuel(distanceToPump, mpg, fuelLeft) {
-  const maxDistance = mpg * fuelLeft;
-  return maxDistance >= distanceToPump;
+    const maxDistance = mpg * fuelLeft;
+    return maxDistance >= distanceToPump;
 }

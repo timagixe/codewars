@@ -20,10 +20,10 @@ A preloaded object/dictionary/hash called CHAR_TO_MORSE will be provided to help
 */
 
 function encryption(message) {
-  let encoded = [];
-  for (let char of message) {
-    const value = CHAR_TO_MORSE[char] || char;
-    encoded.push(value);
-  }
-  return encoded.join(" ");
+    let encoded = [];
+    for (let char of message) {
+        const value = CHAR_TO_MORSE[char] || char;
+        encoded.push(value);
+    }
+    return encoded.join(" ");
 }

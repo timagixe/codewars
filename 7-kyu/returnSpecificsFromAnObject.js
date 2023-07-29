@@ -20,14 +20,14 @@ This would return [1,2,3,'e']
 */
 
 function returnSpecifics(obj) {
-  const nums = [];
-  const methods = [];
-  for (const key in obj) {
-    const value = obj[key];
-    if (typeof value === "number") nums.push(value);
-    if (typeof value === "function") methods.push(key);
-  }
-  const result = nums.concat(methods);
-  if (!result.length) return ["The Object is Empty"];
-  return result;
+    const nums = [];
+    const methods = [];
+    for (const key in obj) {
+        const value = obj[key];
+        if (typeof value === "number") nums.push(value);
+        if (typeof value === "function") methods.push(key);
+    }
+    const result = nums.concat(methods);
+    if (!result.length) return ["The Object is Empty"];
+    return result;
 }

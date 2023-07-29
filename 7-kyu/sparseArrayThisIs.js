@@ -14,5 +14,5 @@ The challenge here is to create such a method. Please remember that an element i
 */
 
 Array.prototype.isSparse = function () {
-  return Object.keys(this).length !== this.length;
+    return Object.keys(this).length !== this.length;
 };

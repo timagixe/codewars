@@ -15,7 +15,7 @@ Division by zero should return NaN.
 */
 
 function remainder(x, y) {
-  const max = Math.max(x, y);
-  const min = Math.min(x, y);
-  return max % min;
+    const max = Math.max(x, y);
+    const min = Math.min(x, y);
+    return max % min;
 }

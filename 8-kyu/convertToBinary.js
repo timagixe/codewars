@@ -22,5 +22,5 @@ toBinary(11) should return 1011
 */
 
 function toBinary(number) {
-  return Number(number.toString(2));
+    return Number(number.toString(2));
 }

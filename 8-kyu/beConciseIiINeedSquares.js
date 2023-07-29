@@ -19,5 +19,5 @@ Good luck! :D
 */
 
 function squaresOnly(array) {
-  return array.filter((item) => Number.isInteger(Math.sqrt(item)));
+    return array.filter((item) => Number.isInteger(Math.sqrt(item)));
 }

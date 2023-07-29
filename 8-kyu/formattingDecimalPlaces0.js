@@ -16,5 +16,5 @@ Example:
 */
 
 function twoDecimalPlaces(n) {
-  return Number(n.toFixed(2));
+    return Number(n.toFixed(2));
 }

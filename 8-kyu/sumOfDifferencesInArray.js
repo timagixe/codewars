@@ -20,9 +20,9 @@ If the array is empty or the array has only one element the result should be 0 (
 */
 
 function sumOfDifferences(nums) {
-  if (!nums.length) return nums.length;
-  const sorted = [...nums].sort((a, b) => b - a);
-  const head = sorted[0];
-  const tail = sorted[sorted.length - 1];
-  return head - tail;
+    if (!nums.length) return nums.length;
+    const sorted = [...nums].sort((a, b) => b - a);
+    const head = sorted[0];
+    const tail = sorted[sorted.length - 1];
+    return head - tail;
 }

@@ -25,5 +25,5 @@ wordSearch("akes the",text)--> false
 const WORD_REGEXP = /\w+/gi;
 
 function wordSearch(word, text) {
-  return text.match(WORD_REGEXP).includes(word);
+    return text.match(WORD_REGEXP).includes(word);
 }

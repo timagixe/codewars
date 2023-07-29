@@ -18,24 +18,24 @@ For an input String: "hey You, Sort me Already!" the function should return: "Yo
 */
 
 function capitalsFirst(str) {
-  const words = str.split(" ");
-  const upper = [];
-  const lower = [];
-  for (const word of words) {
-    if (isUpper(word)) upper.push(word);
-    if (isLower(word)) lower.push(word);
-  }
-  return [...upper, ...lower].join(" ");
+    const words = str.split(" ");
+    const upper = [];
+    const lower = [];
+    for (const word of words) {
+        if (isUpper(word)) upper.push(word);
+        if (isLower(word)) lower.push(word);
+    }
+    return [...upper, ...lower].join(" ");
 }
 
 const LOWER_REGEXP = /^[a-z]/;
 
 function isLower(word) {
-  return LOWER_REGEXP.test(word);
+    return LOWER_REGEXP.test(word);
 }
 
 const UPPER_REGEXP = /^[A-Z]/;
 
 function isUpper(word) {
-  return UPPER_REGEXP.test(word);
+    return UPPER_REGEXP.test(word);
 }

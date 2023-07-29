@@ -13,21 +13,21 @@ You are creating an "Escape the room" game. The first step is to create a hash t
 */
 
 function createRoom(
-  { name, description, completed } = {
-    name: "Default Room Name",
-    description: "Default room description",
-    completed: false
-  }
+    { name, description, completed } = {
+        name: "Default Room Name",
+        description: "Default room description",
+        completed: false
+    }
 ) {
-  return {
-    name,
-    description,
-    completed
-  };
+    return {
+        name,
+        description,
+        completed
+    };
 }
 
 const rooms = {
-  firstRoom: createRoom(),
-  secondRoom: createRoom(),
-  thirdRoom: createRoom()
+    firstRoom: createRoom(),
+    secondRoom: createRoom(),
+    thirdRoom: createRoom()
 };

@@ -21,13 +21,13 @@ albert.toString() --> "Hi! my name's Boris" <-- ohoh..
 */
 
 function Warrior(n) {
-  let name = n;
-  this.name = function (n) {
-    if (n) name = n;
-    return name;
-  };
+    let name = n;
+    this.name = function (n) {
+        if (n) name = n;
+        return name;
+    };
 }
 
 Warrior.prototype.toString = function () {
-  return "Hi! my name's " + this.name();
+    return "Hi! my name's " + this.name();
 };

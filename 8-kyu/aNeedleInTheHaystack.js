@@ -22,6 +22,6 @@ Example(Input --> Output)
 */
 
 function findNeedle(haystack) {
-  const index = haystack.indexOf("needle");
-  return `found the needle at position ${index}`;
+    const index = haystack.indexOf("needle");
+    return `found the needle at position ${index}`;
 }

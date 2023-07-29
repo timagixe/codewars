@@ -14,5 +14,5 @@ Note: input will never be an empty string
 */
 
 function fakeBin(x) {
-  return x.replace(/\d/g, (match) => (Number(match) >= 5 ? 1 : 0));
+    return x.replace(/\d/g, (match) => (Number(match) >= 5 ? 1 : 0));
 }

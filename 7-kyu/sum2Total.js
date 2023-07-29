@@ -30,11 +30,11 @@ total([1,2,3,4])  => 20
 */
 
 function total(nums) {
-  if (nums.length === 1) return nums[0];
-  const nextNums = nums.reduce((next, curr, index) => {
-    const value = nums[index + 1];
-    if (value !== undefined) next.push(curr + value);
-    return next;
-  }, []);
-  return total(nextNums);
+    if (nums.length === 1) return nums[0];
+    const nextNums = nums.reduce((next, curr, index) => {
+        const value = nums[index + 1];
+        if (value !== undefined) next.push(curr + value);
+        return next;
+    }, []);
+    return total(nextNums);
 }

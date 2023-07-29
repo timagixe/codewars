@@ -23,5 +23,5 @@ const VOWEL_REGEXP = /[aeiou]/g;
 const EMPTY = "";
 
 function shortcut(string) {
-  return string.replace(VOWEL_REGEXP, EMPTY);
+    return string.replace(VOWEL_REGEXP, EMPTY);
 }

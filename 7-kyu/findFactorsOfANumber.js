@@ -16,10 +16,10 @@ For Example: factors(54) should return [54, 27, 18, 9, 6, 3, 2, 1]
 */
 
 function factors(x) {
-  if (!Number.isInteger(x) || x < 1) return -1;
-  const result = [];
-  for (let index = x; index >= 1; index--) {
-    if (x % index === 0) result.push(index);
-  }
-  return result;
+    if (!Number.isInteger(x) || x < 1) return -1;
+    const result = [];
+    for (let index = x; index >= 1; index--) {
+        if (x % index === 0) result.push(index);
+    }
+    return result;
 }

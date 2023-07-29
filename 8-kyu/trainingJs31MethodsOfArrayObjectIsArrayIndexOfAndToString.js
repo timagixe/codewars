@@ -74,21 +74,21 @@ Using string template and ternary operator can make your work easier.
 */
 
 const ALLOWED_NUMBERS = {
-  FIVE: 5,
-  THIRTEEN: 13
+    FIVE: 5,
+    THIRTEEN: 13
 };
 
 function blackAndWhite(array) {
-  if (!Array.isArray(array)) {
-    return "It's a fake array";
-  }
+    if (!Array.isArray(array)) {
+        return "It's a fake array";
+    }
 
-  if (
-    array.indexOf(ALLOWED_NUMBERS.FIVE) >= 0 &&
-    array.indexOf(ALLOWED_NUMBERS.THIRTEEN) >= 0
-  ) {
-    return "It's a black array";
-  }
+    if (
+        array.indexOf(ALLOWED_NUMBERS.FIVE) >= 0 &&
+        array.indexOf(ALLOWED_NUMBERS.THIRTEEN) >= 0
+    ) {
+        return "It's a black array";
+    }
 
-  return "It's a white array";
+    return "It's a white array";
 }

@@ -19,6 +19,6 @@ This example will return the string Hello, John Smith! Welcome to Phoenix, Arizo
 const SPACE = " ";
 
 function sayHello(name, city, state) {
-  const fullName = name.join(SPACE);
-  return `Hello, ${fullName}! Welcome to ${city}, ${state}!`;
+    const fullName = name.join(SPACE);
+    return `Hello, ${fullName}! Welcome to ${city}, ${state}!`;
 }

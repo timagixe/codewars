@@ -21,10 +21,10 @@ This is a modification on the Kata: Array2Binary addition hope you like it
 */
 
 function arr2bin(arr) {
-  const sum = arr.reduce((sum, curr) => {
-    if (Number.isInteger(curr) || Number.isNaN(curr)) return sum + curr;
-    return sum;
-  }, 0);
+    const sum = arr.reduce((sum, curr) => {
+        if (Number.isInteger(curr) || Number.isNaN(curr)) return sum + curr;
+        return sum;
+    }, 0);
 
-  return sum.toString(2);
+    return sum.toString(2);
 }

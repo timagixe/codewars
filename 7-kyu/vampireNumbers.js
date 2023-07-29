@@ -22,11 +22,11 @@ Create a function that can receive two 'fangs' and determine if the product of t
 */
 
 function vampire_test(a, b) {
-  const multiplicants = join(`${a}${b}`);
-  const product = join(`${a * b}`);
-  return multiplicants === product;
+    const multiplicants = join(`${a}${b}`);
+    const product = join(`${a * b}`);
+    return multiplicants === product;
 }
 
 function join(string) {
-  return string.split("").sort().join("");
+    return string.split("").sort().join("");
 }

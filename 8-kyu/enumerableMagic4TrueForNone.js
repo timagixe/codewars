@@ -12,5 +12,5 @@ Create a method none? (JS none) that accepts an array and a block (JS: a functio
 */
 
 function none(array, callback) {
-  return !array.some(callback);
+    return !array.some(callback);
 }

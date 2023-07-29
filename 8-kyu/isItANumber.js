@@ -24,5 +24,5 @@ isDigit("zero")
 */
 
 function isDigit(numberString) {
-  return Number(numberString) === Number.parseFloat(numberString);
+    return Number(numberString) === Number.parseFloat(numberString);
 }

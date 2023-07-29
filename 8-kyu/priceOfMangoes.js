@@ -16,7 +16,7 @@ mango(9, 5) ==> 30   # 6 mangoes for 5 = 30; +3 mangoes for free
 */
 
 function mango(quantity, price) {
-  const totalMangoesPrice = quantity * price;
-  const discountPrice = Math.floor(quantity / 3) * price;
-  return totalMangoesPrice - discountPrice;
+    const totalMangoesPrice = quantity * price;
+    const discountPrice = Math.floor(quantity / 3) * price;
+    return totalMangoesPrice - discountPrice;
 }

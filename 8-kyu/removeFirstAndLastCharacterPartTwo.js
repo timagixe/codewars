@@ -19,7 +19,7 @@ const COMMA = ",";
 const SPACE = " ";
 
 function array(array) {
-  const start = 1;
-  const end = -start;
-  return array.slice(start, -end).split(SPACE).join(COMMA) || null;
+    const start = 1;
+    const end = -start;
+    return array.slice(start, -end).split(SPACE).join(COMMA) || null;
 }

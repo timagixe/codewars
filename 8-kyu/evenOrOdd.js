@@ -12,6 +12,6 @@ Create a function that takes an integer as an argument and returns "Even" for ev
 */
 
 function evenOrOdd(number) {
-  if (number % 2) return "Odd";
-  return "Even";
+    if (number % 2) return "Odd";
+    return "Even";
 }

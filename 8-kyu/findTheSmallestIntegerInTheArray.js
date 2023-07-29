@@ -18,7 +18,7 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 */
 
 class SmallestIntegerFinder {
-  findSmallestInt(array) {
-    return Math.min(...array);
-  }
+    findSmallestInt(array) {
+        return Math.min(...array);
+    }
 }

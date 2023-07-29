@@ -18,11 +18,11 @@ Examples:
 */
 
 function isModZero(numerator) {
-  return function (denominator) {
-    return !(numerator % denominator);
-  };
+    return function (denominator) {
+        return !(numerator % denominator);
+    };
 }
 
 function isDivisible(number, ...numbers) {
-  return numbers.every(isModZero(number));
+    return numbers.every(isModZero(number));
 }

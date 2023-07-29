@@ -58,7 +58,7 @@ SEE LICENSE IN filename
 */
 
 const configuration = {
-  name: "your-pack-name",
-  description: "Configure package json for a node application",
-  version: "1.0.0"
+    name: "your-pack-name",
+    description: "Configure package json for a node application",
+    version: "1.0.0"
 };

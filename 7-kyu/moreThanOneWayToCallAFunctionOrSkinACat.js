@@ -18,6 +18,6 @@ Both of these examples should return the sum of the 2 numbers.
 */
 
 function sum(a, b) {
-  if (b === undefined) return (b) => a + b;
-  return a + b;
+    if (b === undefined) return (b) => a + b;
+    return a + b;
 }

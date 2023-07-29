@@ -20,5 +20,5 @@ For ASCII table, you can refer to http://www.asciitable.com/
 */
 
 function getChar(code) {
-  return String.fromCharCode(code);
+    return String.fromCharCode(code);
 }

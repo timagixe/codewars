@@ -24,7 +24,7 @@ Taken from 'Formatting a number as price' (Kyu 5)
 */
 
 function numberToMoney(num) {
-  const truncated = num.toString().match(/\d+.\d{1,2}/)[0];
-  if (!truncated) throw new Error("Invalid input");
-  return new Intl.NumberFormat("en-US").format(truncated);
+    const truncated = num.toString().match(/\d+.\d{1,2}/)[0];
+    if (!truncated) throw new Error("Invalid input");
+    return new Intl.NumberFormat("en-US").format(truncated);
 }

@@ -26,7 +26,13 @@ Whatever you do, do not change what the function does. Good luck :)
 */
 
 function describeAge(age) {
-  return `You're a(n) ${
-    age <= 12 ? "kid" : age <= 17 ? "teenager" : age <= 64 ? "adult" : "elderly"
-  }`;
+    return `You're a(n) ${
+        age <= 12
+            ? "kid"
+            : age <= 17
+            ? "teenager"
+            : age <= 64
+            ? "adult"
+            : "elderly"
+    }`;
 }

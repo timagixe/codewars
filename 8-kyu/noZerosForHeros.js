@@ -24,5 +24,5 @@ Zero alone is fine, don't worry about it. Poor guy anyway
 const ZEROES_REGEXP = /0+$/;
 
 function noBoringZeros(n) {
-  return Number(n.toString().replace(ZEROES_REGEXP, ""));
+    return Number(n.toString().replace(ZEROES_REGEXP, ""));
 }

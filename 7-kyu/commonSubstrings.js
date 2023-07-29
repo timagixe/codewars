@@ -29,7 +29,11 @@ We only count substrings that are > 1 in length.
 function reduceString(string, callback) {
     let callbackResult = false;
 
-    for (let i = 0, j = i + 2; i < string.length && j <= string.length; i++, j++) {
+    for (
+        let i = 0, j = i + 2;
+        i < string.length && j <= string.length;
+        i++, j++
+    ) {
         const slice = string.slice(i, j);
         callbackResult = callback(slice);
         if (callbackResult) return callbackResult;

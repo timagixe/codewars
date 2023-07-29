@@ -20,24 +20,24 @@ dog.name = 'Lassie'; // should set name to 'Lassie'
 */
 
 class Animal {
-  constructor(name, type) {
-    this._name = name;
-    this._type = type;
-  }
+    constructor(name, type) {
+        this._name = name;
+        this._type = type;
+    }
 
-  toString() {
-    return `${this._name} is a ${this._type}`;
-  }
+    toString() {
+        return `${this._name} is a ${this._type}`;
+    }
 
-  get type() {
-    return this._type;
-  }
+    get type() {
+        return this._type;
+    }
 
-  get name() {
-    return this._name;
-  }
+    get name() {
+        return this._name;
+    }
 
-  set name(value) {
-    this._name = value;
-  }
+    set name(value) {
+        this._name = value;
+    }
 }

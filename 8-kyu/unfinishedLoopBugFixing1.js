@@ -13,5 +13,5 @@ Oh no, Timmy's created an infinite loop! Help Timmy find and fix the bug in his 
 */
 
 function createArray(number) {
-  return Array.from({ length: number }, (v, k) => k + 1);
+    return Array.from({ length: number }, (v, k) => k + 1);
 }

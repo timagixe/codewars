@@ -20,7 +20,7 @@ ball2.ballType     //=> "super"
 */
 
 class Ball {
-  constructor(ballType = "regular") {
-    this.ballType = ballType;
-  }
+    constructor(ballType = "regular") {
+        this.ballType = ballType;
+    }
 }

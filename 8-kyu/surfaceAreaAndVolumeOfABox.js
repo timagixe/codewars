@@ -12,16 +12,16 @@ Write a function that returns the total surface area and volume of a box as an a
 */
 
 function calculateBoxArea(width, height, depth) {
-  return 2 * width * height + 2 * height * depth + 2 * depth * width;
+    return 2 * width * height + 2 * height * depth + 2 * depth * width;
 }
 
 function calculateBoxVolume(width, height, depth) {
-  return width * height * depth;
+    return width * height * depth;
 }
 
 function getSize(width, height, depth) {
-  return [
-    calculateBoxArea(width, height, depth),
-    calculateBoxVolume(width, height, depth)
-  ];
+    return [
+        calculateBoxArea(width, height, depth),
+        calculateBoxVolume(width, height, depth)
+    ];
 }

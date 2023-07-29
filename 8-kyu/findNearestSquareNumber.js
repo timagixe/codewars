@@ -14,5 +14,5 @@ Goodluck :)
 */
 
 function nearestSq(n) {
-  return Math.round(Math.sqrt(n)) ** 2;
+    return Math.round(Math.sqrt(n)) ** 2;
 }

@@ -21,18 +21,18 @@ nextBirthdayOfTheWeek(new Date(1975, 2, 22))  //5
 */
 
 function nextBirthdayOfTheWeek(birthday) {
-  const bornDay = birthday.getDay();
-  let date = findDate(addOneYear(birthday), bornDay);
-  return date.getFullYear() - birthday.getFullYear();
+    const bornDay = birthday.getDay();
+    let date = findDate(addOneYear(birthday), bornDay);
+    return date.getFullYear() - birthday.getFullYear();
 }
 
 function addOneYear(date) {
-  const nextYear = date.getFullYear() + 1;
-  const dateInMs = new Date(date).setFullYear(nextYear);
-  return new Date(dateInMs);
+    const nextYear = date.getFullYear() + 1;
+    const dateInMs = new Date(date).setFullYear(nextYear);
+    return new Date(dateInMs);
 }
 
 function findDate(date, weekday) {
-  if (date.getDay() === weekday) return date;
-  return findDate(addOneYear(date), weekday);
+    if (date.getDay() === weekday) return date;
+    return findDate(addOneYear(date), weekday);
 }

@@ -18,6 +18,6 @@ _if(true, function(){console.log("True")}, function(){console.log("false")})
 */
 
 function _if(bool, firstCallback, secondCallback) {
-  if (bool) return firstCallback();
-  return secondCallback();
+    if (bool) return firstCallback();
+    return secondCallback();
 }

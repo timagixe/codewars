@@ -27,5 +27,5 @@ wo rd
 const IDENTIFIER_REGEXP = /^[a-z_$][\w$]*$/i;
 
 function isValid(identifier) {
-  return IDENTIFIER_REGEXP.test(identifier);
+    return IDENTIFIER_REGEXP.test(identifier);
 }

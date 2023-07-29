@@ -20,5 +20,5 @@ Return value as boolean values, true for the string to contains "English", false
 const ENGLISH_REGEXP = /english/i;
 
 function spEng(sentence) {
-  return ENGLISH_REGEXP.test(sentence);
+    return ENGLISH_REGEXP.test(sentence);
 }

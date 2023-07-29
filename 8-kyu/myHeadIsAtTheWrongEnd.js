@@ -18,5 +18,5 @@ Simples!
 */
 
 function fixTheMeerkat(values) {
-  return values.reverse();
+    return values.reverse();
 }

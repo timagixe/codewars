@@ -22,5 +22,5 @@ Reference: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/templa
 const DELIMETER = " are ";
 
 function TempleStrings(...input) {
-  return input.join(DELIMETER);
+    return input.join(DELIMETER);
 }

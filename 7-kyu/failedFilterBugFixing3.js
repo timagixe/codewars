@@ -13,8 +13,8 @@ Oh no, Timmy's filter doesn't seem to be working? Your task is to fix the Filter
 */
 
 function FilterNumbers(str) {
-  return str
-    .split("")
-    .filter((c) => Number.isNaN(parseInt(c)))
-    .join("");
+    return str
+        .split("")
+        .filter((c) => Number.isNaN(parseInt(c)))
+        .join("");
 }

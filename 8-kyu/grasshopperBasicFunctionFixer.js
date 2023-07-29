@@ -15,6 +15,6 @@ Can you help me fix the function?
 */
 
 function addFive(num) {
-  const total = num + 5;
-  return total;
+    const total = num + 5;
+    return total;
 }

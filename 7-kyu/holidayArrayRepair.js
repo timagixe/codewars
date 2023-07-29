@@ -22,14 +22,14 @@ If your colleague is telling the truth, the function should return the string "R
 */
 
 function holidayCount(a1, a2) {
-  const colleague = a1.find(isNumber);
-  const mine = a2.find(isNumber);
-  if (!isNumber(mine) || !isNumber(colleague)) return "Not possible";
-  if (colleague > mine) return "Right";
-  if (colleague < mine) return "Wrong";
-  return "Same";
+    const colleague = a1.find(isNumber);
+    const mine = a2.find(isNumber);
+    if (!isNumber(mine) || !isNumber(colleague)) return "Not possible";
+    if (colleague > mine) return "Right";
+    if (colleague < mine) return "Wrong";
+    return "Same";
 }
 
 function isNumber(value) {
-  return Number.isFinite(value);
+    return Number.isFinite(value);
 }

@@ -22,8 +22,8 @@ Assume that [a,b,c,d] and the answer are all integers (no floating numbers!). Sl
 */
 
 function slope([x1, y1, x2, y2]) {
-  const dX = x2 - x1;
-  if (!dX) return "undefined";
-  const dY = y2 - y1;
-  return (dY / dX).toString();
+    const dX = x2 - x1;
+    if (!dX) return "undefined";
+    const dY = y2 - y1;
+    return (dY / dX).toString();
 }

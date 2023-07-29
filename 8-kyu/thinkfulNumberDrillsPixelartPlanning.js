@@ -25,5 +25,5 @@ True
 */
 
 function isDivisible(wallLength, pixelSize) {
-  return !(wallLength % pixelSize);
+    return !(wallLength % pixelSize);
 }

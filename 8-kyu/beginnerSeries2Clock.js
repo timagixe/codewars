@@ -30,5 +30,5 @@ const MINUTE_IN_MS = 60 * SECOND_IN_MS;
 const HOUR_IN_MS = 60 * MINUTE_IN_MS;
 
 function past(hours, minutes, seconds) {
-  return HOUR_IN_MS * hours + MINUTE_IN_MS * minutes + SECOND_IN_MS * seconds;
+    return HOUR_IN_MS * hours + MINUTE_IN_MS * minutes + SECOND_IN_MS * seconds;
 }

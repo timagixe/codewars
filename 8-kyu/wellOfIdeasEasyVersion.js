@@ -14,8 +14,8 @@ In this kata you need to check the provided array (x) for good ideas 'good' and 
 */
 
 function well(ideas) {
-  const goodCount = ideas.filter((idea) => idea === "good").length;
-  if (!goodCount) return "Fail!";
-  if (goodCount > 2) return "I smell a series!";
-  return "Publish!";
+    const goodCount = ideas.filter((idea) => idea === "good").length;
+    if (!goodCount) return "Fail!";
+    if (goodCount > 2) return "I smell a series!";
+    return "Publish!";
 }

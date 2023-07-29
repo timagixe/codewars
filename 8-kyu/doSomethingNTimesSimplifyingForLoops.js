@@ -163,10 +163,10 @@ In case you got lost, here's precisely what you have to do: define a method Numb
 */
 
 Number.prototype.times = function (callback) {
-  let iteration = 0;
+    let iteration = 0;
 
-  while (iteration < this) {
-    callback(iteration);
-    iteration++;
-  }
+    while (iteration < this) {
+        callback(iteration);
+        iteration++;
+    }
 };

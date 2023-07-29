@@ -20,9 +20,9 @@ Assume all inputs are valid lists with at least one value. For the purpose of si
 */
 
 function listToArray(list) {
-  const arr = [];
-  for (let node = list; node !== null; node = node.next) {
-    arr.push(node.value);
-  }
-  return arr;
+    const arr = [];
+    for (let node = list; node !== null; node = node.next) {
+        arr.push(node.value);
+    }
+    return arr;
 }

@@ -23,5 +23,5 @@ Good luck!
 */
 
 function sumSquares(arr) {
-  return arr.reduce((acc, cur) => acc + cur ** 2, 0);
+    return arr.reduce((acc, cur) => acc + cur ** 2, 0);
 }

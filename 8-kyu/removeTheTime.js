@@ -20,13 +20,13 @@ Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". 
 */
 
 function formatDate(date) {
-  return date.replace(/[^0-9]/gi, "");
+    return date.replace(/[^0-9]/gi, "");
 }
 
 function shortenToDate(longDate) {
-  const [weekDay, month, date] = longDate.split(/\s/);
+    const [weekDay, month, date] = longDate.split(/\s/);
 
-  return `${weekDay} ${month} ${formatDate(date)}`;
+    return `${weekDay} ${month} ${formatDate(date)}`;
 }
 
 /* 

@@ -18,16 +18,16 @@ Please leave feedback for this kata. Cheers!
 */
 
 function getWhoAteCookieAnswer(name) {
-  return `Who ate the last cookie? It was ${name}!`;
+    return `Who ate the last cookie? It was ${name}!`;
 }
 
 function cookie(x) {
-  switch (typeof x) {
-    case "string":
-      return getWhoAteCookieAnswer("Zach");
-    case "number":
-      return getWhoAteCookieAnswer("Monica");
-    default:
-      return getWhoAteCookieAnswer("the dog");
-  }
+    switch (typeof x) {
+        case "string":
+            return getWhoAteCookieAnswer("Zach");
+        case "number":
+            return getWhoAteCookieAnswer("Monica");
+        default:
+            return getWhoAteCookieAnswer("the dog");
+    }
 }

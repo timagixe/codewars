@@ -22,10 +22,10 @@ obj2.test; // => 1
 */
 
 class Singleton {
-  constructor() {
-    if (!Singleton._instance) {
-      Singleton._instance = this;
+    constructor() {
+        if (!Singleton._instance) {
+            Singleton._instance = this;
+        }
+        return Singleton._instance;
     }
-    return Singleton._instance;
-  }
 }

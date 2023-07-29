@@ -21,11 +21,11 @@ The return value of the original method should be returned.
 */
 
 function adviseBefore(target, advice) {
-  return (...args) => {
-    const adviceResult = advice(...args);
+    return (...args) => {
+        const adviceResult = advice(...args);
 
-    if (Array.isArray(adviceResult)) return target(...adviceResult);
+        if (Array.isArray(adviceResult)) return target(...adviceResult);
 
-    return target(...args);
-  };
+        return target(...args);
+    };
 }

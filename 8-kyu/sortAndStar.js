@@ -19,6 +19,6 @@ const EMPTY = "";
 const STARS = "***";
 
 function twoSort(words) {
-  const [word] = [...words].sort();
-  return word.split(EMPTY).join(STARS);
+    const [word] = [...words].sort();
+    return word.split(EMPTY).join(STARS);
 }

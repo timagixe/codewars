@@ -23,15 +23,15 @@ Output should be a title of the longest song from the database that matches the 
 */
 
 function longestPossible(playback) {
-  const song = songs
-    .sort((a, b) => getSongPlayback(b) - getSongPlayback(a))
-    .find((song) => playback >= getSongPlayback(song));
-  return song ? song.title : false;
+    const song = songs
+        .sort((a, b) => getSongPlayback(b) - getSongPlayback(a))
+        .find((song) => playback >= getSongPlayback(song));
+    return song ? song.title : false;
 }
 
 const SECS_IN_MIN = 60;
 
 function getSongPlayback(song) {
-  const [mins, secs] = song.playback.split(":").map(Number);
-  return secs + mins * SECS_IN_MIN;
+    const [mins, secs] = song.playback.split(":").map(Number);
+    return secs + mins * SECS_IN_MIN;
 }

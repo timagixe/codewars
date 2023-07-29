@@ -16,13 +16,13 @@ uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, te
 */
 
 function getResultString(teams, result) {
-  return `At match ${teams.join(" - ")}, ${result}`;
+    return `At match ${teams.join(" - ")}, ${result}`;
 }
 
 function uefaEuro2016(teams, [firstTeamScore, secondTeamScore]) {
-  if (firstTeamScore === secondTeamScore) {
-    return getResultString(teams, "teams played draw.");
-  }
-  const winner = firstTeamScore > secondTeamScore ? teams[0] : teams[1];
-  return getResultString(teams, `${winner} won!`);
+    if (firstTeamScore === secondTeamScore) {
+        return getResultString(teams, "teams played draw.");
+    }
+    const winner = firstTeamScore > secondTeamScore ? teams[0] : teams[1];
+    return getResultString(teams, `${winner} won!`);
 }

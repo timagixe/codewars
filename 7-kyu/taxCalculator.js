@@ -21,20 +21,20 @@ An input of 21, should return 1.75 (10% of 10 + 7% of 10 + 5% of 1)
 */
 
 function taxCalculator(total) {
-  if (typeof total !== "number" || total < 0) return 0;
-  let tax = 0;
-  if (total <= 10) {
-    tax = total * 0.1;
-  } else if (total <= 20) {
-    tax = 1 + (total - 10) * 0.07;
-  } else if (total <= 30) {
-    tax = 1.7 + (total - 20) * 0.05;
-  } else {
-    tax = 2.2 + (total - 30) * 0.03;
-  }
-  return round(tax);
+    if (typeof total !== "number" || total < 0) return 0;
+    let tax = 0;
+    if (total <= 10) {
+        tax = total * 0.1;
+    } else if (total <= 20) {
+        tax = 1 + (total - 10) * 0.07;
+    } else if (total <= 30) {
+        tax = 1.7 + (total - 20) * 0.05;
+    } else {
+        tax = 2.2 + (total - 30) * 0.03;
+    }
+    return round(tax);
 }
 
 function round(num) {
-  return Number(num.toFixed(2));
+    return Number(num.toFixed(2));
 }

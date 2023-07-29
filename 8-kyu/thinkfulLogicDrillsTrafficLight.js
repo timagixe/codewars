@@ -18,12 +18,12 @@ For example, when the input is green, output should be yellow.
 const [GREEN, YELLOW, RED] = ["green", "yellow", "red"];
 
 function updateLight(current) {
-  switch (current) {
-    case GREEN:
-      return YELLOW;
-    case YELLOW:
-      return RED;
-    default:
-      return GREEN;
-  }
+    switch (current) {
+        case GREEN:
+            return YELLOW;
+        case YELLOW:
+            return RED;
+        default:
+            return GREEN;
+    }
 }

@@ -21,5 +21,5 @@ first(arr, 0) //=> [];
 */
 
 function first(array, index = 1) {
-  return array.slice(0, index);
+    return array.slice(0, index);
 }

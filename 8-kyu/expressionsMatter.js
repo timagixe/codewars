@@ -14,5 +14,5 @@ In other words , try every combination of a,b,c with [*+()] , and return the Max
 */
 
 function expressionMatter(a, b, c) {
-  return Math.max(a * (b + c), a * b * c, a + b + c, (a + b) * c);
+    return Math.max(a * (b + c), a * b * c, a + b + c, (a + b) * c);
 }

@@ -114,9 +114,9 @@ The two examples above seems to meet our requirements, but please note: a cube i
 */
 
 function isIntergerCbrt(number) {
-  return Number.isInteger(Math.cbrt(number));
+    return Number.isInteger(Math.cbrt(number));
 }
 
 function cutCube(volume, n) {
-  return isIntergerCbrt(volume) && isIntergerCbrt(volume / n);
+    return isIntergerCbrt(volume) && isIntergerCbrt(volume / n);
 }

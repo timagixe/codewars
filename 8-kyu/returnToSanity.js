@@ -12,5 +12,5 @@ This function should return an object, but it's not doing what's intended. What'
 */
 
 function mystery() {
-  return { sanity: "Hello" };
+    return { sanity: "Hello" };
 }

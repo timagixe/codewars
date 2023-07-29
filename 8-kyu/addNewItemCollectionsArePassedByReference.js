@@ -18,5 +18,5 @@ P.S. You have to create a new list and add a new item to that. (This Kata is ori
 */
 
 function addExtra(listOfNumbers) {
-  return listOfNumbers.concat(Infinity);
+    return listOfNumbers.concat(Infinity);
 }

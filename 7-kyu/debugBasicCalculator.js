@@ -19,9 +19,9 @@ calculate(4,"/",0) //should return null
 */
 
 function calculate(a, o, b) {
-  if (o === "+") return a + b;
-  if (o === "-") return a - b;
-  if (o === "/" && b !== 0) return a / b;
-  if (o === "*") return a * b;
-  return null;
+    if (o === "+") return a + b;
+    if (o === "-") return a - b;
+    if (o === "/" && b !== 0) return a / b;
+    if (o === "*") return a * b;
+    return null;
 }

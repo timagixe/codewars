@@ -16,6 +16,6 @@ Ouput :: "Position of alphabet: 1"
 */
 
 function position(letter) {
-  const position = letter.charCodeAt() - 96;
-  return `Position of alphabet: ${position}`;
+    const position = letter.charCodeAt() - 96;
+    return `Position of alphabet: ${position}`;
 }

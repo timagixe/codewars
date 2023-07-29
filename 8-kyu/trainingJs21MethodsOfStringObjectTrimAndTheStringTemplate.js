@@ -96,10 +96,10 @@ xyxyxyxyxy  <---The effect when you console.log it
 */
 
 function fiveLine(string) {
-  const trimmedString = string.trim();
+    const trimmedString = string.trim();
 
-  return Array(5)
-    .fill(undefined)
-    .map((_, index) => trimmedString.repeat(index + 1))
-    .join("\n");
+    return Array(5)
+        .fill(undefined)
+        .map((_, index) => trimmedString.repeat(index + 1))
+        .join("\n");
 }

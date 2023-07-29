@@ -14,9 +14,9 @@ Return your answer as a number.
 */
 
 function sumMix(values) {
-  let sum = 0;
-  for (const value of values) {
-    sum += Number(value);
-  }
-  return sum;
+    let sum = 0;
+    for (const value of values) {
+        sum += Number(value);
+    }
+    return sum;
 }

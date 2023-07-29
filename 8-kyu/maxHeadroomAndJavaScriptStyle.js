@@ -13,14 +13,14 @@ Can you spot a problem and fix it? Can you learn something about JavaScript styl
 */
 
 function getMax1() {
-  const max = {
-    name: "Max Headroom"
-  };
-  return max;
+    const max = {
+        name: "Max Headroom"
+    };
+    return max;
 }
 
 function getMax2() {
-  return {
-    name: "Max Headroom"
-  };
+    return {
+        name: "Max Headroom"
+    };
 }

@@ -26,13 +26,13 @@ Your function should return the 20 year estimate of the stairs climbed using the
 */
 
 function stairsIn20(days) {
-  return stairsInYear(days) * 20;
+    return stairsInYear(days) * 20;
 }
 
 function stairsInYear(year) {
-  return year.reduce((total, days) => total + days.reduce(sum), 0);
+    return year.reduce((total, days) => total + days.reduce(sum), 0);
 }
 
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }

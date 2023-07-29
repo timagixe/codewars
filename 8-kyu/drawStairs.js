@@ -32,9 +32,9 @@ I
 const WHITE_SPACE = " ";
 
 function drawStairs(n) {
-  if (n === 1) return "I";
-  return Array.from({ length: n }, (value, key) => {
-    if (key === n - 1) return `${WHITE_SPACE.repeat(key)}I`;
-    return `${WHITE_SPACE.repeat(key)}I\n`;
-  }).join("");
+    if (n === 1) return "I";
+    return Array.from({ length: n }, (value, key) => {
+        if (key === n - 1) return `${WHITE_SPACE.repeat(key)}I`;
+        return `${WHITE_SPACE.repeat(key)}I\n`;
+    }).join("");
 }

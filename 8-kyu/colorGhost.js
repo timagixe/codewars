@@ -26,5 +26,5 @@ const randomIndex = (array) => Math.round(Math.random() * (array.length - 1));
 const randomColor = () => COLORS[randomIndex(COLORS)];
 
 function Ghost() {
-  this.color = randomColor();
+    this.color = randomColor();
 }

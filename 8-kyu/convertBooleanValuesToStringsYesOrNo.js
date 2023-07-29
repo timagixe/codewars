@@ -12,5 +12,5 @@ Complete the method that takes a boolean value and return a "Yes" string for tru
 */
 
 function boolToWord(bool) {
-  return bool ? "Yes" : "No";
+    return bool ? "Yes" : "No";
 }

@@ -22,9 +22,9 @@ Examples (input -> output)
 */
 
 function isOpposite(s1, s2) {
-  if (!s1 || !s2 || s1.toLowerCase() !== s2.toLowerCase()) return false;
-  for (let [index, char] of Object.entries(s1)) {
-    if (char === s2[index]) return false;
-  }
-  return true;
+    if (!s1 || !s2 || s1.toLowerCase() !== s2.toLowerCase()) return false;
+    for (let [index, char] of Object.entries(s1)) {
+        if (char === s2[index]) return false;
+    }
+    return true;
 }

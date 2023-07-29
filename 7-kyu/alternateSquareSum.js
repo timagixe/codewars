@@ -28,14 +28,14 @@ Elements at indices 1, 3 are 12 and 14 and they are at even position. So we need
 */
 
 function alternateSqSum(nums) {
-  return nums.reduce(sum, 0);
+    return nums.reduce(sum, 0);
 }
 
 function isEven(num) {
-  return num % 2 === 0;
+    return num % 2 === 0;
 }
 
 function sum(total, num, index) {
-  if (!isEven(index + 1)) return total + num;
-  return total + num ** 2;
+    if (!isEven(index + 1)) return total + num;
+    return total + num ** 2;
 }

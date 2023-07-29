@@ -20,16 +20,16 @@ if it was over 88 you should return "Leo got one already!"
 */
 
 function leo(oscar) {
-  switch (oscar) {
-    case 88:
-      return "Leo finally won the oscar! Leo is happy";
-    case 87:
-      return "When will you give Leo an Oscar?";
-    case 86:
-      return "Not even for Wolf of wallstreet?!";
-    default:
-      return oscar > 88
-        ? "Leo got one already!"
-        : "When will you give Leo an Oscar?";
-  }
+    switch (oscar) {
+        case 88:
+            return "Leo finally won the oscar! Leo is happy";
+        case 87:
+            return "When will you give Leo an Oscar?";
+        case 86:
+            return "Not even for Wolf of wallstreet?!";
+        default:
+            return oscar > 88
+                ? "Leo got one already!"
+                : "When will you give Leo an Oscar?";
+    }
 }

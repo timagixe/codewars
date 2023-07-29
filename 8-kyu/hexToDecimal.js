@@ -12,5 +12,5 @@ Complete the function which converts hex number (given as a string) to a decimal
 */
 
 function hexToDec(hexString) {
-  return parseInt(hexString, 16);
+    return parseInt(hexString, 16);
 }

@@ -16,5 +16,5 @@ http://www.rubycuts.com/enum-any
 */
 
 function any(array, callback) {
-  return array.some(callback);
+    return array.some(callback);
 }

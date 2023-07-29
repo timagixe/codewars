@@ -80,12 +80,12 @@ firstToLast("ababc","d") should return -1
 */
 
 function firstToLast(str, c) {
-  const first = str.indexOf(c);
-  const last = str.lastIndexOf(c);
+    const first = str.indexOf(c);
+    const last = str.lastIndexOf(c);
 
-  if ([first, last].every((id) => id === -1)) {
-    return -1;
-  }
+    if ([first, last].every((id) => id === -1)) {
+        return -1;
+    }
 
-  return last - first;
+    return last - first;
 }

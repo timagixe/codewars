@@ -20,5 +20,5 @@ Your harried co-workers are looking to you for a solution to take this garbled t
 const NUMS_REGEXP = /\d/g;
 
 function stringClean(text) {
-  return text.replace(NUMS_REGEXP, "");
+    return text.replace(NUMS_REGEXP, "");
 }

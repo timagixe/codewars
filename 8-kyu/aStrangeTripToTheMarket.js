@@ -20,5 +20,5 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 const PHRASE_REGEXP = /tree fiddy|3\.50|three fifty/;
 
 function isLockNessMonster(sentence) {
-  return PHRASE_REGEXP.test(sentence);
+    return PHRASE_REGEXP.test(sentence);
 }

@@ -24,6 +24,8 @@ A string of HTML containing an anchor tag for each element of menuItems (with th
 */
 
 function generateMenu(menuItems) {
-    const menuHTML = menuItems.map((item) => `<a href="${item.url}">${item.text}</a>`).join("");
+    const menuHTML = menuItems
+        .map((item) => `<a href="${item.url}">${item.text}</a>`)
+        .join("");
     return menuHTML;
 }

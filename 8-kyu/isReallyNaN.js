@@ -16,5 +16,5 @@ Any solution is acceptable!
 */
 
 function isReallyNaN(val) {
-  return Number.isNaN(val);
+    return Number.isNaN(val);
 }

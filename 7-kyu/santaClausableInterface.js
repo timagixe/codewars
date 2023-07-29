@@ -35,5 +35,5 @@ isSantaClausable(notSanta); // must return FALSE
 const SANTA_PROPERTIES = ["sayHoHoHo", "distributeGifts", "goDownTheChimney"];
 
 function isSantaClausable(obj) {
-  return SANTA_PROPERTIES.every((prop) => typeof obj[prop] === "function");
+    return SANTA_PROPERTIES.every((prop) => typeof obj[prop] === "function");
 }

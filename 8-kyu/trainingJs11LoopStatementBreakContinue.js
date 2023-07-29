@@ -53,15 +53,15 @@ If you forgot how to push an element to array, please refer to lesson 4.
 const FAVOURITE_DOOLS = ["Hello Kitty", "Barbie doll"];
 
 function grabDoll(dolls) {
-  const bag = [];
+    const bag = [];
 
-  for (let doll of dolls) {
-    if (bag.length >= 3) break;
+    for (let doll of dolls) {
+        if (bag.length >= 3) break;
 
-    if (!FAVOURITE_DOOLS.includes(doll)) continue;
+        if (!FAVOURITE_DOOLS.includes(doll)) continue;
 
-    bag.push(doll);
-  }
+        bag.push(doll);
+    }
 
-  return bag;
+    return bag;
 }

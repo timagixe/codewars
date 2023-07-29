@@ -39,6 +39,6 @@ This is because the distance between a and b is greater than 0, and a is less th
 */
 
 function closeCompare(a, b, margin = 0) {
-  if (Math.abs(a - b) <= margin) return 0;
-  return Math.sign(a - b);
+    if (Math.abs(a - b) <= margin) return 0;
+    return Math.sign(a - b);
 }

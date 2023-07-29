@@ -18,5 +18,5 @@ Note: Math.pow and some other Math functions like eval() and ** are disabled.
 */
 
 function numberToPower(number, power) {
-  return !power ? 1 : number * numberToPower(number, power - 1);
+    return !power ? 1 : number * numberToPower(number, power - 1);
 }

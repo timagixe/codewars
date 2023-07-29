@@ -21,17 +21,17 @@ Otherwise returns "Wrong, please enter a number between 1 and 7"
 */
 
 const WEEKDAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday"
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
 ];
 
 function whatday(weekday) {
-  if (weekday > 0 && weekday < 8) return WEEKDAYS[weekday - 1];
+    if (weekday > 0 && weekday < 8) return WEEKDAYS[weekday - 1];
 
-  return "Wrong, please enter a number between 1 and 7";
+    return "Wrong, please enter a number between 1 and 7";
 }

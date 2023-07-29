@@ -18,5 +18,5 @@ All inputs will be integers. Please return an integer. Round down.
 */
 
 function dutyFree(normPrice, discount, hol) {
-  return Math.floor((hol * 100) / (normPrice * discount));
+    return Math.floor((hol * 100) / (normPrice * discount));
 }

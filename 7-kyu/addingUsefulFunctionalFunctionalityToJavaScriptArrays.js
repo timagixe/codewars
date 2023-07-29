@@ -18,10 +18,10 @@ While not forbidden try to write both function without using a for loop
 */
 
 Array.range = function (start, count) {
-  if (!count) return [];
-  return Array.from({ length: count }, (_, index) => start + index);
+    if (!count) return [];
+    return Array.from({ length: count }, (_, index) => start + index);
 };
 
 Array.prototype.sum = function () {
-  return this.reduce((total, b) => (total += b), 0);
+    return this.reduce((total, b) => (total += b), 0);
 };

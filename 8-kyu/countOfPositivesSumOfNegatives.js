@@ -19,13 +19,13 @@ For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should r
 */
 
 function countPositivesSumNegatives(values) {
-  if (!values || !values.length) return [];
-  return values.reduce(
-    (result, value) => {
-      if (value > 0) result[0] += 1;
-      if (value < 0) result[1] += value;
-      return result;
-    },
-    [0, 0]
-  );
+    if (!values || !values.length) return [];
+    return values.reduce(
+        (result, value) => {
+            if (value > 0) result[0] += 1;
+            if (value < 0) result[1] += value;
+            return result;
+        },
+        [0, 0]
+    );
 }

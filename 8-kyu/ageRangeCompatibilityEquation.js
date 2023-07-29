@@ -32,13 +32,13 @@ const DASH = "-";
 const MIN_AGE = 14;
 
 function getMinAge(age) {
-  return Math.floor(age > MIN_AGE ? age / 2 + 7 : 0.9 * age);
+    return Math.floor(age > MIN_AGE ? age / 2 + 7 : 0.9 * age);
 }
 
 function getMaxAge(age) {
-  return Math.floor(age > MIN_AGE ? (age - 7) * 2 : 1.1 * age);
+    return Math.floor(age > MIN_AGE ? (age - 7) * 2 : 1.1 * age);
 }
 
 function datingRange(age) {
-  return [getMinAge, getMaxAge].map((callback) => callback(age)).join(DASH);
+    return [getMinAge, getMaxAge].map((callback) => callback(age)).join(DASH);
 }

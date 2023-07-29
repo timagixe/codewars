@@ -25,6 +25,6 @@ For example(Input --> Output):
 const ZACH = "Zach";
 
 function howManyLightsabersDoYouOwn(name = "") {
-  if (name === ZACH) return 18;
-  return 0;
+    if (name === ZACH) return 18;
+    return 0;
 }

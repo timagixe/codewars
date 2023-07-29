@@ -20,5 +20,5 @@ const SECONDS_IN_HOUR = 3600;
 const CM_IN_KM = 100000;
 
 function cockroachSpeed(speed) {
-  return Math.floor((speed * CM_IN_KM) / SECONDS_IN_HOUR);
+    return Math.floor((speed * CM_IN_KM) / SECONDS_IN_HOUR);
 }

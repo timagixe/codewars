@@ -16,9 +16,9 @@ Go and get it working!
 */
 
 Array.prototype.join = function (separator = ",") {
-  return this.reduce((result, curr) => `${result}${separator}${curr}`);
+    return this.reduce((result, curr) => `${result}${separator}${curr}`);
 };
 
 function semicolonSeparationToCommaSeparation(input) {
-  return input.split(";").join(",");
+    return input.split(";").join(",");
 }

@@ -25,11 +25,11 @@ database.login('Timmy', 'password');
 const NOT_VALID_VALUE = /\/\/|\|\|/;
 
 function isNotValid(value) {
-  return NOT_VALID_VALUE.test(value);
+    return NOT_VALID_VALUE.test(value);
 }
 
 function validate(username, password) {
-  return [username, password].some(isNotValid)
-    ? "Wrong username or password!"
-    : new Database().login(username, password);
+    return [username, password].some(isNotValid)
+        ? "Wrong username or password!"
+        : new Database().login(username, password);
 }

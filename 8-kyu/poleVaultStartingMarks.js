@@ -31,5 +31,5 @@ Hint: Based on the two guidelines given above, you will want to account for the 
 const SLOPE = (10.67 - 9.45) / (1.83 - 1.52);
 
 function startingMark(bodyHeight) {
-  return Number((SLOPE * bodyHeight + 9.45 - SLOPE * 1.52).toFixed(2));
+    return Number((SLOPE * bodyHeight + 9.45 - SLOPE * 1.52).toFixed(2));
 }

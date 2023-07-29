@@ -29,17 +29,17 @@ As long as the tests pass, go for it!
 */
 
 var Queue = function () {
-  this.queue = [];
+    this.queue = [];
 };
 
 Queue.prototype.enqueue = function (item) {
-  this.queue.push(item);
+    this.queue.push(item);
 };
 
 Queue.prototype.dequeue = function () {
-  return this.queue.shift();
+    return this.queue.shift();
 };
 
 Queue.prototype.size = function () {
-  return this.queue.length;
+    return this.queue.length;
 };

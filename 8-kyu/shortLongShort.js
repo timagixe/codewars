@@ -20,6 +20,6 @@ For example: (Input1, Input2) --> output
 */
 
 function solution(a, b) {
-  const [short, long] = [a, b].sort((a, b) => a.length - b.length);
-  return `${short}${long}${short}`;
+    const [short, long] = [a, b].sort((a, b) => a.length - b.length);
+    return `${short}${long}${short}`;
 }

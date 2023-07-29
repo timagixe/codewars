@@ -37,15 +37,15 @@ Reading: Iterators and Generators
 
 */
 let counter = {
-  [Symbol.iterator]() {
-    let value = 1;
-    return {
-      next() {
+    [Symbol.iterator]() {
+        let value = 1;
         return {
-          done: false,
-          value: value++
+            next() {
+                return {
+                    done: false,
+                    value: value++
+                };
+            }
         };
-      }
-    };
-  }
+    }
 };

@@ -29,22 +29,22 @@ For example:
 */
 
 const DIACTRICS_MAP = new Map([
-  ["ą", "a"],
-  ["ć", "c"],
-  ["ę", "e"],
-  ["ł", "l"],
-  ["ń", "n"],
-  ["ó", "o"],
-  ["ś", "s"],
-  ["ź", "z"],
-  ["ż", "z"]
+    ["ą", "a"],
+    ["ć", "c"],
+    ["ę", "e"],
+    ["ł", "l"],
+    ["ń", "n"],
+    ["ó", "o"],
+    ["ś", "s"],
+    ["ź", "z"],
+    ["ż", "z"]
 ]);
 
 function correctPolishLetters(string) {
-  return string.split("").reduce((result, current) => {
-    if (DIACTRICS_MAP.has(current)) {
-      return `${result}${DIACTRICS_MAP.get(current)}`;
-    }
-    return `${result}${current}`;
-  }, "");
+    return string.split("").reduce((result, current) => {
+        if (DIACTRICS_MAP.has(current)) {
+            return `${result}${DIACTRICS_MAP.get(current)}`;
+        }
+        return `${result}${current}`;
+    }, "");
 }

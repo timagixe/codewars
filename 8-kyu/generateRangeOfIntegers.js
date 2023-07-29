@@ -22,11 +22,11 @@ the range does not HAVE to include max (depending on the step)
 */
 
 function createGetValueCallback({ min, step }) {
-  return (value, key) => min + key * step;
+    return (value, key) => min + key * step;
 }
 
 function generateRange(min, max, step) {
-  const length = (max - min) / step + 1;
-  const getValue = createGetValueCallback({ min, step });
-  return Array.from({ length }, getValue);
+    const length = (max - min) / step + 1;
+    const getValue = createGetValueCallback({ min, step });
+    return Array.from({ length }, getValue);
 }

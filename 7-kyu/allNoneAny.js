@@ -26,24 +26,24 @@ You do not need to worry about the data supplied, it will be an array at all tim
 */
 
 Array.prototype.all = function (predicate) {
-  for (const entry of this) {
-    if (predicate(entry)) continue;
-    return false;
-  }
-  return true;
+    for (const entry of this) {
+        if (predicate(entry)) continue;
+        return false;
+    }
+    return true;
 };
 
 Array.prototype.none = function (predicate) {
-  for (const entry of this) {
-    if (!predicate(entry)) continue;
-    return false;
-  }
-  return true;
+    for (const entry of this) {
+        if (!predicate(entry)) continue;
+        return false;
+    }
+    return true;
 };
 
 Array.prototype.any = function (predicate) {
-  for (const entry of this) {
-    if (predicate(entry)) return true;
-  }
-  return false;
+    for (const entry of this) {
+        if (predicate(entry)) return true;
+    }
+    return false;
 };

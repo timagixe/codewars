@@ -21,18 +21,18 @@ The length of all words provided in the list will be >= n. The format will be "x
 const SEPARATOR = ", ";
 
 function sortIt(list, n) {
-  return list
-    .split(SEPARATOR)
-    .sort(compareByNthChar(n - 1))
-    .join(SEPARATOR);
+    return list
+        .split(SEPARATOR)
+        .sort(compareByNthChar(n - 1))
+        .join(SEPARATOR);
 }
 
 function compareByNthChar(charIndex) {
-  return (a, b) => {
-    const charCodeA = a.toLowerCase().charCodeAt(charIndex);
-    const charCodeB = b.toLowerCase().charCodeAt(charIndex);
+    return (a, b) => {
+        const charCodeA = a.toLowerCase().charCodeAt(charIndex);
+        const charCodeB = b.toLowerCase().charCodeAt(charIndex);
 
-    if (charCodeA === charCodeB) return a.localeCompare(b);
-    return charCodeA - charCodeB;
-  };
+        if (charCodeA === charCodeB) return a.localeCompare(b);
+        return charCodeA - charCodeB;
+    };
 }

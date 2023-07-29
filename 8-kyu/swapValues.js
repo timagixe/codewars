@@ -14,5 +14,5 @@ Can you figure out what's wrong here?
 */
 
 function swapValues(input) {
-  input.reverse();
+    input.reverse();
 }

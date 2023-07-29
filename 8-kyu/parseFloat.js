@@ -12,7 +12,7 @@ Write function parseF which takes an input and returns a number or null if conve
 */
 
 function parseF(s) {
-  const parsedNumber = Number.parseFloat(s);
-  if (Number.isNaN(parsedNumber)) return null;
-  return parsedNumber;
+    const parsedNumber = Number.parseFloat(s);
+    if (Number.isNaN(parsedNumber)) return null;
+    return parsedNumber;
 }

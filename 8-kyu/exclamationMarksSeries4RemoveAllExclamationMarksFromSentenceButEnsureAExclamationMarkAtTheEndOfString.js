@@ -15,6 +15,6 @@ const EXCLAMATION_REGEXP = /!/g;
 const EMPTY = "";
 
 function remove(string) {
-  const cleanned = string.replace(EXCLAMATION_REGEXP, EMPTY);
-  return `${cleanned}!`;
+    const cleanned = string.replace(EXCLAMATION_REGEXP, EMPTY);
+    return `${cleanned}!`;
 }

@@ -34,12 +34,12 @@ Using these parameters, create the function that will calculate Bob's and other 
 */
 
 function bloodAlcoholContent({ ounces, abv }, weight, sex, time) {
-  const alcDistribution = sex === "male" ? 0.73 : 0.66;
-  const poorAlcOunces = ounces * abv;
-  return Number(
-    (
-      ((poorAlcOunces * 5.14) / weight) * alcDistribution -
-      0.015 * time
-    ).toFixed(4)
-  );
+    const alcDistribution = sex === "male" ? 0.73 : 0.66;
+    const poorAlcOunces = ounces * abv;
+    return Number(
+        (
+            ((poorAlcOunces * 5.14) / weight) * alcDistribution -
+            0.015 * time
+        ).toFixed(4)
+    );
 }

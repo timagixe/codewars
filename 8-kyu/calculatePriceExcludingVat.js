@@ -25,9 +25,9 @@ If null value given then return -1
 const VAT = 0.15;
 
 function excludingVatPrice(price) {
-  if (Number.isInteger(price)) {
-    return Number((price / (VAT + 1)).toFixed(2));
-  }
+    if (Number.isInteger(price)) {
+        return Number((price / (VAT + 1)).toFixed(2));
+    }
 
-  return -1;
+    return -1;
 }

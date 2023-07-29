@@ -62,16 +62,16 @@ Finally, return the padded string.
 */
 
 function padIt(str, n) {
-  let times = n;
-  let result = str;
+    let times = n;
+    let result = str;
 
-  while (times !== 0) {
-    if (times % 2) {
-      result = result.replace(/^/, "*");
-    } else {
-      result = result.replace(/$/, "*");
+    while (times !== 0) {
+        if (times % 2) {
+            result = result.replace(/^/, "*");
+        } else {
+            result = result.replace(/$/, "*");
+        }
+        times -= 1;
     }
-    times -= 1;
-  }
-  return result;
+    return result;
 }

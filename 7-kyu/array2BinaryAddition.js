@@ -19,10 +19,10 @@ arr2bin([1,2,'a']) == false
 */
 
 function arr2bin(nums) {
-  let sum = 0;
-  for (const num of nums) {
-    if (typeof num !== "number") return false;
-    sum += num;
-  }
-  return sum.toString(2);
+    let sum = 0;
+    for (const num of nums) {
+        if (typeof num !== "number") return false;
+        sum += num;
+    }
+    return sum.toString(2);
 }

@@ -24,5 +24,5 @@ Hint: Don't forget to check for bad values like null/undefined
 */
 
 function countSheeps(sheeps) {
-  return sheeps.filter(Boolean).length;
+    return sheeps.filter(Boolean).length;
 }

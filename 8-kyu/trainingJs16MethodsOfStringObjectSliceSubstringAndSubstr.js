@@ -108,21 +108,21 @@ cutIt(["codewars","javascript","java"]) should return ["code","java","java"]
 */
 
 function findShortestString(array) {
-  return array.reduce((shortest, current) => {
-    if (shortest === null) {
-      return current;
-    }
+    return array.reduce((shortest, current) => {
+        if (shortest === null) {
+            return current;
+        }
 
-    if (current.length < shortest.length) {
-      return current;
-    }
+        if (current.length < shortest.length) {
+            return current;
+        }
 
-    return shortest;
-  }, null);
+        return shortest;
+    }, null);
 }
 
 function cutIt(array) {
-  const shortestString = findShortestString(array);
+    const shortestString = findShortestString(array);
 
-  return array.map((string) => string.substring(0, shortestString.length));
+    return array.map((string) => string.substring(0, shortestString.length));
 }

@@ -17,5 +17,5 @@ parseNumbers(['-1','0','1']) // should return [-1,0,1]
 */
 
 function parseNumbers(intStrs) {
-  return intStrs.map((num) => parseInt(num));
+    return intStrs.map((num) => parseInt(num));
 }

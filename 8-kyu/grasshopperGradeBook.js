@@ -21,18 +21,18 @@ Tested values are all between 0 and 100. Theres is no need to check for negative
 */
 
 function getGrade(...grades) {
-  const averageGrade = average(grades);
-  if (averageGrade >= 90) return "A";
-  if (averageGrade >= 80) return "B";
-  if (averageGrade >= 70) return "C";
-  if (averageGrade >= 60) return "D";
-  return "F";
+    const averageGrade = average(grades);
+    if (averageGrade >= 90) return "A";
+    if (averageGrade >= 80) return "B";
+    if (averageGrade >= 70) return "C";
+    if (averageGrade >= 60) return "D";
+    return "F";
 }
 
 function average(grades) {
-  return grades.reduce(sum) / grades.length;
+    return grades.reduce(sum) / grades.length;
 }
 
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }

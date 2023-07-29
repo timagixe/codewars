@@ -29,20 +29,20 @@ elevator(0, 2, 1); // => "right"
 */
 
 const ELEVATOR = {
-  RIGHT: "right",
-  LEFT: "left"
+    RIGHT: "right",
+    LEFT: "left"
 };
 
 function areEquallyDistant(left, right, call) {
-  return left === right || Math.abs(call - left) === Math.abs(call - right);
+    return left === right || Math.abs(call - left) === Math.abs(call - right);
 }
 
 function elevator(left, right, call) {
-  if (areEquallyDistant(left, right, call)) return ELEVATOR.RIGHT;
+    if (areEquallyDistant(left, right, call)) return ELEVATOR.RIGHT;
 
-  const isRightCloser = Math.abs(call - left) > Math.abs(call - right);
+    const isRightCloser = Math.abs(call - left) > Math.abs(call - right);
 
-  if (isRightCloser) return ELEVATOR.RIGHT;
+    if (isRightCloser) return ELEVATOR.RIGHT;
 
-  return ELEVATOR.LEFT;
+    return ELEVATOR.LEFT;
 }

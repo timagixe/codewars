@@ -25,5 +25,5 @@ Inputs and the expected output will never exceed the signed 32-bit integer limit
 */
 
 function sumStr(a, b) {
-  return (parseInt(a || 0) + parseInt(b || 0)).toString();
+    return (parseInt(a || 0) + parseInt(b || 0)).toString();
 }

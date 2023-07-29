@@ -18,6 +18,6 @@ b = 4
 */
 
 function between(a, b) {
-  const length = Math.abs(a - b) + 1;
-  return Array.from({ length }, (_, index) => a + index);
+    const length = Math.abs(a - b) + 1;
+    return Array.from({ length }, (_, index) => a + index);
 }

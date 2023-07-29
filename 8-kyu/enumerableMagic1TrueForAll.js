@@ -25,5 +25,5 @@ http://www.rubycuts.com/enum-all
 */
 
 function all(array, callback) {
-  return array.every(callback);
+    return array.every(callback);
 }

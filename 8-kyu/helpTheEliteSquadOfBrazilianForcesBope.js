@@ -28,14 +28,14 @@ The return Will always be an integer so as the params.
 */
 
 const MAGAZINE_SIZES = {
-  PT92: 17,
-  M4A1: 30,
-  M16A2: 30,
-  PSG1: 5
+    PT92: 17,
+    M4A1: 30,
+    M16A2: 30,
+    PSG1: 5
 };
 
 function magNumber([weapon, streets]) {
-  const bulletsShot = streets * 3;
-  const magazineSize = MAGAZINE_SIZES[weapon];
-  return Math.ceil(bulletsShot / magazineSize);
+    const bulletsShot = streets * 3;
+    const magazineSize = MAGAZINE_SIZES[weapon];
+    return Math.ceil(bulletsShot / magazineSize);
 }

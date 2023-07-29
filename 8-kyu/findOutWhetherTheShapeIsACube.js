@@ -24,11 +24,11 @@ Note: the sides must be integers
 */
 
 function isValidSide(side) {
-  return side > 0;
+    return side > 0;
 }
 
 function cubeChecker(volume, side) {
-  if (!isValidSide(side)) return false;
+    if (!isValidSide(side)) return false;
 
-  return side ** 3 === volume;
+    return side ** 3 === volume;
 }

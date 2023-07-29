@@ -20,6 +20,6 @@ Return the total figure the individual will receive as a string prefixed with "Â
 const POUND = "Â£";
 
 function bonusTime(salary, bonus) {
-  const total = bonus ? salary * 10 : salary;
-  return `${POUND}${total}`;
+    const total = bonus ? salary * 10 : salary;
+    return `${POUND}${total}`;
 }

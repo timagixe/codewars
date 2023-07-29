@@ -12,6 +12,6 @@ Write a function that adds a named property to an object. It must be possible to
 */
 
 function addProperty(obj, prop, value) {
-  if (prop in obj) throw new Error(`Property ${prop} already exists.`);
-  obj[prop] = value;
+    if (prop in obj) throw new Error(`Property ${prop} already exists.`);
+    obj[prop] = value;
 }

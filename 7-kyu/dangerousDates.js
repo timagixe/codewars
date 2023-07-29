@@ -18,9 +18,9 @@ There's a hard way to do this and there's a right way.
 const DAY_IN_MS = 86400000;
 
 function nextFiveDays(date) {
-  return Array.from({ length: 5 }, (_, index) =>
-    new Date(date.getTime() + DAY_IN_MS * (index + 1)).toLocaleDateString(
-      "en-US"
-    )
-  ).join(", ");
+    return Array.from({ length: 5 }, (_, index) =>
+        new Date(date.getTime() + DAY_IN_MS * (index + 1)).toLocaleDateString(
+            "en-US"
+        )
+    ).join(", ");
 }

@@ -24,5 +24,5 @@ _originalToString(foo); // function foo() {}
 */
 
 function _originalToString(func) {
-  return Function.prototype.toString.apply(func);
+    return Function.prototype.toString.apply(func);
 }

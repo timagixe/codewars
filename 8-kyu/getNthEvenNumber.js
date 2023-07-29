@@ -20,5 +20,5 @@ The input will not be 0.
 */
 
 function nthEven(num) {
-  return num * 2 - 2;
+    return num * 2 - 2;
 }

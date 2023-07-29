@@ -14,5 +14,5 @@ Provided is a function find which accepts two parameters in the following order:
 */
 
 function find(a, e) {
-  return a.indexOf(e) + 1 ? a.indexOf(e) : "Not found";
+    return a.indexOf(e) + 1 ? a.indexOf(e) : "Not found";
 }

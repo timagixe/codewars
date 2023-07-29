@@ -28,9 +28,9 @@ Well Here's the Twist. The inputs will gradually decrease with their index as pa
 */
 
 function add(...entries) {
-  const sum = entries.reduce(
-    (total, current, index) => current / (index + 1) + total,
-    0
-  );
-  return Math.round(sum);
+    const sum = entries.reduce(
+        (total, current, index) => current / (index + 1) + total,
+        0
+    );
+    return Math.round(sum);
 }

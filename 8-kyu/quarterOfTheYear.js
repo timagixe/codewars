@@ -18,5 +18,5 @@ Constraint:
 */
 
 function quarterOf(month) {
-  return Math.floor((month + 2) / 3);
+    return Math.floor((month + 2) / 3);
 }

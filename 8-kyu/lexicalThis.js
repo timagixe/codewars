@@ -18,12 +18,12 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fun
 */
 
 function Person() {
-  const person = {
-    _name: "Leroy",
-    _friends: [],
-    fillFriends(f) {
-      this._friends = this._friends.concat(f);
-    }
-  };
-  return person;
+    const person = {
+        _name: "Leroy",
+        _friends: [],
+        fillFriends(f) {
+            this._friends = this._friends.concat(f);
+        }
+    };
+    return person;
 }

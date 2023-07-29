@@ -33,12 +33,12 @@ Note the additional whitespace around the bracketed literals in the examples!
 */
 
 function obfuscate(email) {
-  return email.replace(/[@\.]/g, emailReplacer);
+    return email.replace(/[@\.]/g, emailReplacer);
 }
 
 function emailReplacer(char) {
-  console.log({ char });
-  if (char === "@") return " [at] ";
-  if (char === ".") return " [dot] ";
-  return char;
+    console.log({ char });
+    if (char === "@") return " [at] ";
+    if (char === ".") return " [dot] ";
+    return char;
 }

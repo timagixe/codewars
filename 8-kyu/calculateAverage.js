@@ -14,8 +14,8 @@ Note: Empty arrays should return 0.
 */
 
 function findAverage(array) {
-  const count = array.length;
-  if (!count) return count;
-  const sum = array.reduce((a, b) => a + b);
-  return sum / count;
+    const count = array.length;
+    if (!count) return count;
+    const sum = array.reduce((a, b) => a + b);
+    return sum / count;
 }

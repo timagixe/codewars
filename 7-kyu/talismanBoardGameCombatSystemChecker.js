@@ -59,26 +59,26 @@ const DICE_MIN = 1;
 const DICE_MAX = 6;
 
 function getRequired(player, enemy) {
-  const playerStats = calculateStats(player);
-  const enemyStats = calculateStats(enemy);
-  const statsDiff = playerStats - enemyStats;
-  const role = calculateRole(statsDiff);
-  return role;
+    const playerStats = calculateStats(player);
+    const enemyStats = calculateStats(enemy);
+    const statsDiff = playerStats - enemyStats;
+    const role = calculateRole(statsDiff);
+    return role;
 }
 
 function calculateStats([power, modifier]) {
-  return power + modifier;
+    return power + modifier;
 }
 
 function calculateRole(diff) {
-  if (!diff) return "Random";
-  if (diff >= DICE_MAX) return "Auto-win";
-  if (diff <= -DICE_MAX) return "Auto-lose";
-  if (diff === -DICE_MAX + DICE_MIN) return "Pray for a tie!";
-  if (diff > 0) {
-    const min = DICE_MAX + DICE_MIN - diff;
-    return `(${min}..${DICE_MAX})`;
-  }
-  const max = DICE_MAX - DICE_MIN + diff;
-  return `(${DICE_MIN}..${max})`;
+    if (!diff) return "Random";
+    if (diff >= DICE_MAX) return "Auto-win";
+    if (diff <= -DICE_MAX) return "Auto-lose";
+    if (diff === -DICE_MAX + DICE_MIN) return "Pray for a tie!";
+    if (diff > 0) {
+        const min = DICE_MAX + DICE_MIN - diff;
+        return `(${min}..${DICE_MAX})`;
+    }
+    const max = DICE_MAX - DICE_MIN + diff;
+    return `(${DICE_MIN}..${max})`;
 }

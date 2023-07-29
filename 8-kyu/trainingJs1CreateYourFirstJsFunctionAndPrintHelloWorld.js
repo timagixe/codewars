@@ -25,6 +25,6 @@ type the console.log() in the next line (don't forget to put the str in the pare
 */
 
 function helloWorld() {
-  const str = "Hello World!";
-  console.log(str);
+    const str = "Hello World!";
+    console.log(str);
 }

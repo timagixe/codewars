@@ -19,18 +19,18 @@ myList.add(0).add(1)
 */
 
 class List {
-  constructor(type) {
-    this.type = type;
-    this.items = [];
-    this.count = 0;
-  }
+    constructor(type) {
+        this.type = type;
+        this.items = [];
+        this.count = 0;
+    }
 
-  add(item) {
-    if (typeof item !== this.type)
-      return `This item is not of type: ${this.type}`;
+    add(item) {
+        if (typeof item !== this.type)
+            return `This item is not of type: ${this.type}`;
 
-    this.items.push(item);
-    this.count += 1;
-    return this;
-  }
+        this.items.push(item);
+        this.count += 1;
+        return this;
+    }
 }

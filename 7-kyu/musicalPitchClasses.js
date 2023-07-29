@@ -33,31 +33,31 @@ Return nil (JS:  null ) for invalid input.
 const LIMIT = 12;
 
 const NOTES = new Map([
-  ["C", 0],
-  ["D", 2],
-  ["E", 4],
-  ["F", 5],
-  ["G", 7],
-  ["A", 9],
-  ["B", 11]
+    ["C", 0],
+    ["D", 2],
+    ["E", 4],
+    ["F", 5],
+    ["G", 7],
+    ["A", 9],
+    ["B", 11]
 ]);
 
 const TONES = new Map([
-  ["b", -1],
-  ["#", 1]
+    ["b", -1],
+    ["#", 1]
 ]);
 
 function pitchClass(str) {
-  if (!isValidNote(str)) return null;
-  const [note, tone] = str;
-  const noteValue = NOTES.get(note);
-  if (!tone) return noteValue;
-  const toneValue = TONES.get(tone);
-  return (noteValue + toneValue + LIMIT) % LIMIT;
+    if (!isValidNote(str)) return null;
+    const [note, tone] = str;
+    const noteValue = NOTES.get(note);
+    if (!tone) return noteValue;
+    const toneValue = TONES.get(tone);
+    return (noteValue + toneValue + LIMIT) % LIMIT;
 }
 
 const NOTE_REGEXP = /^[A-G][b#]?$/;
 
 function isValidNote(note) {
-  return NOTE_REGEXP.test(note);
+    return NOTE_REGEXP.test(note);
 }

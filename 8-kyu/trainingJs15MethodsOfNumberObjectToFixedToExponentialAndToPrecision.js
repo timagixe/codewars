@@ -84,14 +84,14 @@ howManySmaller([3.1288,3.1212,3.1205],3.1212) should return 2
 */
 
 function toFixed2(number) {
-  return Number(number.toFixed(2));
+    return Number(number.toFixed(2));
 }
 
 function howManySmaller(arr, n) {
-  return arr.reduce((acc, curr) => {
-    if (toFixed2(curr) < n) {
-      return (acc += 1);
-    }
-    return acc;
-  }, 0);
+    return arr.reduce((acc, curr) => {
+        if (toFixed2(curr) < n) {
+            return (acc += 1);
+        }
+        return acc;
+    }, 0);
 }

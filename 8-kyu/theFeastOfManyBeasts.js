@@ -16,11 +16,11 @@ Assume that beast and dish are always lowercase strings, and that each has at le
 */
 
 function getFirstAndLastChars(word) {
-  const firstChar = word.charAt(0);
-  const lastChar = word.charAt(word.length - 1);
-  return `${firstChar}${lastChar}`;
+    const firstChar = word.charAt(0);
+    const lastChar = word.charAt(word.length - 1);
+    return `${firstChar}${lastChar}`;
 }
 
 function feast(beast, dish) {
-  return getFirstAndLastChars(beast) === getFirstAndLastChars(dish);
+    return getFirstAndLastChars(beast) === getFirstAndLastChars(dish);
 }

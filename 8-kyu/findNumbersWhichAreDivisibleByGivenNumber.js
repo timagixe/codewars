@@ -15,5 +15,5 @@ Example(Input1, Input2 --> Output)
 */
 
 function divisibleBy(numbers, divisor) {
-  return numbers.filter((number) => !(number % divisor));
+    return numbers.filter((number) => !(number % divisor));
 }

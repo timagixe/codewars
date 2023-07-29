@@ -14,9 +14,9 @@ Why doesn't greet_abe() actually greet Abe?
 */
 
 function great(name) {
-  return function () {
-    return "Hello, " + name + "!";
-  };
+    return function () {
+        return "Hello, " + name + "!";
+    };
 }
 
 const greet_abe = great("Abe");

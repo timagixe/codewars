@@ -67,13 +67,13 @@ function spreadExample(x, y, z) { return //complete this function } spreadExampl
 */
 
 function defaultExample(x, y = 7) {
-  return x + y;
+    return x + y;
 }
 
 function restExample(x, ...y) {
-  return x * y.length;
+    return x * y.length;
 }
 
 function spreadExample(...x) {
-  return x[0] + x[1] + x[2];
+    return x[0] + x[1] + x[2];
 }

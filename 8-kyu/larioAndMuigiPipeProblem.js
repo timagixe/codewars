@@ -23,10 +23,10 @@ Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8
 */
 
 function pipeFix(numbers) {
-  const lastNumber = numbers[numbers.length - 1];
-  const fixedNumbers = [numbers[0]];
-  while (fixedNumbers[fixedNumbers.length - 1] !== lastNumber) {
-    fixedNumbers.push(fixedNumbers[fixedNumbers.length - 1] + 1);
-  }
-  return fixedNumbers;
+    const lastNumber = numbers[numbers.length - 1];
+    const fixedNumbers = [numbers[0]];
+    while (fixedNumbers[fixedNumbers.length - 1] !== lastNumber) {
+        fixedNumbers.push(fixedNumbers[fixedNumbers.length - 1] + 1);
+    }
+    return fixedNumbers;
 }

@@ -23,18 +23,18 @@ If an empty value ( null, None, Nothing etc. ) is given instead of an array, or 
 */
 
 function sumArray(array) {
-  if (!isValidArray(array)) return 0;
-  let min = Infinity;
-  let max = -Infinity;
-  let sum = 0;
-  for (let value of array) {
-    sum += value;
-    min = Math.min(min, value);
-    max = Math.max(max, value);
-  }
-  return sum - min - max;
+    if (!isValidArray(array)) return 0;
+    let min = Infinity;
+    let max = -Infinity;
+    let sum = 0;
+    for (let value of array) {
+        sum += value;
+        min = Math.min(min, value);
+        max = Math.max(max, value);
+    }
+    return sum - min - max;
 }
 
 function isValidArray(value) {
-  return Array.isArray(value) && value.length > 2;
+    return Array.isArray(value) && value.length > 2;
 }

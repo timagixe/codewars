@@ -16,6 +16,6 @@ The arguments will always be non empty strings, and normal letters.
 */
 
 function correctTail(body, tail) {
-  const bodyTail = body.substr(body.length - tail.length);
-  return bodyTail === tail;
+    const bodyTail = body.substr(body.length - tail.length);
+    return bodyTail === tail;
 }

@@ -20,7 +20,7 @@ The answer should be rounded to the nearest 2 decimal places.
 */
 
 function howMuchWater(water, load, clothes) {
-  if (load > clothes) return "Not enough clothes";
-  if (load * 2 < clothes) return "Too much clothes";
-  return Number((water * 1.1 ** (clothes - load)).toFixed(2));
+    if (load > clothes) return "Not enough clothes";
+    if (load * 2 < clothes) return "Too much clothes";
+    return Number((water * 1.1 ** (clothes - load)).toFixed(2));
 }

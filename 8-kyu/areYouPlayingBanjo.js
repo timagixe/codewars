@@ -19,7 +19,7 @@ Names given are always valid strings.
 */
 
 function areYouPlayingBanjo(name) {
-  const char = name[0].toLowerCase();
-  if (char === "r") return `${name} plays banjo`;
-  return `${name} does not play banjo`;
+    const char = name[0].toLowerCase();
+    if (char === "r") return `${name} plays banjo`;
+    return `${name} does not play banjo`;
 }

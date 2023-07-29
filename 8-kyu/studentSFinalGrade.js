@@ -21,15 +21,15 @@ This function should return a number (final grade). There are four types of fina
 */
 
 const GRADERS = [
-  (exam, projects) => (exam > 90 || projects > 10 ? 100 : undefined),
-  (exam, projects) => (exam > 75 && projects >= 5 ? 90 : undefined),
-  (exam, projects) => (exam > 50 && projects >= 2 ? 75 : undefined)
+    (exam, projects) => (exam > 90 || projects > 10 ? 100 : undefined),
+    (exam, projects) => (exam > 75 && projects >= 5 ? 90 : undefined),
+    (exam, projects) => (exam > 50 && projects >= 2 ? 75 : undefined)
 ];
 
 function finalGrade(exam, projects) {
-  for (let grader of GRADERS) {
-    const grade = grader(exam, projects);
-    if (grade) return grade;
-  }
-  return 0;
+    for (let grader of GRADERS) {
+        const grade = grader(exam, projects);
+        if (grade) return grade;
+    }
+    return 0;
 }

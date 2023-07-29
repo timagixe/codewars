@@ -12,9 +12,9 @@ Add two logs with base X, with the value of A and B. Example log A + log B where
 */
 
 function calculateLogWithBase(number, base) {
-  return Math.log(number) / Math.log(base);
+    return Math.log(number) / Math.log(base);
 }
 
 function logs(x, a, b) {
-  return calculateLogWithBase(a, x) + calculateLogWithBase(b, x);
+    return calculateLogWithBase(a, x) + calculateLogWithBase(b, x);
 }

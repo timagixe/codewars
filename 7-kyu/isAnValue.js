@@ -14,8 +14,8 @@ So let's make a proper function, called isAN, for is A Number. If you pass it a 
 */
 
 function isAN(value) {
-  return (
-    Number.isFinite(value) ||
-    (value instanceof Number && !Number.isNaN(value.valueOf()))
-  );
+    return (
+        Number.isFinite(value) ||
+        (value instanceof Number && !Number.isNaN(value.valueOf()))
+    );
 }

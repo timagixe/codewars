@@ -68,16 +68,16 @@ roundIt(34.56) should return 35
 const DOT_REGEXP = /\./;
 
 function splitNumber(number) {
-  return number.toString().split(DOT_REGEXP);
+    return number.toString().split(DOT_REGEXP);
 }
 
 function getRoundingFunction(numbersOnLeft, numbersOnRight) {
-  if (numbersOnLeft > numbersOnRight) return Math.floor;
-  if (numbersOnLeft < numbersOnRight) return Math.ceil;
-  return Math.round;
+    if (numbersOnLeft > numbersOnRight) return Math.floor;
+    if (numbersOnLeft < numbersOnRight) return Math.ceil;
+    return Math.round;
 }
 
 function roundIt(number) {
-  const [leftSide, rightSide] = splitNumber(number);
-  return getRoundingFunction(leftSide.length, rightSide.length)(number);
+    const [leftSide, rightSide] = splitNumber(number);
+    return getRoundingFunction(leftSide.length, rightSide.length)(number);
 }

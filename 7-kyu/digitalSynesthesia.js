@@ -24,15 +24,15 @@ I define a color as being associated with three ASCII characters when each pair 
 */
 
 function MusicToColor(music) {
-  if (!music) return [];
-  const chunks = music.match(/.{1,3}/gi) || [];
-  return chunks
-    .filter((c) => c.length === 3)
-    .map((chunk) => {
-      let hex = "#";
-      for (const char of chunk) {
-        hex += char.charCodeAt().toString(16);
-      }
-      return hex.toUpperCase();
-    });
+    if (!music) return [];
+    const chunks = music.match(/.{1,3}/gi) || [];
+    return chunks
+        .filter((c) => c.length === 3)
+        .map((chunk) => {
+            let hex = "#";
+            for (const char of chunk) {
+                hex += char.charCodeAt().toString(16);
+            }
+            return hex.toUpperCase();
+        });
 }

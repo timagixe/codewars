@@ -18,14 +18,14 @@ Provide output in this format: For dates in the future: "You are ... year(s) old
 */
 
 function calculateAge(birthDate, otherDate) {
-  if (birthDate === otherDate) return "You were born this very year!";
+    if (birthDate === otherDate) return "You were born this very year!";
 
-  const years = Math.abs(birthDate - otherDate);
-  const yearForm = years === 1 ? "year" : "years";
+    const years = Math.abs(birthDate - otherDate);
+    const yearForm = years === 1 ? "year" : "years";
 
-  if (birthDate < otherDate) {
-    return `You are ${years} ${yearForm} old.`;
-  }
+    if (birthDate < otherDate) {
+        return `You are ${years} ${yearForm} old.`;
+    }
 
-  return `You will be born in ${years} ${yearForm}.`;
+    return `You will be born in ${years} ${yearForm}.`;
 }

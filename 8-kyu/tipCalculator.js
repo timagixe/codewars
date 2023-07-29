@@ -26,15 +26,15 @@ Because you're a nice person, you always round up the tip, regardless of the ser
 */
 
 const TIP_TO_SERVICE = {
-  terrible: 0,
-  poor: 5,
-  good: 10,
-  great: 15,
-  excellent: 20
+    terrible: 0,
+    poor: 5,
+    good: 10,
+    great: 15,
+    excellent: 20
 };
 
 function calculateTip(amount, rating) {
-  const tipPercent = TIP_TO_SERVICE[rating.toLowerCase()];
-  if (!Number.isInteger(tipPercent)) return "Rating not recognised";
-  return Math.ceil((amount * tipPercent) / 100);
+    const tipPercent = TIP_TO_SERVICE[rating.toLowerCase()];
+    if (!Number.isInteger(tipPercent)) return "Rating not recognised";
+    return Math.ceil((amount * tipPercent) / 100);
 }

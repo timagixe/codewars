@@ -21,5 +21,5 @@ Don't forget about the indexing pitfall ;)
 */
 
 function seqlist(first, num, length) {
-  return Array.from({ length }, (_, index) => first + num * index);
+    return Array.from({ length }, (_, index) => first + num * index);
 }

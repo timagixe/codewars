@@ -30,18 +30,18 @@ The code also has to perform input validation, return :
 */
 
 function func(item) {
-  return item % 2 === 0;
+    return item % 2 === 0;
 }
 
 function map(arr, predicate) {
-  if (typeof predicate !== "function") {
-    return "given argument is not a function";
-  }
-  let result = [];
-  for (const entry of arr) {
-    const num = Number(entry);
-    if (!Number.isFinite(num)) return "array should contain only numbers";
-    result.push(predicate(entry));
-  }
-  return result;
+    if (typeof predicate !== "function") {
+        return "given argument is not a function";
+    }
+    let result = [];
+    for (const entry of arr) {
+        const num = Number(entry);
+        if (!Number.isFinite(num)) return "array should contain only numbers";
+        result.push(predicate(entry));
+    }
+    return result;
 }

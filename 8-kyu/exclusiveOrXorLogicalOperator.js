@@ -21,5 +21,5 @@ Since we cannot define keywords in Javascript (well, at least I don't know how t
 */
 
 function xor(a, b) {
-  return a !== b;
+    return a !== b;
 }

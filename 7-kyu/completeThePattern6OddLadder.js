@@ -34,11 +34,11 @@ Hint: Use \n in string to jump to next line
 */
 
 function pattern(length) {
-  return Array.from({ length }).reduce((ladder, _, index) => {
-    const num = index + 1;
-    if (!(num % 2)) return ladder;
-    const delimiter = num + 1 >= length ? "" : "\n";
-    const nextBar = num.toString().repeat(num);
-    return `${ladder}${nextBar}${delimiter}`;
-  }, "");
+    return Array.from({ length }).reduce((ladder, _, index) => {
+        const num = index + 1;
+        if (!(num % 2)) return ladder;
+        const delimiter = num + 1 >= length ? "" : "\n";
+        const nextBar = num.toString().repeat(num);
+        return `${ladder}${nextBar}${delimiter}`;
+    }, "");
 }

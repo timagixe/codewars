@@ -30,32 +30,32 @@ Dog Years
 */
 
 function humanYearsCatYearsDogYears(humanYears) {
-  return [
-    humanYears,
-    convertHumanYears(humanYears, "cat"),
-    convertHumanYears(humanYears, "dog")
-  ];
+    return [
+        humanYears,
+        convertHumanYears(humanYears, "cat"),
+        convertHumanYears(humanYears, "dog")
+    ];
 }
 
 function convertHumanYears(humanYears, animal) {
-  switch (humanYears) {
-    case 1:
-      return 15;
-    case 2:
-      return 15 + 9;
-    default:
-      const multiplier = getMultiplier(animal);
-      return 15 + 9 + multiplier * (humanYears - 2);
-  }
+    switch (humanYears) {
+        case 1:
+            return 15;
+        case 2:
+            return 15 + 9;
+        default:
+            const multiplier = getMultiplier(animal);
+            return 15 + 9 + multiplier * (humanYears - 2);
+    }
 }
 
 function getMultiplier(animal) {
-  switch (animal) {
-    case "dog":
-      return 5;
-    case "cat":
-      return 4;
-    default:
-      throw new Error("Unknown animal");
-  }
+    switch (animal) {
+        case "dog":
+            return 5;
+        case "cat":
+            return 4;
+        default:
+            throw new Error("Unknown animal");
+    }
 }

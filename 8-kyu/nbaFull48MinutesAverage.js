@@ -26,9 +26,9 @@ Follow your dreams!
 const FULL_GAME_MINUTES = 48;
 
 function pointsPer48(pointsPerGame, minutesPerGame) {
-  if (!pointsPerGame || !minutesPerGame) return 0;
+    if (!pointsPerGame || !minutesPerGame) return 0;
 
-  return Number(
-    ((FULL_GAME_MINUTES * pointsPerGame) / minutesPerGame).toFixed(1)
-  );
+    return Number(
+        ((FULL_GAME_MINUTES * pointsPerGame) / minutesPerGame).toFixed(1)
+    );
 }

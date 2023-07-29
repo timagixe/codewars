@@ -12,5 +12,5 @@ Complete the function which converts a binary number (given as a string) to a de
 */
 
 function binToDec(binary) {
-  return parseInt(binary, 2);
+    return parseInt(binary, 2);
 }

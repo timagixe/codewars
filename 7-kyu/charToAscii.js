@@ -14,9 +14,9 @@ Take a string and return a hash with all the ascii values of the characters in t
 const CHARS_REGEXP = /[a-z]/gi;
 
 function charToAscii(string) {
-  if (!string.length) return null;
-  return string.match(CHARS_REGEXP).reduce((hashMap, char) => {
-    hashMap[char] = char.charCodeAt();
-    return hashMap;
-  }, {});
+    if (!string.length) return null;
+    return string.match(CHARS_REGEXP).reduce((hashMap, char) => {
+        hashMap[char] = char.charCodeAt();
+        return hashMap;
+    }, {});
 }

@@ -22,6 +22,6 @@ guessBlue() should return the probability of drawing a blue marble, expressed as
 */
 
 function guessBlue(blueStart, redStart, bluePulled, redPulled) {
-  const [blueLeft, redLeft] = [blueStart - bluePulled, redStart - redPulled];
-  return blueLeft / (blueLeft + redLeft);
+    const [blueLeft, redLeft] = [blueStart - bluePulled, redStart - redPulled];
+    return blueLeft / (blueLeft + redLeft);
 }

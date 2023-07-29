@@ -27,20 +27,20 @@ return [null, ["favicon.gif", "favicon", "gif"]]
 const IMG_REGEXP = /^jpg$|^gif$|^png$|^tiff$|^svg$|^bmp$/i;
 
 function imageFilter(files) {
-  return files.reduce((acc, filename) => {
-    const [name, extension] = extractFileData(filename);
-    if (!isValidImage(name, extension)) return acc.concat(null);
-    return acc.concat([[filename, name, extension]]);
-  }, []);
+    return files.reduce((acc, filename) => {
+        const [name, extension] = extractFileData(filename);
+        if (!isValidImage(name, extension)) return acc.concat(null);
+        return acc.concat([[filename, name, extension]]);
+    }, []);
 }
 
 function isValidImage(name, extension) {
-  return IMG_REGEXP.test(extension) && !!name.length;
+    return IMG_REGEXP.test(extension) && !!name.length;
 }
 
 function extractFileData(filename) {
-  const splitted = filename.split(".");
-  const name = splitted[0];
-  const extension = splitted[splitted.length - 1];
-  return [name, extension];
+    const splitted = filename.split(".");
+    const name = splitted[0];
+    const extension = splitted[splitted.length - 1];
+    return [name, extension];
 }

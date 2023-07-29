@@ -31,5 +31,5 @@ function should be case insensitive to pass the tests
 const HELLO_REGEXP = /hello|ciao|salut|hallo|hola|ahoj|czesc/i;
 
 function validateHello(greetings) {
-  return HELLO_REGEXP.test(greetings);
+    return HELLO_REGEXP.test(greetings);
 }

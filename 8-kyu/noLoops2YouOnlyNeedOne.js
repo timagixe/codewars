@@ -22,5 +22,5 @@ https://www.codewars.com/kata/no-loops-3-copy-within
 */
 
 function check(a, x) {
-  return a.includes(x);
+    return a.includes(x);
 }

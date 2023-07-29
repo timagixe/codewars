@@ -22,13 +22,13 @@ As usual, your function/method should be pure, i.e. it should not mutate the ori
 */
 
 String.prototype.toAlternatingCase = function () {
-  const str = this;
-  return str
-    .split("")
-    .map((char) => {
-      if (!/[a-z]/i.test(char)) return char;
-      if (char === char.toLowerCase()) return char.toUpperCase();
-      if (char === char.toUpperCase()) return char.toLowerCase();
-    })
-    .join("");
+    const str = this;
+    return str
+        .split("")
+        .map((char) => {
+            if (!/[a-z]/i.test(char)) return char;
+            if (char === char.toLowerCase()) return char.toUpperCase();
+            if (char === char.toUpperCase()) return char.toLowerCase();
+        })
+        .join("");
 };

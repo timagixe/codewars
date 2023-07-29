@@ -20,5 +20,5 @@ returns:
 */
 
 function combineNames(firstName, lastName) {
-  return `${firstName} ${lastName}`;
+    return `${firstName} ${lastName}`;
 }

@@ -18,12 +18,12 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Cla
 */
 
 class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 
-  get info() {
-    return `${this.name}s age is ${this.age}`;
-  }
+    get info() {
+        return `${this.name}s age is ${this.age}`;
+    }
 }

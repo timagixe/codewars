@@ -17,13 +17,13 @@ Math.radians(180) //3.14rad
 */
 
 Math.degrees = function (radians) {
-  const value = (radians * 180) / Math.PI;
-  const fixed = parseFloat(value.toFixed(2));
-  return `${fixed}deg`;
+    const value = (radians * 180) / Math.PI;
+    const fixed = parseFloat(value.toFixed(2));
+    return `${fixed}deg`;
 };
 
 Math.radians = function (degrees) {
-  const value = (degrees * Math.PI) / 180;
-  const fixed = parseFloat(value.toFixed(2));
-  return `${fixed}rad`;
+    const value = (degrees * Math.PI) / 180;
+    const fixed = parseFloat(value.toFixed(2));
+    return `${fixed}rad`;
 };

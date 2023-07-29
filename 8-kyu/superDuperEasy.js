@@ -12,6 +12,6 @@ Make a function that returns the value multiplied by 50 and increased by 6. If t
 */
 
 function problem(x) {
-  if (typeof x !== "number") return "Error";
-  return x * 50 + 6;
+    if (typeof x !== "number") return "Error";
+    return x * 50 + 6;
 }

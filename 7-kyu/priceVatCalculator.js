@@ -35,16 +35,16 @@ calc.getVat(100) === 16.67  //gross price of 100 => var === 16.67
 */
 
 function Calculator(vatRate) {
-  this.getNet = function (grossPrice) {
-    const net = (grossPrice / (100 + vatRate)) * 100;
-    return roundNum(net);
-  };
-  this.getVat = function (grossPrice) {
-    const vat = (grossPrice / (100 + vatRate)) * vatRate;
-    return roundNum(vat);
-  };
+    this.getNet = function (grossPrice) {
+        const net = (grossPrice / (100 + vatRate)) * 100;
+        return roundNum(net);
+    };
+    this.getVat = function (grossPrice) {
+        const vat = (grossPrice / (100 + vatRate)) * vatRate;
+        return roundNum(vat);
+    };
 }
 
 function roundNum(num, digits = 2) {
-  return Number(num.toFixed(digits));
+    return Number(num.toFixed(digits));
 }

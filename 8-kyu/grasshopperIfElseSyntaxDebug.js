@@ -17,9 +17,9 @@ The function receives one parameter health which will always be a whole number b
 */
 
 function checkAlive(health) {
-  if (health <= 0) {
-    return false;
-  } else {
-    return true;
-  }
+    if (health <= 0) {
+        return false;
+    } else {
+        return true;
+    }
 }

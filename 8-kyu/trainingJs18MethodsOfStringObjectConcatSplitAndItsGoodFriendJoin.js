@@ -90,8 +90,8 @@ const WHITESPACE = " ";
 const EMPTY_STRING = "";
 
 function splitAndMerge(string, separator) {
-  return string
-    .split(WHITESPACE)
-    .map((subString) => subString.split(EMPTY_STRING).join(separator))
-    .join(WHITESPACE);
+    return string
+        .split(WHITESPACE)
+        .map((subString) => subString.split(EMPTY_STRING).join(separator))
+        .join(WHITESPACE);
 }

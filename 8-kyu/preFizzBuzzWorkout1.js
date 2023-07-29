@@ -18,5 +18,5 @@ Your job is to write an algorithm that gets you from the input to the output.
 */
 
 function preFizz(length) {
-  return Array.from({ length }, (value, key) => key + 1);
+    return Array.from({ length }, (value, key) => key + 1);
 }

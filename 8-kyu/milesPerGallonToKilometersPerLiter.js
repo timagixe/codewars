@@ -21,10 +21,10 @@ const LITRES_IN_GALLON = 4.54609188;
 const KILOMETERS_IN_MILE = 1.609344;
 
 function converter(mpg) {
-  const converted = (mpg * KILOMETERS_IN_MILE) / LITRES_IN_GALLON;
-  return toFixedPoint(converted, 2);
+    const converted = (mpg * KILOMETERS_IN_MILE) / LITRES_IN_GALLON;
+    return toFixedPoint(converted, 2);
 }
 
 function toFixedPoint(value, digits) {
-  return Number(value.toFixed(digits));
+    return Number(value.toFixed(digits));
 }

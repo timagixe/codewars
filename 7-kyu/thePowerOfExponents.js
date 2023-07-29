@@ -25,5 +25,5 @@ power(4, -2)  // 0.0625
 */
 
 function power(base, exponent) {
-  return base ** exponent;
+    return base ** exponent;
 }

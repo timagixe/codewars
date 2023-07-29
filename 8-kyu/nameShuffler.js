@@ -18,6 +18,6 @@ Example(Input --> Output)
 const SPACE = " ";
 
 function nameShuffler(name) {
-  const [firstName, lastName] = name.split(SPACE);
-  return `${lastName} ${firstName}`;
+    const [firstName, lastName] = name.split(SPACE);
+    return `${lastName} ${firstName}`;
 }

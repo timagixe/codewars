@@ -20,6 +20,6 @@ multiply(-3)==-15 // -3 * 5¹
 const NOT_A_NUMBER_REGEXP = /[^0-9]/;
 
 function multiply(number) {
-  const power = number.toString().replace(NOT_A_NUMBER_REGEXP, "").length;
-  return number * 5 ** power;
+    const power = number.toString().replace(NOT_A_NUMBER_REGEXP, "").length;
+    return number * 5 ** power;
 }

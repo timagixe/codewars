@@ -16,5 +16,5 @@ Write a function which will return value for which strict comparison will give f
 */
 
 function findStrangeValue() {
-  return NaN;
+    return NaN;
 }

@@ -32,7 +32,7 @@ If you make it, return "Alive!", if not, return "Shark Bait!".
 */
 
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin) {
-  const myTime = pontoonDistance / youSpeed;
-  const sharkTime = sharkDistance / (sharkSpeed / (dolphin ? 2 : 1));
-  return myTime < sharkTime ? "Alive!" : "Shark Bait!";
+    const myTime = pontoonDistance / youSpeed;
+    const sharkTime = sharkDistance / (sharkSpeed / (dolphin ? 2 : 1));
+    return myTime < sharkTime ? "Alive!" : "Shark Bait!";
 }

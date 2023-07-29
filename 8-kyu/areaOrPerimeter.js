@@ -19,10 +19,10 @@ Note: for the purposes of this kata you will assume that it is a square if its l
 */
 
 function areaOrPerimeter(l, w) {
-  if (isRectangle(l, w)) return 2 * (l + w);
-  return l ** 2;
+    if (isRectangle(l, w)) return 2 * (l + w);
+    return l ** 2;
 }
 
 function isRectangle(l, w) {
-  return l !== w;
+    return l !== w;
 }

@@ -38,5 +38,5 @@ https://developer.mozilla.org/en-US/docs/Glossary/Primitive
 */
 
 function greaterThanLessThan(a, b, c) {
-  return a < b < c;
+    return a < b < c;
 }

@@ -17,30 +17,30 @@ Can you finish the game so all the rules are met?
 */
 
 class Guesser {
-  constructor(number, lives) {
-    this.number = number;
-    this.lives = lives;
-  }
-
-  isGameOver() {
-    if (!this.lives) {
-      throw new Error("Game over!");
+    constructor(number, lives) {
+        this.number = number;
+        this.lives = lives;
     }
-  }
 
-  handleLives(isNumberCorrect) {
-    if (!isNumberCorrect) {
-      this.lives -= 1;
+    isGameOver() {
+        if (!this.lives) {
+            throw new Error("Game over!");
+        }
     }
-  }
 
-  guess(n) {
-    this.isGameOver();
+    handleLives(isNumberCorrect) {
+        if (!isNumberCorrect) {
+            this.lives -= 1;
+        }
+    }
 
-    const isNumberCorrect = n === this.number;
+    guess(n) {
+        this.isGameOver();
 
-    this.handleLives(isNumberCorrect);
+        const isNumberCorrect = n === this.number;
 
-    return isNumberCorrect;
-  }
+        this.handleLives(isNumberCorrect);
+
+        return isNumberCorrect;
+    }
 }

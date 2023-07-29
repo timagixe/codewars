@@ -16,9 +16,9 @@ Note: if there is nothing to sum, the sum is default to 0.
 */
 
 function positiveSum(values) {
-  let sum = 0;
-  for (let value of values) {
-    if (value >= 0) sum += value;
-  }
-  return sum;
+    let sum = 0;
+    for (let value of values) {
+        if (value >= 0) sum += value;
+    }
+    return sum;
 }

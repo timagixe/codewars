@@ -14,11 +14,11 @@ The questions array is already defined for you and is not the same as the one in
 */
 
 function defineUsersAnswer(data) {
-  Object.defineProperty(data, "usersAnswer", {
-    value: null,
-    writable: true,
-    enumerable: true
-  });
+    Object.defineProperty(data, "usersAnswer", {
+        value: null,
+        writable: true,
+        enumerable: true
+    });
 }
 
 questions.forEach(defineUsersAnswer);

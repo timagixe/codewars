@@ -31,5 +31,5 @@ Please note: The functions that are passed to make_lazy may take one or more arg
 */
 
 function makeLazy(func, ...args) {
-  return () => func(...args);
+    return () => func(...args);
 }

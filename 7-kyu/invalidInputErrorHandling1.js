@@ -34,8 +34,8 @@ Output: {vowels:0,consonants:0}
 */
 
 function getCount(words) {
-  if (typeof words !== "string") return { vowels: 0, consonants: 0 };
-  const vowels = words.match(/[aeiou]/gi) || [];
-  const consonants = words.match(/[^aeiou_\W]/gi) || [];
-  return { vowels: vowels.length, consonants: consonants.length };
+    if (typeof words !== "string") return { vowels: 0, consonants: 0 };
+    const vowels = words.match(/[aeiou]/gi) || [];
+    const consonants = words.match(/[^aeiou_\W]/gi) || [];
+    return { vowels: vowels.length, consonants: consonants.length };
 }

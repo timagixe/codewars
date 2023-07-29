@@ -16,5 +16,5 @@ Note that the number will always be non-negative (>= 0).
 const TWO_ODD_NUMS_REGEXP = /[13579](?=[13579])/g;
 
 function insertDash(num) {
-  return num.toString().replace(TWO_ODD_NUMS_REGEXP, (match) => `${match}-`);
+    return num.toString().replace(TWO_ODD_NUMS_REGEXP, (match) => `${match}-`);
 }

@@ -21,9 +21,9 @@ const VALUE_REGEXP = /^[-0-9.]+/gi;
 const UNITS_REGEXP = /[a-z%]+$/gi;
 
 function valAndUnits(s) {
-  const matchedValue = s.match(VALUE_REGEXP);
-  const value = matchedValue ? parseFloat(matchedValue[0]) : "";
-  const matchedUnits = s.match(UNITS_REGEXP);
-  const units = matchedUnits ? matchedUnits[0] : "";
-  return { val: value, units };
+    const matchedValue = s.match(VALUE_REGEXP);
+    const value = matchedValue ? parseFloat(matchedValue[0]) : "";
+    const matchedUnits = s.match(UNITS_REGEXP);
+    const units = matchedUnits ? matchedUnits[0] : "";
+    return { val: value, units };
 }

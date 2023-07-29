@@ -34,17 +34,17 @@ const BLACK_PLAYER = "black";
 const WHITE_PLAYER = "white";
 
 function getOppositePlayer(player) {
-  if (player === BLACK_PLAYER) {
-    return WHITE_PLAYER;
-  }
+    if (player === BLACK_PLAYER) {
+        return WHITE_PLAYER;
+    }
 
-  return BLACK_PLAYER;
+    return BLACK_PLAYER;
 }
 
 function whoseMove(lastPlayer, win) {
-  if (win) {
-    return lastPlayer;
-  }
+    if (win) {
+        return lastPlayer;
+    }
 
-  return getOppositePlayer(lastPlayer);
+    return getOppositePlayer(lastPlayer);
 }

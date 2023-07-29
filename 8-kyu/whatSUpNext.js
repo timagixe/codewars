@@ -17,23 +17,23 @@ nextItem("testing", "t") # "e"
 */
 
 function isGeneratorFunction(value) {
-  return Boolean(value.next);
+    return Boolean(value.next);
 }
 
 function nextGeneratorItem(generator, item) {
-  for (let entry of generator) {
-    if (entry === item) return generator.next().value;
-  }
+    for (let entry of generator) {
+        if (entry === item) return generator.next().value;
+    }
 
-  return generator.next().value;
+    return generator.next().value;
 }
 
 function nextItem(items, item) {
-  if (isGeneratorFunction(items)) return nextGeneratorItem(items, item);
+    if (isGeneratorFunction(items)) return nextGeneratorItem(items, item);
 
-  const itemIndex = items.indexOf(item);
+    const itemIndex = items.indexOf(item);
 
-  if (itemIndex !== -1) return items[itemIndex + 1];
+    if (itemIndex !== -1) return items[itemIndex + 1];
 
-  return void 0;
+    return void 0;
 }

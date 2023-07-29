@@ -31,5 +31,5 @@ Invalid postcodes:
 const POST_CODE_REGEXP = /^[12346]\d{5}$/;
 
 function zipvalidate(postcode) {
-  return POST_CODE_REGEXP.test(postcode);
+    return POST_CODE_REGEXP.test(postcode);
 }

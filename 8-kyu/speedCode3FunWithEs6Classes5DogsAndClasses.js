@@ -44,7 +44,7 @@ Quick, get your timer out and get ready to time yourself. Are you ready? Ready, 
 */
 
 class Labrador extends Dog {
-  constructor(name, age, gender, master) {
-    super(name, age, gender, "Labrador", "Large", master, true);
-  }
+    constructor(name, age, gender, master) {
+        super(name, age, gender, "Labrador", "Large", master, true);
+    }
 }

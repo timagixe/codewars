@@ -30,5 +30,5 @@ Advanced users may find this extremely easy and can easily write this in one lin
 */
 
 function sum(numbers) {
-  return numbers.reduce((total, num) => total + num, 0);
+    return numbers.reduce((total, num) => total + num, 0);
 }

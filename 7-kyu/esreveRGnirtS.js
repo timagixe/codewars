@@ -16,5 +16,5 @@ The reverse function should NOT modify the original string.
 */
 
 String.prototype.reverse = function () {
-  return this.split("").reverse().join("");
+    return this.split("").reverse().join("");
 };

@@ -30,6 +30,6 @@ Other languages: return 1 or 0 or refer to Sample Tests.
 */
 
 function isPythagoreanTriple(integers) {
-  const [a, b, c] = [...integers].sort((a, b) => a - b);
-  return a ** 2 + b ** 2 === c ** 2;
+    const [a, b, c] = [...integers].sort((a, b) => a - b);
+    return a ** 2 + b ** 2 === c ** 2;
 }

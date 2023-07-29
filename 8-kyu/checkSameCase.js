@@ -18,11 +18,11 @@ If both characters are letters, but not the same case, return 0
 const CHARS = /[a-z]/;
 
 function sameCase(a, b) {
-  if (![a, b].every(isChar)) return -1;
-  const sameCase = CHARS.test(a) === CHARS.test(b);
-  return Number(sameCase);
+    if (![a, b].every(isChar)) return -1;
+    const sameCase = CHARS.test(a) === CHARS.test(b);
+    return Number(sameCase);
 }
 
 function isChar(char) {
-  return /[a-z]/i.test(char);
+    return /[a-z]/i.test(char);
 }

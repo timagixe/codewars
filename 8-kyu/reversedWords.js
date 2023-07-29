@@ -20,5 +20,5 @@ Example(Input --> Output):
 const SPACE = " ";
 
 function reverseWords(str) {
-  return str.split(SPACE).reverse().join(SPACE);
+    return str.split(SPACE).reverse().join(SPACE);
 }

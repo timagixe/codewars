@@ -14,5 +14,5 @@ Simple, remove the spaces from the string, then return the resultant string.
 const EMPTY = "";
 
 function noSpace(str) {
-  return str.replace(/\s/g, EMPTY);
+    return str.replace(/\s/g, EMPTY);
 }

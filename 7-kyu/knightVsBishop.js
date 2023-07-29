@@ -21,22 +21,22 @@ Check the test cases and Happy coding :)
 */
 
 function knightVsBishop([knightRow, knightColumn], [bishopRow, bishopColumn]) {
-  const rowIndexDiff = Math.abs(knightRow - bishopRow);
-  const columnIndexDiff = Math.abs(
-    knightColumn.charCodeAt() - bishopColumn.charCodeAt()
-  );
-  if (knightCaptures(rowIndexDiff, columnIndexDiff)) return "Knight";
-  if (bishopCaptures(rowIndexDiff, columnIndexDiff)) return "Bishop";
-  return "None";
+    const rowIndexDiff = Math.abs(knightRow - bishopRow);
+    const columnIndexDiff = Math.abs(
+        knightColumn.charCodeAt() - bishopColumn.charCodeAt()
+    );
+    if (knightCaptures(rowIndexDiff, columnIndexDiff)) return "Knight";
+    if (bishopCaptures(rowIndexDiff, columnIndexDiff)) return "Bishop";
+    return "None";
 }
 
 function knightCaptures(rowIndexDiff, columnIndexDiff) {
-  return (
-    (rowIndexDiff === 2 && columnIndexDiff === 1) ||
-    (rowIndexDiff === 1 && columnIndexDiff === 2)
-  );
+    return (
+        (rowIndexDiff === 2 && columnIndexDiff === 1) ||
+        (rowIndexDiff === 1 && columnIndexDiff === 2)
+    );
 }
 
 function bishopCaptures(rowIndexDiff, columnIndexDiff) {
-  return rowIndexDiff === columnIndexDiff;
+    return rowIndexDiff === columnIndexDiff;
 }

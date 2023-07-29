@@ -14,5 +14,5 @@ The order of the sequence has to stay the same.
 */
 
 function distinct(array) {
-  return Array.from(new Set(array));
+    return Array.from(new Set(array));
 }

@@ -33,13 +33,13 @@ hotpo(23) returns 15
 */
 
 function isEven(number) {
-  return number % 2 === 0;
+    return number % 2 === 0;
 }
 
 function hotpo(n) {
-  if (n <= 1) return 0;
+    if (n <= 1) return 0;
 
-  if (isEven(n)) return 1 + hotpo(n / 2);
+    if (isEven(n)) return 1 + hotpo(n / 2);
 
-  return 1 + hotpo(3 * n + 1);
+    return 1 + hotpo(3 * n + 1);
 }

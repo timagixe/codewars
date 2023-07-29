@@ -22,5 +22,5 @@ Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Fun
 */
 
 function ArrowFunc(arr) {
-  return arr.map((code) => String.fromCharCode(code)).join("");
+    return arr.map((code) => String.fromCharCode(code)).join("");
 }
